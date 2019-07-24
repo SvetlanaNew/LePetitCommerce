@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	scroll-behavior:smooth;
+}
+*{
+	box-sizing:border-box;
+}
+h1{
+	font-size:35px;
+	text-align:left;
+
+}
+h2{
+	font-size:30px;
+    text-align:left;
+}	
+h3{
+	font-size:25px;
+}
+h4{
+	font-size:20px;
+	text-align:left;
+}
+	
+p{
+		font-size:20px;
+		text-align:justify;
+		margin:15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/********************************************************************************/
+header{
+	background:rgb(158, 148, 158);
+	width:100%;
+}
+main{
+   width: 100%;
+	background: rgb(243, 237, 237);
+}
+footer{
+    height:100px;
+	width:100%;
+	background:rgb(148, 141, 150);
+}
+/*********************************************************/
+.containerService{
+	background: rgb(65, 45, 65);
+	text-shadow: 0px 0px 2px grey;
+
+}
+.containerService i{
+	opacity: .5;
+	text-shadow: 0px 0px 2px grey;
+}
+.containerLogo{
+	text-shadow: 0px 0px 2px grey;
+}
+
+.recherche input{
+	height: 30px;
+	font-size: 10px;
+	width: 70%;
+	text-align: center;
+} 
+.recherche button{
+	height: 30px;
+	font-size: 10px;
+	text-shadow: 0px 0px 2px grey;
+}
+.containerMenu nav {
+	background: rgb(65, 45, 65)!important;
+	padding: 0;
+}
+.containerMenu nav a{
+	color:black;
+	text-shadow: 0px 0px 2px grey;
+}
+/***************************************/
+
+
+/**********************logo anomation************************/
+
+.logo img{
+	height: 80px;
+	position: relative;
+	margin-left: 40%;
+		animation: logoMove 20s infinite;
+}
+
+@keyframes logoMove {
+	0%   {left:0;width: 250px;}
+	25%  {left:10%;width: 30px;}
+	50%  {left:0%;width: 250px;}
+	75%  {left:10%;width: 30px;}
+	100% {left:0%;width: 250px;}
+  }
+  /****************************/
+  
+ 
