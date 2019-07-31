@@ -18,10 +18,10 @@ h1{font-size:35px;text-align:left;font-family: 'Berkshire Swash', cursive;}
 h2{padding: 25px ;font-size:30px;text-align:center;font-family: 'Berkshire Swash', cursive;}	
 h3{padding: 20px ;font-size:30px;text-align:center;font-family: 'Berkshire Swash', cursive;}
 h4{font-size:20px;text-align:left;font-family: 'Berkshire Swash', cursive;}	
-p{font-size:20px;text-align:justify;margin:15px;font-family: 'Gentium Book Basic', serif;}
+p{font-size:15px;text-align:justify;margin:15px;font-family: 'Gentium Book Basic', serif;}
 .fs-1{font-size: 1em;}
 .fs-1-5{font-size: 1.5em;}
-a{text-decoration: none;}
+a{text-decoration: none;font-size: 20px;}
 a:hover{color: #c0c0c0!important;}
 *{box-sizing:border-box;}
 
@@ -40,18 +40,24 @@ a:hover{color: #c0c0c0!important;}
   }*
 /***********************Corps****************************************************/  
 .corps{
-	margin-top: 100px;
+	margin-top: 120px;
+
 }
 /********************************************************************************/
 nav, nav .dropdown-menu,nav button span
-{background: white;color: black;}
-nav .dropdown-menu a{text-decoration: none;background: white;color: black;}
+{background: black;color: white;z-index: 100;
+
+}
+.navbar-toggler{height: 100px;}
+nav a,nav .dropdown-menu a{text-decoration: none;color: white;}
+nav a:hover,nav .dropdown-menu a:hover{color: #c0c0c0!important;}
 nav .btn{box-shadow: 2px 2px 2px #929090;background: black;text-align: center;color: white;opacity: 0.5;}
 /*******************header******************************************************/
-.service{background: black;height: 80px;box-shadow: 5px 5px 15px #929090;padding-bottom: 10px;}
+header{height: 100px;}
+.service{background: black;box-shadow: 5px 5px 15px #929090;}
 .service a{color:white;font-weight: bold; text-shadow: -2px 2px 2px #929090;	}
 .service  i, .containerLogo i{color:black;text-shadow: -2px 0px 2px #929090;}
-.interface a i{height: 50px;}
+.interface a i{height: 100px;}
 /**************main	************************************************************/
 main{	box-shadow:5px 5px 15px black;padding-bottom: 10px;}
 main div .femme, main div .homme{
@@ -60,7 +66,7 @@ main div .femme, main div .homme{
 .imgFemme, .imgHomme, .img-thumbnail{box-shadow: 5px 5px 15px black;padding-bottom: 10px;}
 
 /**************prefooter*********************************************************/
-.preFooter{background: black;color: white;box-shadow: 5px 5px 5px #929090;padding-bottom: 10px;}
+.preFooter{background:black ;color: white;box-shadow: 5px 5px 5px #929090;padding-bottom: 10px;}
 .preFooter h2{	text-shadow: -4px -1px 2px #929090;}
 .preFooter hr {border-color: #929090;-moz-border-border-color: #929090;	} 
 .reseaux i{color: black;}
@@ -74,7 +80,7 @@ footer{box-shadow:5px 5px 15px black;padding: 10px;}
 /**********************************BLOC PHOTOS MINIATURES***************ok**********/
 figure{position: relative;border: 3px solid #c0c0c0;overflow: hidden;   }
 figure figcaption a{text-decoration: none;color: rgb(41, 37, 37);}
-figcaption{position: absolute;background: rgba(255, 253, 253, 0.75);padding: 5px 0;text-align: center;width: 100%;transition: 0.6s;left: 0;bottom: -120px; /* on met la légende plus bas */}
+figcaption{position: absolute;background: rgba(255, 253, 253, 0.75);padding: 5px 0;text-align: center;width: 100%;transition: 0.6s;left: 0;bottom: -100px; /* on met la légende plus bas */}
 figure:hover figcaption{bottom: 0;color: black;}
 /********************************************************************************/
 
