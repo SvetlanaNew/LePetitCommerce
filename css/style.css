@@ -17,7 +17,7 @@ html{scroll-behavior:smooth;}
 h1{font-size:35px;text-align:center;font-family: 'Berkshire Swash', cursive;}
 h2{padding: 25px ;font-size:30px;text-align:center;font-family: 'Berkshire Swash', cursive;}	
 h3{padding: 20px ;font-size:30px;text-align:center;font-family: 'Berkshire Swash', cursive;}
-h4{font-size:20px;text-align:left;font-family: 'Berkshire Swash', cursive;}	
+h4{font-size:20px;text-align:center;font-family: 'Berkshire Swash', cursive;}	
 p{font-size:15px;text-align:justify;margin:15px;font-family: 'Gentium Book Basic', serif;}
 .fs-1{font-size: 1em;}
 .fs-1-5{font-size: 1.5em;}
