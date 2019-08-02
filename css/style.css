@@ -72,7 +72,7 @@ footer{box-shadow:5px 5px 15px black;padding: 10px;}
 /**********************************BLOC PHOTOS MINIATURES***************ok**********/
 figure{position: relative;border: 3px solid #c0c0c0;overflow: hidden;   }
 figure figcaption a{text-decoration: none;color: rgb(41, 37, 37);}
-figcaption{position: absolute;background: rgba(255, 253, 253, 0.75);padding: 5px 0;text-align: center;width: 100%;transition: 0.6s;left: 0;bottom: -100px; /* on met la légende plus bas */}
+figcaption{position: absolute;background: rgba(255, 253, 253, 0.75);padding: 5px 0;text-align: center;width: 100%;transition: 0.6s;left: 0;bottom: -110px; /* on met la légende plus bas */}
 figure:hover figcaption{bottom: 0;color: black;}
 
 
