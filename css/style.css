@@ -25,10 +25,8 @@ p{font-size:15px;text-align:justify;margin:15px;font-family: 'Gentium Book Basic
 *{box-sizing:border-box;}
 
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic&display=swap');
-
-/**********************logo animation********************************************/
-.logo a {text-decoration: none;color: black; }
 /**********************logo animation********************************************
+.logo a {text-decoration: none;color: black; }
 .logoImg{background: white;position: relative;animation: logoMove 20s infinite;}
 @keyframes logoMove {
 	0%   {left:0;width: 150px;}
@@ -40,25 +38,20 @@ p{font-size:15px;text-align:justify;margin:15px;font-family: 'Gentium Book Basic
 /***********************Corps****************************************************/  
 .corps{margin-top: 150px;}
 /********************************************************************************/
-nav, nav .dropdown-menu,nav button span
-{background: black;color: white;z-index: 100;}
-
+nav, nav .dropdown-menu,nav button span{background: black;color: white;z-index: 100;}
 nav a,nav .dropdown-menu a{text-decoration: none;color: white;font-weight: bold;}
-nav a:hover,nav .dropdown-menu a:hover{background:black;color:white;font-weight: bold; text-shadow: -2px 2px 2px #929090;}
+nav a:hover,nav .dropdown-menu a:hover{background:black;color:white;font-weight: bold; text-shadow: 1px 6px 2px #929090;}
 nav .btn{box-shadow: 2px 2px 2px #929090;background: black;text-align: center;color: white;opacity: 0.5;}
-
 .navbar-toggler{height: 150px;font-size: 50px;}
-.navbar-collapse{
-	text-align: center;
-}
+.navbar-collapse{text-align: center;}
 /*******************header******************************************************/
-header{height: 150px;}
 .service{background: black;box-shadow: 5px 5px 15px #929090;}
 .service .dropdown-menu{background: black;box-shadow: 5px 5px 15px #929090;}
-.service a{color:white;font-weight: bold; text-shadow: -2px 2px 2px #929090;}
-.service  i, .containerLogo i{color:black;text-shadow: -2px 0px 2px #929090;}
-
-.interface a i{color:white!important;text-shadow: -2px 0px 2px #929090;width: 50px;}
+.service li{font-size:20px;}
+.service a{color:white; text-shadow: -2px 2px 2px #929090;}
+.service  i{color:white;text-shadow: -2px 0px 2px #929090;font-size:20px;}
+.service h1 a{text-decoration: none;}
+.service a:hover, .service i:hover{ text-shadow: 1px 6px 2px #929090;}
 /**************main	************************************************************/
 main{	box-shadow:5px 5px 15px black;padding-bottom: 10px;}
 main div .femme, main div .homme{height: 100vh;}
@@ -67,22 +60,23 @@ main div .femme, main div .homme{height: 100vh;}
 .preFooter{background:black ;color: white;box-shadow: 5px 5px 5px #929090;padding-bottom: 10px;}
 .preFooter h2{	text-shadow: -4px -1px 2px #929090;}
 .preFooter hr {border-color: #929090;-moz-border-border-color: #929090;	} 
-.reseaux i{color: black;}
-.reseaux i:hover{color: black;}
+/******/
+.reseaux a i{color: black;font-size: 40px;}
+.reseaux a i:hover{}
+
+/******/
 .preFooter2{box-shadow:5px 5px 15px black;padding-bottom: 10px;}
  /******************footer******************************************************/
 footer a{text-decoration: none;color: black;}
 footer{box-shadow:5px 5px 15px black;padding: 10px;}
-
-
 /**********************************BLOC PHOTOS MINIATURES***************ok**********/
 figure{position: relative;border: 3px solid #c0c0c0;overflow: hidden;   }
 figure figcaption a{text-decoration: none;color: rgb(41, 37, 37);}
 figcaption{position: absolute;background: rgba(255, 253, 253, 0.75);padding: 5px 0;text-align: center;width: 100%;transition: 0.6s;left: 0;bottom: -100px; /* on met la légende plus bas */}
 figure:hover figcaption{bottom: 0;color: black;}
+
+
 /********************************************************************************/
-
-
 /******************Small devices xs 576px and up********************************/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -98,7 +92,7 @@ figure:hover figcaption{bottom: 0;color: black;}
 	.navbar-collapse{
 		font-size: 20px;
 	}
-	}	
+}	
 /* Large devices (desktops, 992px and up)*/
 /******************Large devices xs 992px and up********************************/
 @media (min-width: 992px) {  }
