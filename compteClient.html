@@ -10,17 +10,16 @@
 <body class="container-fluid d-flex flex-column flex-lg-row">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
     <!--1ere partie menu -->
-  <div class="col col-lg-2 fixed-top">   
-    <nav class="navbar navbar-expand-lg p-2">  
+  <div class="col-2">   
+    <nav class=" col col-lg-2 navbar navbar-expand-lg  position-fixed">  
       <!--menu mobil et tablette-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> 
       </button>
-      <!--titre et logo
-      <h1><a class="navbar-brand" href="index.html">Le Petit Commerce</a></h1>
-      menu écran large-->
+      <!-- menu écran large-->
       <div class=" collapse navbar-collapse" id="navbarTogglerDemo01">         
-        <ul class="navPerso navbar-nav mt-2 mt-lg-0 flex-column ">      
+        <ul class="navPerso navbar-nav mt-2 mt-lg-0 flex-column justify-content-start justify-content-lg-around align-items-start  align-items-lg-start">   
+             
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Femme</a>
               <div class="dropdown-menu ">
@@ -77,8 +76,8 @@
                 </a>
               </div>
           </li>   
-          <li class="nav-item active">
-                  <a class="nav-link" href="coachPersonnel.html" target="_blank">Coach personnel Shopper</a>
+          <li class="nav-item">
+                  <a class="nav-link" href="coachPersonnel.html" target="_blank">Coach personnel<br>Shopper</a>
           </li>
           <li class="nav-item">
                   <a class="nav-link" href="actualites.html" target="_blank">Actualités</a>
@@ -87,9 +86,9 @@
                     <a class="nav-link" href="avis.html" target="_blank">Avis</a>
           </li>
           <li>   
-            <form class="col-6 col-12  form-inline my-2 my-lg-0">
-              <input class="col-3 col-lg-8 form-control mr-sm-2 w-100 " type="search" placeholder="Recherche" aria-label="Search">
-              <button class="col-2  col-lg-3 btn my-2 " type="submit"><i class="fas fa-search"></i></button>
+            <form class="form-inline">
+              <input class="col-5 col-lg-9 form-control w-100 " type="search" placeholder="Recherche" aria-label="Search">
+              <button class="col-2  col-lg-3 btn p-1 " type="submit"><i class="fas fa-search"></i></button>
             </form>
           </li>
       </ul>
@@ -97,17 +96,18 @@
     </nav>
   </div>
     <!--2eme partie le Corps-->
-  <div class="corps col my-lg-0 offset-lg-2">
-    <header class="container-fluid service" >
-      <ul  class=" d-flex flex-row justify-content-end  ">                     
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle services" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">France </a>
+  <div class="corps col col-lg-10 my-lg-0 ">
+
+    <header class="container-fluid service p-2" >
+      <ul  class=" d-flex flex-row justify-content-around">                     
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
           <div class="dropdown-menu">       
             <a class="dropdown-item" href="#"> Royaume Uni </a>
             <a class="dropdown-item" href="#"> Espagne </a>       
             <a class="dropdown-item" href="#"> Italie </a>
           </div>
         </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle services" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
           <div class="dropdown-menu">       
             <a class="dropdown-item" href="quiSommesNous.html" target="_blank">Qui Sommes-nous</a>
             <a class="dropdown-item" href="contact.html" target="_blank">Contact</a>       
@@ -119,17 +119,133 @@
         <li class="nav-item">
           <a class="nav-link" href="pointDeVentes.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="compteClient.html"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" ><i class="fas fa-heart"></i></a>
+        </li>
       </ul>
-      <div class="interface d-flex flex-row justify-content-end">
-        <a href="" ><i class="fas fa-heart"></i></a>
-        <a href="compteClient.html"><i class="fas fa-user"></i></a>
-        <a href="panier.html"><i class="fas fa-shopping-basket"></i></a>
-      </div> 
+      <h1><a  href="index.html">Le Petit Commerce</a></h1>
     </header>
 
     <main class="container-fluid">
-<!------------------------------------------------------->
-<!----------------contenair a rajouter ici---------->
+ 
+        
+      <div class="contenair-fluid d-flex flex-column flex-lg-row flex-wrap ">
+        <!----------------------------------------------->
+        <div class="connexion col-12">
+         <h2>Connectez-vous</h2>
+          <p>Bienvenue sur LePetitCommmerce, votre compagnon mode. Réinventez votre dressing.</p>
+            <form method="post"  action="">    
+              <div class="form-group">
+                <label>Pseudo:</label>
+                <input type="text" class="form-control" name="pseudo" value=""/>
+              </div>
+              <div class="form-group">
+                <label>Mot de passe:</label>
+                <input type="password" class="form-control" name="mdp" />
+              </div>
+  
+              <div class="form-group">	
+                <input type="submit" value="se connecter" class="btn btn-success" />
+              </div>
+            </form>
+        </div>
+        <!------------------------------------------------------>
+        <div class="connexion col-12">
+
+          
+          <h2>Nouveau Client?</h2>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+           abonnez vous?
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog w-100" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Abonnez-vous</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body ">
+                  <div id="collapseOne" class="collapse show col-12 " aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body container-fluid ">
+                        <div class="row ">
+                            <div class="col-md-3 ml-auto">
+                              Level 2: .col-8 .col-sm-6
+                            </div>
+                            <div class="col-4 col-sm-6">
+                              Level 2: .col-4 .col-sm-6
+                            </div>
+                        </div>
+
+                        <form method="post"  action="">    
+                            <div class="form-group">
+                              <label>Pseudo:</label>
+                              <input type="text" class="form-control" name="pseudo" value=""/>
+                            </div>
+                            <div class="form-group">
+                              <label>Mot de passe:</label>
+                              <input type="password" class="form-control" name="mdp" />
+                            </div>
+                            <div class="form-group">	
+                              <label>Prénom:</label>
+                              <input type="text" class="form-control" name="prenom" value=""/>
+                            </div>
+                            <div class="form-group">	
+                              <label>Nom :</label>
+                              <input type="text" class="form-control" name="nom" value="" />
+                            </div>
+                            <div class="form-group">	
+                              <label>Email:</label>
+                              <input type="text" class="form-control" name="email" value=""/>
+                            </div>
+                            <div class="form-group">	
+                              <label>Civilité:</label>
+                              <select name="civilite" class="form-control">
+                                <option value="m" selected >Homme</option>
+                                <option value="f">Femme</option>
+                              </select>
+                            </div>
+                            <div class="form-group">	
+                              <label>Ville:</label>
+                              <input type="text" class="form-control" name="ville" value=""/>
+                            </div>
+                            <div class="form-group">	
+                              <label>Code Postal:</label>
+                              <input type="text" class="form-control" name="code_postal" value=""/>
+                            </div>
+                            <div class="form-group">	
+                              <label>Adresse:</label>
+                              <input type="text" class="form-control" name="adresse" value=""/>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">S'inscrire</button>
+                              </div>
+                          </form>
+                   
+                  
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!----------------------------------->
+      </div>
 
       <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap" >
         <h2 class="col col-lg-12">AVANTAGES E-BOUTIQUE</h2>
@@ -174,9 +290,9 @@
             <article class="col">
                 <h2>SUIVEZ-NOUS</h2> 
                 <div class=" justify-item-around m-2">
-                  <a href="facebook.com"></a><i class="fab fa-facebook"></i></a>
-                  <a href="instagram.com"></a><i class="fab fa-facebook"></i></a>
-                  <a href="twitter.com"></a><i class="fab fa-facebook"></i></a>
+                  <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                  <a href="instagram.com"><i class="fab fa-facebook"></i></a>
+                  <a href="twitter.com"><i class="fab fa-facebook"></i></a>
                  </div>    
             </article> 
       </section>
