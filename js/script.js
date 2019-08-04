@@ -17,9 +17,9 @@ function resultat(){
        && document.formulaire1.mdp.value.length >= 8
           && document.formulaire1.mdp.value.length <=16)
     {
-      var continuer = confirm('Voulez vous continuer ?');
+      var continuer = confirm('Voulez vous voir votre compte ?');
       if(continuer == true){
-        window.open('panier.html');
+        window.open('compteClient.html');
       }else{
         window.open('index.html');
       }
@@ -107,9 +107,9 @@ if(document.formulaire2.pseudo2.value.length >= 5
 // && document.formulaire2.code_postal.value.typeof === 'number'
 
 ){
-  var continuer = confirm('Voulez vous continuer ?');
+  var continuer = confirm('Voulez vous voir votre compte ?');
     if(continuer == true){
-        window.open('panier.html');
+        window.open('compteClient.html');
     }else{
       window.open('index.html');
     }
