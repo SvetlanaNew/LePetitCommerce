@@ -234,7 +234,7 @@ document.getElementById("avatar").onblur = function () {
 
 
   
-  // click bouton ajout panier
+  /* click bouton ajout panier
 $('.add-to-cart').click(function() {
 
   // récupération des infos du produit
@@ -282,4 +282,4 @@ $('.add-to-cart').click(function() {
   // affiche le contenu du panier si c'est le premier article
   cartEmptyToggle();
 });
-Les commentaires sont ass
+Les commentaires sont ass*/
