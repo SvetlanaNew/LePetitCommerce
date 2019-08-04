@@ -69,7 +69,7 @@ main div .femme, main div .homme{height: 100vh;}
 .preFooter hr {border-color: #929090;-moz-border-border-color: #929090;	} 
 /******/
 .reseaux a i{color: black;font-size: 40px;}
-.reseaux a i:hover{}
+
 /******/
 .preFooter2{box-shadow:5px 5px 15px black;padding-bottom: 10px;}
  /******************footer******************************************************/
@@ -92,9 +92,13 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 .modal-body .card-body .radio{box-shadow: 0px 0px 0px black;
 }
 .modal-body .card-body form{text-align: center;}
+/********************card accordeon**card panier*****************/
+.compteClient,.partie1 .card-body, .partie2 .card-body{box-shadow: 5px 5px 5px black;}
+.compteClient button:hover{text-decoration: none;}
+.compteClient .card-body{background: black;}
+.partie1 .card-header, .partie2 .card-header{background:black;color:white;font-weight: bold; text-shadow: 1px 6px 2px #929090;text-align: center;}
 
 
- 
 /******************Small devices xs 576px and up********************************/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
