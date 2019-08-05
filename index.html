@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container-fluid d-flex flex-column flex-lg-row">
+<body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
     <!--1ere partie menu -->
   <div class="col-2">   
@@ -95,8 +95,8 @@
     </nav>
   </div>
     <!--2eme partie le Corps-->
-  <div class="corps col col-lg-10 my-lg-0 ">
-      
+  <div class="corps col col-lg-10 my-lg-0">  
+
     <header class="container-fluid service p-2" >
           <ul  class=" d-flex flex-row justify-content-around">                     
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
@@ -132,61 +132,29 @@
     </header>
 
     <main class="container-fluid">
-      <h3 >Laissez-vous inspirez<br> par notre boutique et notre nouvelle collection prêt-à-porter été 2019</h3>
-      <div class="container caroussel">
-        <div class="row m-2  d-block w-100 " >
-          <div id="carouselExampleControls col " class="carousel slide " data-ride="carousel">
+      
+      <div class="col caroussel px-4 py-2 d-block">
+          <div id="carouselExampleControls col " class="carousel slide " data-ride="carousel">    
             <div class="carousel-inner">
-              <div class="carousel-item active">
-      <!--picture et lister
-        convertir en jpeg : convertio.co
-           <img src="img/slide.jpg" class="imgSlide d-block w-100  d-md-none " alt="...">
-                    <img src="img/mode_femme_1.jpg" class="imgSlide d-none d-md-block  w-100 " alt="...">
-        ex:
-        <picture>
-    <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
-    <source media="(min-width: 800px)" srcset="elva-800w.jpg">
-    <img src="elva-800w.jpg" alt="Chris debout tenant sa fille Elva dans ses bras">
-  </picture>
-  
-  <picture>
-    <source type="image/svg+xml" srcset="pyramid.svg">
-    <source type="image/webp" srcset="pyramid.webp"> 
-    <img src="pyramid.png" alt="Pyramide régulière constituée de quatre triangles équilatéraux">
-  </picture>
-  
-  <picture>
-   <source srcset="mdn-logo-wide.png" media="(min-width: 600px)">
-   <img src="mdn-logo-narrow.png" alt="MDN">
-  </picture>
-  
-  ​<picture>
-   <source srcset="mdn-logo.svg" type="image/svg+xml">
-   <img src="mdn-logo.png" alt="MDN">
-  </picture
-  
-  <figure>
-    <img src="images/dinosaur.jpg"
-         alt="The head and torso of a dinosaur skeleton;
-              it has a large head with long sharp teeth"
-         width="400"
-         height="341">
-  
-    <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
-  </figure
-  p {
-    background-image: url("images/dinosaur.jpg");
-  }
-  
-      -->
+              <div class="carousel-item active"> 
                 <img src="img/slide.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Laissez-vous inspirez par notre boutique...</h3>              
+                  </div>
               </div>
               <div class="carousel-item">
-                <img src="img/slide2.jpg" class="d-block w-100  " alt="...">
-              </div>
+                  <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>venez visiter notre boutique en pleins centre de Paris...</h3>              
+                    </div>
+                </div>
               <div class="carousel-item">
-                <img src="img/slide1.jpg" class="d-block w-100 " alt="...">
+                <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>et découvrir notre dernière collection</h3>              
+                  </div>
               </div>
+
             </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -197,84 +165,141 @@
                   <span class="sr-only">Next</span>
                 </a>
           </div>
-        </div>
+      
       </div>
 
-      <div class="container-fluid femme d-flex flex-row flex-wrap ">
-        <div class="col-12">
-          <h2>FEMME<br>voici les tendances de notre saison</h2>
-             <p>Découvrez nos dernières Création MadeInParis selon Le Petit Commerce</p>
-             <a href="modeFemme.html">
-                <img src="img/femme/vetements/robes-jupes/robe1_1.jpg" class="imgFemme img-fluid  rounded d-block w-100" alt="">
-              </a>  
+      <div class="container-fluid femme d-flex flex-row flex-wrap">
+        <div class="col-12 mb-3">
+          <h2>MODE & ACCESSOIRES</h2>
+            <p>bgdfbvfevfevfgeeg    fvgervgrefgver gvregvregv erfvgergvrgr.</p>
         </div>
-
-        <div class="col-12">
-          <div class="contenair d-flex flex-row flex-wrap">
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="vetementsF.html">          
-              <img src="img/femme/vetements/robes-jupes/robe3_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">PRET A PORTER</p></figcaption> 
-            </a>
-          </figure>
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="accessoires.html">          
-              <img src="img/femme/vetements/robes-jupes/robe3_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">ACCESSOIRES</p></figcaption> 
-            </a>
-          </figure>
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="chaussures.html">          
-              <img src="img/femme/vetements/robes-jupes/robe3_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">CHAUSSURES</p></figcaption> 
-            </a>
-          </figure>
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="vetementsF.html">          
-              <img src="img/femme/vetements/robes-jupes/robe3_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">VOIR TOUT</p></figcaption> 
-            </a>
-          </figure>   
-          </div>   
-    </div>         
+        <div class="col-12">    
+          <a href="modeFemme.html"> 
+            <img src="img/slide1_1.jpg" class="img-fluid img-thumbnail w-100 " alt="Image 1"/> 
+          </a>           
+        </div>
+        <div class="col-12 mt-3">
+          <h3 >NOUVELLE COLLECTION HIVER 2019</h3>
+           <p >gttgregetrgrt btgtergrgetgtger rtgrgfregrg opplflgvr^fl oplvr^lr^$e$fl$^re</p>
+           
+          <div class="col col-lg-10 offset-lg-1 d-flex flex-row flex-wrap text-center text-lg-left mt-3">
+            <div class="col-6">
+              <a href="vetementsF.html" class="d-block mb-4">
+                <figure class="" >
+                  <img class="img-fluid img-thumbnail"  src="img/femme/vetements/pantalon-jeans/jeans_bootcut_bleu_clair.jpg" alt="">
+                    <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">PRÊT À PORTER</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <h3>PRÊT À PORTER</h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <a href="maroquinerieF.html" class="d-block mb-4">
+                <figure>
+                  <img class="img-fluid img-thumbnail" src="img/femme/accessoires/sac-a-main/sac_main_parme_cuir_1.jpg" alt="">
+                    <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">MAROQUINERIE</p></figcaption>
+                  </figure>
+                </a>
+                <div class="d-lg-none mr-0">
+                  <h3>MAROQUINERIE</h3>
+                </div>
+            </div>
+            <div class="col-6">
+              <a href="chaussuresF.html" class="d-block mb-4">
+                <figure class="" >
+                  <img class="img-fluid img-thumbnail"  src="img/femme/chaussures/sandales/sandale_kaki_laniere_2.jpg" alt="">
+                  <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">CHAUSSURES</p>
+                  </figcaption>
+                </figure>
+              </a>
+                <div class="d-lg-none mr-0">
+                  <h3>CHAUSSURES</h3>
+                </div>
+            </div>
+            <div class="col-6">
+              <a href="accessoiresF.html" class="d-block mb-4">
+                <figure>
+                  <img class="img-fluid img-thumbnail" src="img/femme/accessoires/sac-a-dos/sac_dos_cuir_marron_3.jpg" alt="">
+                    <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">ACCESSOIRES</p></figcaption>
+                </figure>
+              </a>
+                <div class="d-lg-none mr-0">
+                    <h3>ACCESSOIRES</h3>
+                </div>
+            </div>       
+          </div>
+        </div>  
       </div>
 
       <div class="container-fluid homme d-flex flex-row flex-wrap">
-        <div class="col-12">
-          <h2>HOMME<br>voici les tendances de notre saison</h2>
-            <p>Découvrez nos dernières Création MadeInParis selon Le Petit Commerce</p>
-            <a href="modeHomme.html">
-              <img src="img/homme/vetements/chemise/chemise1_1.jpg" class="imgFemme rounded w-100" alt="">
-          </a>
+        <div class="col-12 mb-3">
+          <h2>MODE & ACCESSOIRES</h2>
+            <p>bgdfbvfevfevfgeeg    fvgervgrefgver gvregvregv erfvgergvrgr.</p>
         </div>
-        <div class="col-12">
-        <div class="contenair d-flex flex-row flex-wrap">
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="vetementsH.html">          
-              <img src="img/homme/vetements/tee-shirt/tee_shirt1_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">PRET A PORTER</p></figcaption> 
-            </a>
-          </figure>
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="accessoiresH.html">          
-              <img src="img/homme/vetements/tee-shirt/tee_shirt3_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">ACCESSOIRES</p></figcaption> 
-            </a>
-          </figure>
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="chaussuresH.html">          
-              <img src="img/homme/vetements/chemise/chemise1_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">CHAUSSURES</p></figcaption> 
-            </a>
-          </figure>
-          <figure  class="img-thumbnail rounded w-50" >    
-            <a href="vetementsH.html">          
-              <img src="img/homme/vetements/polo/polo1_1.jpg" alt="" class="img-thumbnail rounded w-100 ">
-              <figcaption><p style="text-align: center">TOUT VOIR</p></figcaption> 
-            </a>
-          </figure>   
-        </div>   
-      </div>         
+        <div class="col-12 ">  
+          <a href="modeHomme.html">         
+           <img src="img/slide2_1.jpg" class="img-fluid img-thumbnail w-100 "  alt="Image 1"/> 
+        </a>          
+        </div>
+        <div class="col-12 mt-3">
+          <h3 >NOUVELLE COLLECTION HIVER 2019</h3>
+            <p >gttgregetrgrt btgtergrgetgtger rtgrgfregrg opplflgvr^fl oplvr^lr^$e$fl$^re</p>
+
+          <div class="col col-lg-10 offset-lg-1 d-flex flex-row flex-wrap text-center text-lg-left mt-3">       
+            <div class="col-6">
+              <a href="vetementsH.html" class="d-block mb-4">
+                <figure class="" >
+                  <img class="img-fluid img-thumbnail"  src="img/homme/vetements/jeans/jeans_bootcut_bleu_avant.jpg" alt="">
+                  <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">PRÊT À PORTER</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <h3>PRÊT À PORTER</h3>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <a href="maroquinerieH.html" class="d-block mb-4">
+                <figure>
+                  <img class="img-fluid img-thumbnail" src="img/homme/maroquineries/portefeuille_gris_avant.jpg" alt="">
+                    <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">MAROQUINERIE</p></figcaption>
+                  </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <h3>MAROQUINERIE</h3>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <a href="chaussuresH.html" class="d-block mb-4">
+                <figure class="" >
+                  <img class="img-fluid img-thumbnail"  src="img/homme/maroquineries/ceinture_beige_double.jpg" alt="">
+                    <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">CHAUSSURES</p>
+                    </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <h3>CHAUSSURES</h3>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <a href="accessoiresH.html" class="d-block mb-4">
+                <figure>
+                  <img class="img-fluid img-thumbnail" src="img/homme/accessoires/gant_noir_avant.jpg" alt="">
+                    <figcaption class="d-sm-none d-md-none d-lg-block"><p style="text-align: center">ACCESSOIRES</p></figcaption>
+                </figure>
+                </a>
+                <div class="d-lg-none mr-0">
+                  <h3>ACCESSOIRES</h3>
+                </div>
+            </div>
+
+          </div>
+        </div>  
       </div>
 
       <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap" >
