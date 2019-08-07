@@ -2,27 +2,28 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container-fluid d-flex flex-column flex-lg-row">
+<body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
     <!--1ere partie menu -->
-    <!--------------------->
   <div class="col-2">   
-    <nav class=" col col-lg-2 navbar navbar-expand-lg  position-fixed">  
+    <nav class="container-fluid col col-lg-2 navbar navbar-expand-lg  position-fixed">  
       <!--menu mobil et tablette-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> 
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>       
       </button>
+      <h1 class="navbar-toggler"><a  href="index.html">Le Petit Commerce</a></h1>
       <!-- menu écran large-->
       <div class=" collapse navbar-collapse" id="navbarTogglerDemo01">         
-        <ul class="navPerso navbar-nav mt-2 mt-lg-0 flex-column justify-content-start justify-content-lg-around align-items-start  align-items-lg-start">   
-             
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Femme</a>
+        <ul class="navPerso navbar-nav mt-2 mt-lg-0 flex-column justify-content-sm-start justify-content-lg-around  align-items-lg-start">      
+          <li class="nav-item dropdown femme ">
+            <a class="nav-link dropdown-toggle m-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Femme</a>
               <div class="dropdown-menu ">
                 <a class="dropdown-item" href="vetementsF.html" target="_blank">Vêtements
                   <ul class="sousMenu p-0">
@@ -34,7 +35,7 @@
                   </ul>
                 </a>
                 <a class="dropdown-item" href="chaussures.html" target="_blank">Chaussures
-                  <ul>
+                  <ul class="sousMenu p-0">
                     <li><a href="escarpins.html" target="_blank">Escarpins</a></li>
                     <li><a href="sandales.html" target="_blank">Sandales</a></li>
                     <li><a href="sneakersF.html" target="_blank">Sneakers</a></li>
@@ -42,26 +43,26 @@
                   </ul>
                 </a>            
                 <a class="dropdown-item" href="accessoires.html" target="_blank">Accessoires
-                  <ul>
+                  <ul class="sousMenu p-0" >
                     <li><a href="sacMains.html" target="_blank">Sac à mains</a></li>
                     <li><a href="sacDosF.html" target="_blank">sac à dos</a></li>
                   </ul>
                 </a>
               </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Homme</a>
+          <li class="nav-item dropdown homme">
+            <a class="nav-link dropdown-toggle  ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Homme</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item " href="vetementsH.html" target="_blank">Vêtements
-                  <ul >
+                <a class="dropdown-item " href="vetementsH.html" target="_blank">Vêtements 
+                  <ul class="sousMenu p-0" >
                     <li><a href="chemises.html" target="_blank">Chemises</a></li>
                     <li><a href="teeshirtPolo.html" target="_blank">Tee-shirts et Polos</a></li>           
                     <li><a href="pantalosJeansH.html" target="_blank">Pantalons et Jeans</a></li>
-                    <li><a href="vestesManteauxH.html" target="_blank">Vestes et manteaux</a></li>
+                    <li><a href="vestesManteauxH.html" target="_blank" >Vestes et manteaux</a></li>
                   </ul>
                 </a>
                 <a class="dropdown-item" href="chaussuresH.html" target="_blank">Chaussures
-                  <ul>
+                  <ul class="sousMenu p-0">
                     <li><a href="derbies.html" target="_blank">Derbies</a></li>
                     <li><a href="sneakersH.html" target="_blank">Sneakers</a></li>
                     <li><a href="boots.html" target="_blank">Boots</a></li>
@@ -69,7 +70,7 @@
                   </ul>
                 </a>            
                 <a class="dropdown-item" href="accessoiresH.html" target="_blank">Accessoires
-                  <ul>
+                  <ul class="sousMenu p-0">
                     <li><a href="sacDosH.html" target="_blank">Sac à dos et sac de sport</a></li>
                     <li><a href="portefeuille.html" target="_blank">Portefeuilles</a></li>
                     <li><a href="ceintures.html" target="_blank">Ceintures</a></li>
@@ -78,18 +79,26 @@
               </div>
           </li>   
           <li class="nav-item">
-                  <a class="nav-link" href="coachPersonnel.html" target="_blank">Coach personnel<br>Shopper</a>
-          </li>
+            <a class="nav-link ml-2 " href="actualites.html" target="_blank" style="text-align: left;">Coach personnel Shopper</a>
+    </li>
           <li class="nav-item">
-                  <a class="nav-link" href="actualites.html" target="_blank">Actualités</a>
+                  <a class="nav-link ml-2 " href="actualites.html" target="_blank">Actualités</a>
           </li>
-          <li class="nav-item">
-                    <a class="nav-link" href="avis.html" target="_blank">Avis</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avis</a>
+              <div class="dropdown-menu">
+               
+                  <ul >
+                    <li><a href="" target="_blank">Boutique en ligne</a></li>
+                    <li><a href="" target="_blank">Points de ventes</a></li>          
+                  </ul>
+                            
+              </div>
+          </li> 
           <li>   
-            <form class="form-inline">
-              <input class="col-5 col-lg-9 form-control w-100 " type="search" placeholder="Recherche" aria-label="Search">
-              <button class="col-2  col-lg-3 btn p-1 " type="submit"><i class="fas fa-search"></i></button>
+            <form class="form-inline offset-2 offset-lg-0 ">
+              <input class="col-5 col-lg-11  form-control w-100  m-2 " type="search" placeholder="Recherche" aria-label="Search">
+              <button class="col-2  col-lg-4  btn  ml-2 ml-lg-5  " type="submit"><i class="fas fa-search"></i></button>
             </form>
           </li>
       </ul>
@@ -97,41 +106,40 @@
     </nav>
   </div>
     <!--2eme partie le Corps-->
-    <!------------------------>
-  <div class="corps col col-lg-10 my-lg-0 ">
+  <div class="corps col col-lg-10 my-lg-0">  
 
     <header class="container-fluid service p-2" >
-      <ul  class=" d-flex flex-row justify-content-around">                     
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
-          <div class="dropdown-menu">       
-            <a class="dropdown-item" href="#"> Royaume Uni </a>
-            <a class="dropdown-item" href="#"> Espagne </a>       
-            <a class="dropdown-item" href="#"> Italie </a>
-          </div>
-        </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
-          <div class="dropdown-menu">       
-            <a class="dropdown-item" href="quiSommesNous.html" target="_blank">Qui Sommes-nous</a>
-            <a class="dropdown-item" href="contact.html" target="_blank">Contact</a>       
-            <a class="dropdown-item" href="recrutements.html" target="_blank">Recrutements</a>
-            <a class="dropdown-item" href="evenements.html" target="_blank">Evénements</a>
-            <a class="dropdown-item" href="presse.html" target="_blank">Presse</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pointDeVentes.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="connexionInscription.html"><i class="fas fa-user"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="" ><i class="fas fa-heart"></i></a>
-        </li>
-      </ul>
-      <h1><a  href="index.html">Le Petit Commerce</a></h1>
+          <ul  class=" d-flex flex-row flex-wrap justify-content-around justify-content-lg-around">                     
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
+              <div class="dropdown-menu">       
+                <a class="dropdown-item" href="#"> Royaume Uni </a>
+                <a class="dropdown-item" href="#"> Espagne </a>       
+                <a class="dropdown-item" href="#"> Italie </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
+              <div class="dropdown-menu">       
+                <a class="dropdown-item" href="quiSommesNous.html" target="_blank">Qui Sommes-nous</a>
+                <a class="dropdown-item" href="contact.html" target="_blank">Contact</a>       
+                <a class="dropdown-item" href="recrutements.html" target="_blank">Recrutements</a>
+                <a class="dropdown-item" href="evenements.html" target="_blank">Evénements</a>
+                <a class="dropdown-item" href="presse.html" target="_blank">Presse</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pointDeVentes.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connexionInscription.html"><i class="fas fa-user"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" ><i class="fas fa-heart"></i></a>
+            </li>
+          </ul>
+          <h1 class="	d-none d-lg-block"><a  href="index.html">Le Petit Commerce</a></h1>
     </header>
 
     <main class="container-fluid">

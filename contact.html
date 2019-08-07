@@ -2,27 +2,28 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container-fluid d-flex flex-column flex-lg-row">
+<body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
     <!--1ere partie menu -->
-    <!--------------------->
   <div class="col-2">   
-    <nav class=" col col-lg-2 navbar navbar-expand-lg  position-fixed">  
+    <nav class="container-fluid col col-lg-2 navbar navbar-expand-lg  position-fixed">  
       <!--menu mobil et tablette-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> 
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>       
       </button>
+      <h1 class="navbar-toggler"><a  href="index.html">Le Petit Commerce</a></h1>
       <!-- menu écran large-->
       <div class=" collapse navbar-collapse" id="navbarTogglerDemo01">         
-        <ul class="navPerso navbar-nav mt-2 mt-lg-0 flex-column justify-content-start justify-content-lg-around align-items-start  align-items-lg-start">   
-             
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Femme</a>
+        <ul class="navPerso navbar-nav mt-2 mt-lg-0 flex-column justify-content-sm-start justify-content-lg-around  align-items-lg-start">      
+          <li class="nav-item dropdown femme ">
+            <a class="nav-link dropdown-toggle m-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Femme</a>
               <div class="dropdown-menu ">
                 <a class="dropdown-item" href="vetementsF.html" target="_blank">Vêtements
                   <ul class="sousMenu p-0">
@@ -34,7 +35,7 @@
                   </ul>
                 </a>
                 <a class="dropdown-item" href="chaussures.html" target="_blank">Chaussures
-                  <ul>
+                  <ul class="sousMenu p-0">
                     <li><a href="escarpins.html" target="_blank">Escarpins</a></li>
                     <li><a href="sandales.html" target="_blank">Sandales</a></li>
                     <li><a href="sneakersF.html" target="_blank">Sneakers</a></li>
@@ -42,26 +43,26 @@
                   </ul>
                 </a>            
                 <a class="dropdown-item" href="accessoires.html" target="_blank">Accessoires
-                  <ul>
+                  <ul class="sousMenu p-0" >
                     <li><a href="sacMains.html" target="_blank">Sac à mains</a></li>
                     <li><a href="sacDosF.html" target="_blank">sac à dos</a></li>
                   </ul>
                 </a>
               </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Homme</a>
+          <li class="nav-item dropdown homme">
+            <a class="nav-link dropdown-toggle  ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Homme</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item " href="vetementsH.html" target="_blank">Vêtements
-                  <ul >
+                <a class="dropdown-item " href="vetementsH.html" target="_blank">Vêtements 
+                  <ul class="sousMenu p-0" >
                     <li><a href="chemises.html" target="_blank">Chemises</a></li>
                     <li><a href="teeshirtPolo.html" target="_blank">Tee-shirts et Polos</a></li>           
                     <li><a href="pantalosJeansH.html" target="_blank">Pantalons et Jeans</a></li>
-                    <li><a href="vestesManteauxH.html" target="_blank">Vestes et manteaux</a></li>
+                    <li><a href="vestesManteauxH.html" target="_blank" >Vestes et manteaux</a></li>
                   </ul>
                 </a>
                 <a class="dropdown-item" href="chaussuresH.html" target="_blank">Chaussures
-                  <ul>
+                  <ul class="sousMenu p-0">
                     <li><a href="derbies.html" target="_blank">Derbies</a></li>
                     <li><a href="sneakersH.html" target="_blank">Sneakers</a></li>
                     <li><a href="boots.html" target="_blank">Boots</a></li>
@@ -69,7 +70,7 @@
                   </ul>
                 </a>            
                 <a class="dropdown-item" href="accessoiresH.html" target="_blank">Accessoires
-                  <ul>
+                  <ul class="sousMenu p-0">
                     <li><a href="sacDosH.html" target="_blank">Sac à dos et sac de sport</a></li>
                     <li><a href="portefeuille.html" target="_blank">Portefeuilles</a></li>
                     <li><a href="ceintures.html" target="_blank">Ceintures</a></li>
@@ -78,18 +79,26 @@
               </div>
           </li>   
           <li class="nav-item">
-                  <a class="nav-link" href="coachPersonnel.html" target="_blank">Coach personnel<br>Shopper</a>
-          </li>
+            <a class="nav-link ml-2 " href="actualites.html" target="_blank" style="text-align: left;">Coach personnel Shopper</a>
+    </li>
           <li class="nav-item">
-                  <a class="nav-link" href="actualites.html" target="_blank">Actualités</a>
+                  <a class="nav-link ml-2 " href="actualites.html" target="_blank">Actualités</a>
           </li>
-          <li class="nav-item">
-                    <a class="nav-link" href="avis.html" target="_blank">Avis</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avis</a>
+              <div class="dropdown-menu">
+               
+                  <ul >
+                    <li><a href="" target="_blank">Boutique en ligne</a></li>
+                    <li><a href="" target="_blank">Points de ventes</a></li>          
+                  </ul>
+                            
+              </div>
+          </li> 
           <li>   
-            <form class="form-inline">
-              <input class="col-5 col-lg-9 form-control w-100 " type="search" placeholder="Recherche" aria-label="Search">
-              <button class="col-2  col-lg-3 btn p-1 " type="submit"><i class="fas fa-search"></i></button>
+            <form class="form-inline offset-2 offset-lg-0 ">
+              <input class="col-5 col-lg-11  form-control w-100  m-2 " type="search" placeholder="Recherche" aria-label="Search">
+              <button class="col-2  col-lg-4  btn  ml-2 ml-lg-5  " type="submit"><i class="fas fa-search"></i></button>
             </form>
           </li>
       </ul>
@@ -97,109 +106,231 @@
     </nav>
   </div>
     <!--2eme partie le Corps-->
-    <!------------------------>
-  <div class="corps col col-lg-10 my-lg-0 ">
+  <div class="corps col col-lg-10 my-lg-0">  
 
     <header class="container-fluid service p-2" >
-      <ul  class=" d-flex flex-row justify-content-around">                     
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
-          <div class="dropdown-menu">       
-            <a class="dropdown-item" href="#"> Royaume Uni </a>
-            <a class="dropdown-item" href="#"> Espagne </a>       
-            <a class="dropdown-item" href="#"> Italie </a>
-          </div>
-        </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
-          <div class="dropdown-menu">       
-            <a class="dropdown-item" href="quiSommesNous.html" target="_blank">Qui Sommes-nous</a>
-            <a class="dropdown-item" href="contact.html" target="_blank">Contact</a>       
-            <a class="dropdown-item" href="recrutements.html" target="_blank">Recrutements</a>
-            <a class="dropdown-item" href="evenements.html" target="_blank">Evénements</a>
-            <a class="dropdown-item" href="presse.html" target="_blank">Presse</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pointDeVentes.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="connexionInscription.html"><i class="fas fa-user"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="" ><i class="fas fa-heart"></i></a>
-        </li>
-      </ul>
-      <h1><a  href="index.html">Le Petit Commerce</a></h1>
+          <ul  class=" d-flex flex-row flex-wrap justify-content-around justify-content-lg-around">                     
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
+              <div class="dropdown-menu">       
+                <a class="dropdown-item" href="#"> Royaume Uni </a>
+                <a class="dropdown-item" href="#"> Espagne </a>       
+                <a class="dropdown-item" href="#"> Italie </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
+              <div class="dropdown-menu">       
+                <a class="dropdown-item" href="quiSommesNous.html" target="_blank">Qui Sommes-nous</a>
+                <a class="dropdown-item" href="contact.html" target="_blank">Contact</a>       
+                <a class="dropdown-item" href="recrutements.html" target="_blank">Recrutements</a>
+                <a class="dropdown-item" href="evenements.html" target="_blank">Evénements</a>
+                <a class="dropdown-item" href="presse.html" target="_blank">Presse</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pointDeVentes.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connexionInscription.html"><i class="fas fa-user"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" ><i class="fas fa-heart"></i></a>
+            </li>
+          </ul>
+          <h1 class="	d-none d-lg-block"><a  href="index.html">Le Petit Commerce</a></h1>
     </header>
 
     <main class="container-fluid">
  
         
         <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
-          <!------------début nvo contenu----------------------------------->
-        
-          <!-------------fin nvo contenu------------------------------------>
-        </div>
-  
-        <section class="container-fluid preFooter d-flex flex-column flex-lg-row flex-wrap" >
-          <h2 class="col col-lg-12">AVANTAGES E-BOUTIQUE</h2>
-    
-    
-              <article class="col col-lg-4">
-                <h3><i class="fas fa-shipping-fast"></i></h3>
-                <h3>LIVRAISON OFFERTE</h3>
-                <p>Livraison standard offerte pour toute commande</p>
-                 <hr class="col-2 offset-5">
-              </article>
-    
-              <article class="col col-lg-4">
-                <h3><i class="fas fa-undo-alt"></i></h3>
-               <h3> RETOUR OFFERT</h3>
-               <p>Retour sous 14 jours offerts pour toute commande</p>
-                <hr class="col-2 offset-5">
-              </article>
-              
-              <article class="col col-lg-4">
-                <h3><i class="fas fa-gift"></i></h3>
-                <h3>L'ART D'OFFRIR</h3>
-                <p >Votre commande sublimée dans un coffret cadeau personnalisé</p> 
-                  <hr class="col-2 offset-5">     
-              </article> 
-    
-          
-        </section>
-  
-        <section class="container-fluid d-flex flex-column flex-lg-row">
-              <article class="col">
-                  <h2>NEWSLETTER</h2>
-                  <p>Et si vous profitiez de 10% de réduction sur votre prochaine commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p>
-            
-                    <a href="newsletters.html" class="stretched-link">S'abonner</a>
-              </article>
-              <article class="col">
-                  <h2>NOUS CONTACTER</h2>
-                  <p>Vous avez une question, vousavez besoins d'aides, n'hésitez pas nous sommes là pour vous!</p>
-                  <a href="contact.html" class="stretched-link">contact</a>
-              </article>
-              <article class="col">
-                  <h2>SUIVEZ-NOUS</h2> 
-                  <div class=" justify-item-around m-2">
-                    <a href="facebook.com"><i class="fab fa-facebook"></i></a>
-                    <a href="instagram.com"><i class="fab fa-facebook"></i></a>
-                    <a href="twitter.com"><i class="fab fa-facebook"></i></a>
-                   </div>    
-              </article> 
-        </section>
-  
-    </main>  
+        <h2>Bonjour,</h2>
+          <h3>Vous avez une question? Allons trouver la réponse</h3>
+            <p>Vous souhaitez obtenir de l'aide ? Notre FAQ est le moyen le plus rapide pour obtenir de l'aide. Vous trouverez des réponses sur de nombreux sujets, tels que les moyens de paiement, les frais de livraison, etc...</p>
+            <p>Et si vous ne trouvez pas de réponse alors compléter le formulaire et nous répondrons dans les plus brefs délais</p>
 
-    <footer class="container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around text-center">
-      <a href="cgv.html " >Conditions generales de ventes</a>
-      <a href="mentionsLegales.html" >Mentions légales</a>   
-      <a href="planSite.html" >plan du site</a>       
-    </footer>
+            <div class="accordion contact col-10 offset-1 mb-3" id="accordionExample">
+              <div class="card ">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     Frais de livraison
+                    </button>
+                  </h2>
+                </div>   
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p class="m-3 p-3">La livraison standard est offerte, à partir d’un montant minimum d’achat de 24.90 €.<br>
+                      Si la somme de votre commande est inférieure à ce montant, les frais de livraison standard s’élèvent à 3.50 €.<br>                  
+                      Les frais de livraison seront remboursés en cas de retour complet de votre commande.<br>                    
+                      Nous proposons également la livraison express pour 9.95 €. En cas de retour, nous rembourserons uniquement les frais de livraison standard.
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Suivre mon colis
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p class="m-3 p-3">Dès que votre commande quitte notre entrepôt, nous vous envoyons un email confirmant l'expédition de votre colis avec un lien de suivi permettant de suivre la livraison. Si vous avez déjà votre numéro de suivi de commande, rendez-vous sur le site de la poste pour un suivi en temps réel :
+
+                          https://www.laposte.fr/particulier/
+                          
+                          Ce suivi est également possible depuis votre compte client :
+                          
+                          Connectez-vous à l’aide de vos identifiants.
+                          Cliquez sur « Mes commandes » et sélectionnez la commande concernée.
+                          Dans le tableau récapitulatif des articles commandés, cliquez sur « Suivre la livraison en ligne » 
+                          Une nouvelle fenêtre s'ouvre avec le suivi de votre colis, étape par étape.
+                          Si votre colis est indiqué comme livré et que vous ne l'avez pas encore reçu, nous vous conseillons de consulter votre boîte à lettre. En cas d'absence au moment de la livraison, la poste devrait avoir déposé un avis de passage.
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card ">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Moyens de paiement proposés
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body container-fluid ">
+                      <p class=" m-3 p-3">
+                         Nous vous proposons différentes solutions pour régler votre commande. L’ensemble de ces moyens de paiement sont sécurisés et sans frais supplémentaire : </p>   
+                        <p class=" m-3 p-3">Carte bancaire :Visa, MasterCard, American Express, Carte Bleue</p> 
+                         <p class=" m-3 p-3">PayPal</p>
+                  <p class=" m-3 p-3"> Chèque cadeau</p>
+                  <p class=" m-3 p-3">Nous n'acceptons pas les cartes VISA Electron et Maestro</p>
+                  <p class=" m-3 p-3">Important : Le paiement en plusieurs fois n’est pas proposé.</p>
+                      
+              
+                     
+                  </div>
+                </div>
+              </div>
+              <div class="card ">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Retourner un article
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+            <p class=" m-3 p-3">Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br>
+              <strong>Préparez le colis</strong><br>
+              Replacez l’article dans son emballage d'origine (boîte à chaussures, emballage plastique), puis mettez-le dans un colis. Collez ensuite l’étiquette de retour que vous avez eu dans votre colis.<br>
+              Bon à savoir : Vous pouvez retourner plusieurs commandes dans le même colis. Il suffit simplement de coller une étiquette de retour à l'extérieur de votre colis et de mettre les autres à l'intérieur du colis. <br>
+              <strong>Renvoyez l'article</strong><br>
+              Déposez votre colis dans un bureau de poste, dans votre boîte aux lettres ou chez un commerçant (Points de retrait So Colissimo). Les frais de port sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit ! <br>
+              Conservez le reçu tamponné par le bureau de poste ou signé par le commerçant.<br>   
+              <strong>Vous êtes remboursé !</strong><br> 
+              Vous avez réglé votre commande par carte sans utiliser de bon de réduction? Vous serez alors remboursé sous 4 jours ouvrés après le dépôt de votre colis.<br>
+              
+              Si ce n'est pas le cas, vous êtes remboursé sous 10 jours ouvrables.<br> Vous recevrez un e-mail de confirmation une fois le remboursement effectué.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+<!-------------------------------------------------------->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!------------------------->
+  <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap p-3" >
+      <h3 class="col col-lg-12 p-2">AVANTAGES E-BOUTIQUE</h3>
+
+
+          <article class="col col-lg-4 p-3">
+            <h4><i class="fas fa-shipping-fast"></i></h4>
+            <h4>LIVRAISON OFFERTE</h4>
+            <p><span class="marge"></span>La livraison standard est offerte, à partir d’un montant minimum d’achat de 24.90 €.Nous proposons également la livraison express pour 9.95 €. </p>
+            
+          </article>
+
+          <article class="col col-lg-4 p-3">
+            <h4><i class="fas fa-undo-alt"></i></h4>
+           <h4> RETOUR OFFERT</h4>
+           <p><span class="marge"></span>Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br> Les frais de port sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit !</p>
+          
+          </article>
+          
+          <article class="col col-lg-4 p-3 ">
+            <h4><i class="fas fa-gift"></i></h'>
+            <h4>L'ART D'OFFRIR</h4>
+            <p><span class="marge"></span>Avant chaque anniversaire, chaque fête et chaque Noël, nous nous trouvons confrontés à la même question : à quoi ressemble le cadeau parfait ?<br> Avec un coffret personnalisé Le Petit Commerce, vous avez trouvé la réponse.<br>Votre commande sera sublimée dans un coffret cadeau personnalisé</p> 
+                  
+          </article> 
+
+      
+    </section>
+
+    <section class="contenair-fluid prefooter2 d-flex flex-column flex-lg-row  p-3">
+          <article class="col p-3">
+              <h3>NEWSLETTER</h3>
+
+                <a href="newsletters.html" class="stretched-link">       <p class="p-4"><span class="marge"></span>Et si vous profitiez de 10% de réduction sur votre prochaine commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p></a>
+        
+          </article>
+
+          <article class="col p-3">
+              <h3>NOUS CONTACTER</h3>
+              <a href="contact.html" class="stretched-link"> <p class="p-4"><span class="marge"></span>Vous avez une question, Vous avez besoins d'aides, n'hésitez pas nous sommes là pour vous!</p></a>
+          </article>
+          <article class="col p-3">
+              <h3>SUIVEZ-NOUS</h3> 
+              <div class="reseaux  p-5">
+                <a href="facebook.com" target="_blank" title="Facebook" class="p-4"><i class="fab fa-facebook"></i></a>
+                <a href="instagram.com"target="_blank" title="instagram" class="p-4" ><i class="fab fa-instagram"></i></a>
+                <a href="twitter.com"target="_blank" title="twitter " class="p-4"><i class="fab fa-pinterest"></i></a>
+               </div>    
+          </article> 
+    </section>
+
+  </main>  
+
+  <footer class="container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around text-center">
+    <a href="cgv.html " >Conditions generales de ventes</a>
+    <a href="mentionsLegales.html" >Mentions légales</a>   
+    <a href="planSite.html" >plan du site</a>    
+    <a href="">Copyright &copy; Svetlana & Samy </a>   
+  </footer>
   </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
