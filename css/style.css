@@ -73,7 +73,7 @@ nav a:hover,nav .dropdown-menu a:hover{text-decoration: none;background:black;co
 .service a:hover, .service i:hover{ text-shadow: 1px 6px 2px #929090;}	
 /**************main	********************************************/
 .corps{margin-top: 70px;}
-main{box-shadow:5px 5px 15px black;padding-bottom: 10px;}
+
 .imgFemme, .imgHomme, .img-thumbnail{box-shadow: 5px 5px 15px black;padding-bottom: 10px;}
 /**************prefooter****************************************/
 .preFooter{background:black ;color: white;box-shadow: 5px 5px 5px #929090;padding-bottom: 10px;}
@@ -125,6 +125,12 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 }
 /******************Large devices xs 992px and up********************************/
 @media screen and (min-width: 992px) { 
+	.container-fluid .corps{
+		padding-right: 10px;
+	
+	
+	}
+
 	.navbar-collapse div {margin: 8px;padding: 5px;}
 	.navbar-collapse div a{font-size:2vh;letter-spacing: 1px;}
 	.navbar-collapse a{letter-spacing: 1px;font-size:3vh; font-family: 'Bad Script', cursive;}
