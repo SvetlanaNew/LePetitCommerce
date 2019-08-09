@@ -144,12 +144,107 @@
 
     <main class="container-fluid">
       
-      <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
-            <!------------début nvo contenu----------------------------------->
-          
-            <!-------------fin nvo contenu------------------------------------>
-      </div>
-
+      <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap p-3">
+        <div class="col">
+          <h2 class="">Comment Nous travaillons ...</h2>                  
+           <img src="img/salaries2.jpg" class="img-fluid img-thumbnail w-100" alt="salariés 2019"/>  
+        </div>
+        <div class="col-12 ">
+          <section class="recrutement mt-4 col-12 col-lg-8 offset-lg-2">
+            <div class="card">
+              <div class="card-header">Drive the Change</div>
+              <div class="card-body">
+                <h5 class="card-title">Chez Le Petit Commerce, nos idées sont grandes et nos actions audacieuses. Chaque rôle a son impact. C'est pourquoi nous recherchons des personnes comme vous, des personnes désireuses de se développer personnellement et professionnellement. Vous explorez, commencez, échouez, apprenez, vous vous améliorez et vous avancez.</p>
+              </div>
+            </div>
+          </section>
+          <section class="recrutement container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around mt-4" >
+            <div class="card  col col-lg-5 m-2 offset-1">
+            <div class="card-header">Collaborer</div>
+            <div class="card-body">
+              
+              <p class="card-text">Nous travaillons avec des équipes ambitieuses sur des thèmes variés. Pour nous, collaborer signifie bien plus que travailler en équipe. Nos équipes et départements unissent leurs forces pour atteindre nos objectifs communs.</p>
+            </div>
+            </div>
+            <div class="card  col col-lg-5 m-2">
+              <div class="card-header">Contribuer</div>
+              <div class="card-body">
+                <p class="card-text">Nous cherchons constamment à innover. Nous contribuons à l'avenir de la mode grâce à nos approches nouvelles et nous évoluons de notre statut de commerçant en statut de commerçant en ligne. Chez nous, vous ne changez pas les règles du jeu, vous inventez le jeu.</p>
+              </div>
+            </div>
+            <div class="card  col col-lg-5 m-2">
+                <div class="card-header">Influencer</div>
+                <div class="card-body">
+                  <h5 class="card-title">Nous sommes convaincus que chacun peut faire la différence. C'est pour cela que nous encourageons nos collaborateurs à contribuer à notre longue réussite. Chez nous chacun peut apporter sa pierre à l'édifice et écrire sa propre histoire.</p>
+                </div>
+            </div>   
+            <div class="card  col col-lg-5 m-2">
+                <div class="card-header">Savoir Apprécier la Diversité</div>
+                <div class="card-body">
+                  <h5 class="card-title">Le Petit Commerce est plus qu'une entreprise internationale qui propose des emplois intéressants. Chez nous des hommes et des femmes venant de plus de 130 nations différentes collaborent au quotidien et apportent des compétences et des talents variés. Il en résulte des idées et une performance qui nous permettent de renforcer notre rôle de promoteur de l'innovation pour la mode et la technologie.</p>
+                </div>
+            </div>  
+        </section>
+        <section class="recrutement mt-4 col-12 col-lg-8 offset-lg-2">
+            <div class="card">
+              <div class="card-header">Façonnons le Changement ensemble</div>
+              <div class="card-body">
+                <h5 class="card-title">Pour cela, notre entreprise a besoin d'hommes et de femmes audacieux et intelligents qui aiment innover et remettre en question le statu quo. Enoyez-nous votre canditatur</p>
+                      <!--Modal formulaire de contact-->
+                      <button type="button" class="btn col-10 offset-1 p-2" data-toggle="modal" data-target="#exampleModalLong">Formulaire candidature</button>
+                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLongTitle">Formulaire candidature</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                          <div class="modal-body">
+                          <form method="POST" action="index.html" name="formulaireRecrutement" id="formulaireRecrutement" enctype="multipart/form-data" class="col">      
+                            <div class="form-group">	
+                              <label for="nom4">Nom *</label>
+                              <input type="text" class="form-control" name="nom4" id="nom4"  value="" placeholder="Votre nom..." required/>
+                            </div>
+                            <div class="form-group">	
+                              <label for="prenom4">Prénom *</label>
+                              <input type="text" class="form-control" name="prenom4" id="prenom4" value="" placeholder="Votre prénom..." required/>
+                            </div>   
+                            <div class="form-group">	
+                              <label for="email">Email *</label>
+                              <input type="email" class="form-control" name="email4" id="email4" value="" placeholder="Votre adresse mail..." required/>
+                            </div>
+                            <div class="form-group">	
+                              <label for="entreprise2">Entreprise *</label>
+                              <input type="text" class="form-control" name="entreprise2" id="entreprise2" value="" placeholder="Votre entreprise..." required/>
+                            </div>
+                            <div class="cv">
+                                <label for="avatar">votre CV</label>
+                                <input type="file" class="form-control  mb-3" id="cv" name="cv" value="">
+                              </div>
+                            <div class="form-group">
+                                <label for="lettreM">Votre lettre de motivation</label>
+                                <input type="file" class="form-control" id="lettreM" name="lettreM" value="">
+                              </div>                   
+                            <div class="form-group">	
+                              <label for="message4">message *</label>
+                              <textarea class="col" placeholder="Votre message..." name="message4" id="message4"  cols="30" rows="3"></textarea>
+                            </div>
+                            <div class="modal-footer ">
+                              <input type="submit" class="btn" value="Envoi" onclick="resultat4()">
+                            </div>
+                          </form>    
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    
+      </div>      
+ 
       <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap p-3" >
         <h3 class="col col-lg-12 p-2">AVANTAGES E-BOUTIQUE</h3>
   
@@ -209,7 +304,23 @@
       <a href="">Copyright &copy; Svetlana & Samy </a>   
     </footer>
   </div>
+  <script>
+      const formulaireRecrutement = document.getElementById("formulaireRecrutement");
 
+       formulaireRecrutement.addEventListener('focus', (event) => {
+         event.target.style.background = 'black'; 
+         event.target.style.border = '4px solid black';  
+         event.target.style.color = 'white'; 
+       }, 
+         true);
+   
+         formulaireRecrutement.addEventListener('blur', (event) => {
+         event.target.style.background = "none";
+         event.target.style.border ="2px inset threedface" ;
+         event.target.style.color = "black"; 
+       },
+         true);
+     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 

@@ -97,7 +97,7 @@
           </li> 
           <li>   
             <form class="form-inline offset-2 offset-lg-0 ">
-              <input class="col-5 col-lg-11  form-control w-100  m-2 " type="search" placeholder="Recherche" aria-label="Search">
+              <input class="col-5 col-lg-11  form-control w-100  m-2 " type="search" placeholder="Recherche" aria-label="Search" pattern="[a-zA-Z0-9.-_]+" title="">
               <button class="col-2  col-lg-4  btn  ml-2 ml-lg-5  " type="submit"><i class="fas fa-search"></i></button>
             </form>
           </li>
@@ -145,134 +145,186 @@
     <main class="container-fluid">
  
         
-        <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
-        <h2>Bonjour,</h2>
-          <h3>Vous avez une question? Allons trouver la réponse</h3>
-            <p>Vous souhaitez obtenir de l'aide ? Notre FAQ est le moyen le plus rapide pour obtenir de l'aide. Vous trouverez des réponses sur de nombreux sujets, tels que les moyens de paiement, les frais de livraison, etc...</p>
-            <p>Et si vous ne trouvez pas de réponse alors compléter le formulaire et nous répondrons dans les plus brefs délais</p>
+        <div class="container-fluid d-flex flex-column ">
+        <h2 class="">Bonjour</h2>
+          <h3 class="">Vous avez une question? Allons trouver la réponse</h3>
+            <p class="col-10 offset-1 col-lg-8 offset-lg-2"><span class="marge"></span>Vous souhaitez obtenir de l'aide ? Notre FAQ est le moyen le plus rapide pour obtenir de l'aide. Vous trouverez des réponses sur de nombreux sujets, tels que les moyens de paiement, les frais de livraison, etc...<br>Et si vous ne trouvez pas de réponse alors compléter le formulaire et nous répondrons dans les plus brefs délais</p>
 
-            <div class="accordion contact col-10 offset-1 mb-3" id="accordionExample">
-              <div class="card ">
+            <div class="accordion contact col col-lg-10 offset-lg-1 mb-3" id="accordionExample">
+              <div class="card">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                      Frais de livraison
                     </button>
                   </h2>
                 </div>   
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
-                    <p class="m-3 p-3">La livraison standard est offerte, à partir d’un montant minimum d’achat de 24.90 €.<br>
-                      Si la somme de votre commande est inférieure à ce montant, les frais de livraison standard s’élèvent à 3.50 €.<br>                  
-                      Les frais de livraison seront remboursés en cas de retour complet de votre commande.<br>                    
-                      Nous proposons également la livraison express pour 9.95 €. En cas de retour, nous rembourserons uniquement les frais de livraison standard.
-                    </p>
+                    <ul class="list-group">           
+                    <li class="list-group-item m-2"><span class="marge"></span>La livraison standard est offerte, à partir d’un montant minimum d’achat de <strong>24.90 €</strong></li>
+                    <li class="list-group-item m-2"><span class="marge"></span>  Si la somme de votre commande est inférieure à ce montant, les frais de livraison standard s’élèvent à <strong>3,50 €</strong> </li>
+                    <li class="list-group-item m-2"><span class="marge"></span> Les frais de livraison seront remboursés en cas de retour complet de votre commande </li>
+                    <li class="list-group-item m-2"><span class="marge"></span>Nous proposons également la livraison express pour <strong>9,95 €</strong> </li>
+                    <li class="list-group-item m-2"><span class="marge"></span> En cas de retour, nous rembourserons uniquement les frais de livraison standard</li>
+          
+                  </ul>
                   </div>
                 </div>
               </div>
-    
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Suivre mon colis
                     </button>
                   </h2>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                  <div class="card-body">
-                      <p class="m-3 p-3">Dès que votre commande quitte notre entrepôt, nous vous envoyons un email confirmant l'expédition de votre colis avec un lien de suivi permettant de suivre la livraison. Si vous avez déjà votre numéro de suivi de commande, rendez-vous sur le site de la poste pour un suivi en temps réel :
-
-                          https://www.laposte.fr/particulier/
-                          
-                          Ce suivi est également possible depuis votre compte client :
-                          
-                          Connectez-vous à l’aide de vos identifiants.
-                          Cliquez sur « Mes commandes » et sélectionnez la commande concernée.
-                          Dans le tableau récapitulatif des articles commandés, cliquez sur « Suivre la livraison en ligne » 
-                          Une nouvelle fenêtre s'ouvre avec le suivi de votre colis, étape par étape.
-                          Si votre colis est indiqué comme livré et que vous ne l'avez pas encore reçu, nous vous conseillons de consulter votre boîte à lettre. En cas d'absence au moment de la livraison, la poste devrait avoir déposé un avis de passage.
-                      </p>
-                  </div>
+                    <div class="card-body">
+                        <ul class="list-group">           
+                        <li class="list-group-item m-2"><span class="marge"></span>Dès que votre commande quitte notre entrepôt, nous vous envoyons un email confirmant l'expédition de votre colis avec un lien de suivi permettant de suivre la livraison</li>
+                        <li class="list-group-item m-2"><span class="marge"></span>Si vous avez déjà votre numéro de suivi de commande, rendez-vous sur le site de la poste pour un suivi en temps réel :
+                          <a href=" https://www.laposte.fr/particulier/">la Poste</a>
+                        </li>
+                        <li class="list-group-item m-2"><span class="marge"></span>   Ce suivi est également possible depuis votre compte client :
+                          <a href="connexionInscription.html">Connectez-vous à l’aide de vos identifiants</a>
+                        </li>
+                        <li class="list-group-item m-2"><span class="marge"></span>Si votre colis est indiqué comme livré et que vous ne l'avez pas encore reçu, nous vous conseillons de consulter votre boîte à lettre</li>
+                        <li class="list-group-item m-2"><span class="marge"></span>En cas d'absence au moment de la livraison, la poste devrait avoir déposé un avis de passage</li>
+              
+                      </ul>
+                    </div>
                 </div>
               </div>
               <div class="card ">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link collapsed  col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Moyens de paiement proposés
                     </button>
                   </h2>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                  <div class="card-body container-fluid ">
-                      <p class=" m-3 p-3">
-                         Nous vous proposons différentes solutions pour régler votre commande. L’ensemble de ces moyens de paiement sont sécurisés et sans frais supplémentaire : </p>   
-                        <p class=" m-3 p-3">Carte bancaire :Visa, MasterCard, American Express, Carte Bleue</p> 
-                         <p class=" m-3 p-3">PayPal</p>
-                  <p class=" m-3 p-3"> Chèque cadeau</p>
-                  <p class=" m-3 p-3">Nous n'acceptons pas les cartes VISA Electron et Maestro</p>
-                  <p class=" m-3 p-3">Important : Le paiement en plusieurs fois n’est pas proposé.</p>
-                      
-              
-                     
-                  </div>
+
+                    <div class="card-body">
+                        <ul class="list-group">           
+                        <li class="list-group-item m-2"><span class="marge"></span>Nous vous proposons différentes solutions pour régler votre commande. L’ensemble de ces moyens de paiement sont sécurisés et sans frais supplémentaire : </li>
+                        <li class="list-group-item m-2"><span class="marge"></span><strong>Carte bancaire : </strong> Visa, MasterCard, American Express, Carte Bleue
+                        </li>
+                        <li class="list-group-item m-2"><span class="marge"></span><strong>PayPal</strong>
+                        </li>
+                        <li class="list-group-item m-2"><span class="marge"></span><strong>Chèque cadeau</strong></li>
+                        <li class="list-group-item m-2"><span class="marge"></span>Nous n'acceptons pas les cartes <strong>VISA Electron</strong> et <strong>Maestro</strong></li>
+                        <li class="list-group-item m-2"><span class="marge"></span>Important : Le paiement en plusieurs fois n’est pas proposé.</li>
+                      </ul>
+                    </div>
                 </div>
               </div>
               <div class="card ">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                       Retourner un article
                     </button>
                   </h2>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                  <div class="card-body">
-            <p class=" m-3 p-3">Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br>
-              <strong>Préparez le colis</strong><br>
-              Replacez l’article dans son emballage d'origine (boîte à chaussures, emballage plastique), puis mettez-le dans un colis. Collez ensuite l’étiquette de retour que vous avez eu dans votre colis.<br>
-              Bon à savoir : Vous pouvez retourner plusieurs commandes dans le même colis. Il suffit simplement de coller une étiquette de retour à l'extérieur de votre colis et de mettre les autres à l'intérieur du colis. <br>
-              <strong>Renvoyez l'article</strong><br>
-              Déposez votre colis dans un bureau de poste, dans votre boîte aux lettres ou chez un commerçant (Points de retrait So Colissimo). Les frais de port sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit ! <br>
-              Conservez le reçu tamponné par le bureau de poste ou signé par le commerçant.<br>   
-              <strong>Vous êtes remboursé !</strong><br> 
-              Vous avez réglé votre commande par carte sans utiliser de bon de réduction? Vous serez alors remboursé sous 4 jours ouvrés après le dépôt de votre colis.<br>
-              
-              Si ce n'est pas le cas, vous êtes remboursé sous 10 jours ouvrables.<br> Vous recevrez un e-mail de confirmation une fois le remboursement effectué.</p>
-                  </div>
+
+                    <div class="card-body">
+                        <ul class="list-group">           
+                        <li class="list-group-item m-2"><span class="marge"></span>Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br>
+                          </li>
+                        <li class="list-group-item m-2"><span class="marge"></span><strong>Préparez le colis</strong><br><span class="marge"></span>Replacez l’article dans son emballage d'origine (boîte à chaussures, emballage plastique), puis mettez-le dans un colis. Collez ensuite l’étiquette de retour que vous avez eu dans votre colis.<br>
+                          <span class="marge"></span>Bon à savoir : Vous pouvez retourner plusieurs commandes dans le même colis. Il suffit simplement de coller une étiquette de retour à l'extérieur de votre colis et de mettre les autres à l'intérieur du colis
+                        </li>
+                        <li class="list-group-item m-2"><span class="marge"></span><strong>Renvoyez l'article</strong><br>
+                          Déposez votre colis dans un bureau de poste, dans votre boîte aux lettres ou chez un commerçant (Points de retrait So Colissimo). Les frais de port sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit ! <br>
+                          Conservez le reçu tamponné par le bureau de poste ou signé par le commerçant.
+                        </li>
+                        <li class="list-group-item m-2"><span class="marge"></span><strong>Vous êtes remboursé !</strong><br> 
+                          Vous avez réglé votre commande par carte sans utiliser de bon de réduction? Vous serez alors remboursé sous 4 jours ouvrés après le dépôt de votre colis.</li>
+                        <li class="list-group-item m-2"><span class="marge"></span>Vous recevrez un e-mail de confirmation une fois le remboursement effectué</li>
+                        
+                      </ul>
+                    </div>
                 </div>
+                
+              </div>
+              <div class="card ">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                  <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Formulaire de contact</button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item m-2">Pour tout autre renseignement veuillez Remplir et envoyer le formulaire.</li>
+                      <li class="list-group-item m-2">
+                        <!--Modal formulaire de contact-->
+                        <button type="button" class="btn col-10 offset-1 p-2" data-toggle="modal" data-target="#exampleModalLong">Formulaire de contact</button>
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLongTitle">formulaire de contact</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            <div class="modal-body">
+                            <form method="POST" action="index.html" name="formulaireContact" id="formulaireContact" enctype="multipart/form-data" class="col">      
+                              <div class="form-group">	
+                                <label for="nom3">Nom *</label>
+                                <input type="text" class="form-control" name="nom3" id="nom3"  value="" placeholder="Votre nom..." required/>
+                              </div>
+                              <div class="form-group">	
+                                <label for="prenom3">Prénom *</label>
+                                <input type="text" class="form-control" name="prenom3" id="prenom3" value="" placeholder="Votre prénom..." required/>
+                              </div>   
+                              <div class="form-group">	
+                                <label for="email3">Email *</label>
+                                <input type="email" class="form-control" name="email3" id="email3" value="" placeholder="Votre adresse mail..." required/>
+                              </div>
+                              <div class="form-group">	
+                                <label for="entreprise">Entreprise *</label>
+                                <input type="text" class="form-control" name="entreprise" id="entreprise" value="" placeholder="Votre entreprise..." required/>
+                              </div>
+                              <div class="form-group">	
+                                <label for="pays3">Pays *</label>
+                                <input type="text" class="form-control" name="pays3" id="pays3" value="" placeholder="Votre pays..." required/>
+                              </div>
+                              <div class="form-group">	
+                                  <label for="sujet">Choisir le sujet *</label>
+                                <select class="custom-select"  id="custom-select" name="custom-select">                                 
+                                  <option selected>Commandes</option>
+                                  <option value="1">livraison</option>
+                                  <option value="2">Paiement</option>
+                                  <option value="3">Compte client</option>
+                                  <option value="4">Retour et remboursement</option>
+                                  <option value="5">Autres</option>
+                                </select>
+                              </div>
+                              <div class="form-group">	
+                                <label for="message3">message *</label>
+                                <textarea class="col" placeholder="Votre message..." name="message3" id="message3"  cols="30" rows="3"></textarea>
+                              </div>
+                              <div class="modal-footer ">
+                                <input type="submit" class="btn" value="Envoi" onclick="resultat3()">
+                              </div>
+                            </form>    
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div> 
               </div>
             </div>
         </div>
-<!-------------------------------------------------------->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!------------------------->
   <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap p-3" >
       <h3 class="col col-lg-12 p-2">AVANTAGES E-BOUTIQUE</h3>
 
@@ -332,6 +384,22 @@
     <a href="">Copyright &copy; Svetlana & Samy </a>   
   </footer>
   </div>
+  <script>
+   const formulaireContact = document.getElementById("formulaireContact"); 
+    formulaireContact.addEventListener('focus', (event) => {
+      event.target.style.background = 'black'; 
+      event.target.style.border = '4px solid black';  
+      event.target.style.color = 'white'; 
+    }, 
+      true);
+
+    formulaireContact.addEventListener('blur', (event) => {
+      event.target.style.background = "none";
+      event.target.style.border ="2px inset threedface" ;
+      event.target.style.color = "black"; 
+    },
+      true);
+  </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

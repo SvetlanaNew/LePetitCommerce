@@ -143,122 +143,111 @@
     </header>
 
     <main class="container-fluid">
-      <div class="container-fluid  d-flex flex-column flex-lg-row flex-wrap ">
+      <div class="container-fluid  d-flex  d-flex flex-column ">
         <!------------------formulaire connexion----------------------------->
         <div class="col col-lg-8 offset-lg-2">
           <h2>Connectez-vous</h2>
-          <h4>Bienvenue sur LePetitCommmerce,<br>votre compagnon mode.</h4>
+          <h3>Bienvenue sur LePetitCommmerce,<br>votre compagnon mode.</h3>
         <section class="d-flex flex-row justify-content-center">
-          <form method="POST" action="#" name="formulaire1" enctype="multipart/form-data" class="col-10 col-lg-6">
+          <form method="POST" action="compteClient.html" id="formulaire1"  name="formulaire1" enctype="multipart/form-data" class="col-10 col-lg-6">
             <div class="form-group ">
               <label for="pseudo">Pseudo *</label>
               <input type="text"  class="form-control" name="pseudo" id="pseudo" placeholder="Votre pseudo..." required >
             </div>
             <div class="form-group ">
               <label for="mdp">Mot de passe *</label>
-              <input type="password"  class="form-control" name="mdp" id="mdp" placeholder="Votre mdp..." required>
+              <input type="password"  class="form-control mb-4" name="mdp" id="mdp" placeholder="Votre mdp..." required>
             </div>
-            <div class="form-group offset-3">
-              <input type="submit" class="btn" id="connexion" value="Identification" onclick="resultat();">
+            <div class="form-group ">
+              <input type="submit" class="btn col" id="connexion" value="Connexion" onclick="resultat();">
             </div>
           </form>
         </section>
         </div>
         <!-----------------------fin formulaire connexion----------------------------------->
-        <div class="col ">
+        <div class="col col-lg-8 offset-lg-2">
           <h2>Nouveau Client?</h2>
 
         <section class="d-flex flex-row justify-content-center">  
           <!----------------Button modal pour formulaire inscription----------------------->
-          <div class="form-group">
-            <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">
-           abonnez vous
-            </button>
-          </div>
-          <!-------------------- Modal formulaire inscription---------------------------->
+   <!-- Button modal -->
+<button type="button" class="btn col-10 col-lg-6 m-2 mb-4" data-toggle="modal" data-target="#exampleModalLong">
+ Inscription 
+</button>
 
-
-
-
-          <div class="col-12 modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg max-width: 100%;" >
-
-
-              <div class="modal-content " >
-                <div class="modal-header ">
-                  <h5 class="modal-title" id="exampleModalLabel">BONJOUR Veuillez remplir le formulaire pour vous inscrire</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body  ">
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body container-fluid">            
-                      <form method="POST" action="#" name="formulaire2" enctype="multipart/form-data" class="col">      
-                        <div class="form-group">
-                          <label for="civilite" >Civilite</label><br>               
-                          <input type="radio" class="mb-2" name="civilite" id="civilite" value="femm"/>  Femme <br>  
-                          <input type="radio"  class="mb-2" name="civilite" id="civilite" value="homme"/> Homme 
-                        </div>
-                        <div class="form-group">
-                          <label for="pseudo2">Pseudo *</label>
-                          <input type="text" class="form-control" name="pseudo2" id="pseudo2" value="" placeholder="Votre pseudo..." required/>
-                        </div>
-                        <div class="form-group">	
-                          <label for="prenom">Prénom *</label>
-                          <input type="text" class="form-control" name="prenom" id="prenom" value="" placeholder="Votre prénom..." required/>
-                        </div>
-                        <div class="form-group">	
-                          <label for="nom">Nom *</label>
-                          <input type="text" class="form-control" name="nom" id="nom"  value="" placeholder="Votre nom..." required/>
-                        </div>           
-                        <div class="form-group">	
-                          <label for="date_de_naissance">Date de Naissance *</label>
-                          <input type="date" class="form-control" name="date_de_naissance" id="date_de_naissance"    required/>
-                        </div>
-                        <div class="form-group">	
-                          <label for="email">Email *</label>
-                          <input type="email" class="form-control" name="email" id="email"                   value="" placeholder="Votre adresse mail..." required/>
-                        </div>
-                        <div class="form-group">
-                          <label for="tel">Telephone *</label>
-                          <input type="tel" class="form-control" name="tel" id="tel" pattern="^[0-9]{10}$" maxlength="10" placeholder="Votre numéro de téléphone..." required/>
-                        </div>
-                        <div class="form-group">	
-                          <label for="adresse">Adresse *</label>
-                          <input type="text" class="form-control" name="adresse" id="adresse" value="" placeholder="Votre adresse..." required/>
-                        </div>
-                        <div class="form-group">	
-                          <label for="ville">Ville *</label>
-                          <input type="text" class="form-control" name="ville" id="ville" value="" placeholder="Votre ville..." required/>
-                        </div>
-                        <div class="form-group">	
-                          <label>Code Postal *</label>
-                          <input type="text" class="form-control" name="code_postal" id="code_postal" value="" pattern="[0-9]{5}" title="5 chiffres requis entre 0 et 9" placeholder="Votre code postal..." required/>
-                        </div>
-                        <div class="form-group">
-                          <label for="mdp2">Mot de passe *</label>
-                          <input type="password" class="form-control" name="mdp2" id="mdp2" pattern="[a-zA-Z0-9_]{8,16}" value="" placeholder="votre mot de passe..." required/>
-                        </div>
-                        <div class="form-group">
-                          <label for="avatar">Avatar</label>
-                          <input type="file" class="form-control" id="avatar" name="avatar" value="" multiple/>
-                        </div>
-                        <div class="modal-footer">
-                          <input type="submit" class="btn" value="Identification" onclick="resultat2();">
-                        </div>
-                      </form>    
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        </div>
-        <!----------------------------------fin modal inscription------------------------->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">
+          <form method="POST" action="compteClient.html" id="formulaire2" name="formulaire2"  enctype="multipart/form-data" class="col">      
+            <div class="form-group">
+              <label for="civilite" >Civilite</label><br>               
+              <input type="radio" class="mb-2" name="civilite" id="civilite" value="femm">  Femme <br>  
+              <input type="radio"  class="mb-2" name="civilite" id="civilite" value="homme"> Homme 
+            </div>
+            <div class="form-group">
+              <label for="pseudo2">Pseudo *</label>
+              <input type="text" class="form-control" name="pseudo2" id="pseudo2" value="" placeholder="Votre pseudo..." required >
+            </div>
+            <div class="form-group">	
+              <label for="prenom">Prénom *</label>
+              <input type="text" class="form-control" name="prenom" id="prenom" value="" placeholder="Votre prénom..." required>
+            </div>
+            <div class="form-group">	
+              <label for="nom">Nom *</label>
+              <input type="text" class="form-control" name="nom" id="nom"  value="" placeholder="Votre nom..." required>
+            </div>           
+            <div class="form-group">	
+              <label for="date_de_naissance">Date de Naissance *</label>
+              <input type="date" class="form-control" name="date_de_naissance" id="date_de_naissance"    required>
+            </div>
+            <div class="form-group">	
+              <label for="email">Email *</label>
+              <input type="email" class="form-control" name="email" id="email"  value="" placeholder="Votre adresse mail..." required>
+            </div>
+            <div class="form-group">
+              <label for="tel">Telephone *</label>
+              <input type="tel" class="form-control" name="tel" id="tel" pattern="^[0-9]{10}$" maxlength="10" placeholder="Votre numéro de téléphone..." required>
+            </div>
+            <div class="form-group">	
+              <label for="adresse">Adresse *</label>
+              <input type="text" class="form-control" name="adresse" id="adresse" value="" placeholder="Votre adresse..." required>
+            </div>
+            <div class="form-group">	
+              <label for="ville">Ville *</label>
+              <input type="text" class="form-control" name="ville" id="ville" value="" placeholder="Votre ville..." required>
+            </div>
+            <div class="form-group">	
+              <label>Code Postal *</label>
+              <input type="text" class="form-control" name="code_postal" id="code_postal" value="" pattern="[0-9]{5}" title="5 chiffres requis entre 0 et 9" placeholder="Votre code postal..." required>
+            </div>
+            <div class="form-group">
+              <label for="mdp2">Mot de passe *</label>
+              <input type="password" class="form-control" name="mdp2" id="mdp2" pattern="[a-zA-Z0-9_]{8,16}" value="" placeholder="votre mot de passe..." required>
+            </div>
+            <div class="form-group">
+              <label for="avatar">Avatar</label>
+              <input type="file" class="form-control" id="avatar" name="avatar" value="" multiple>
+            </div>
+            <div class="modal-footer">
+              <input type="submit" class="btn" value="Identification" onclick="resultat2();">
+            </div>
+          </form>    
+      </div>
+    </div>
+  </div>
+</div>
 
+        <!----------------------------------fin modal inscription------------------------->
+        </div>
+      </div>
       <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap p-3" >
           <h3 class="col col-lg-12 p-2">AVANTAGES E-BOUTIQUE</h3>
     
@@ -291,7 +280,8 @@
               <article class="col p-3">
                   <h3>NEWSLETTER</h3>
   
-                    <a href="newsletters.html" class="stretched-link">       <p class="p-4"><span class="marge"></span>Et si vous profitiez de 10% de réduction sur votre prochaine commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p></a>
+                    <a href="newsletters.html" class="stretched-link">       
+                      <p class="p-4"><span class="marge"></span>Et si vous profitiez de 10% de réduction sur votre prochaine commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p></a>
             
               </article>
   
@@ -318,7 +308,43 @@
         <a href="">Copyright &copy; Svetlana & Samy </a>   
       </footer>
   </div>
+<script>
+ //focus et blur du formulaire d'inscription
+ const form = document.getElementById('formulaire1');
+ const form2 = document.getElementById('formulaire2');
 
+
+ form.addEventListener('focus', (event) => {
+   event.target.style.background = 'black'; 
+   event.target.style.border = '4px solid black';  
+   event.target.style.color = 'white'; 
+ }, 
+ true);
+ 
+ form.addEventListener('blur', (event) => {
+   event.target.style.border ="2px inset threedface" ;
+   event.target.style.color = "black";
+   event.target.style.background = "none";
+ }, 
+ true);
+
+ form2.addEventListener('focus', (event) => {
+  event.target.style.background = 'black'; 
+  event.target.style.border = '4px solid black';  
+  event.target.style.color = 'white'; 
+  event.target.style.hover="none";
+}, 
+true);
+
+form2.addEventListener('blur', (event) => {
+  event.target.style.border ="2px inset threedface" ;
+  event.target.style.color = "black";
+  event.target.style.background = "none";
+}, 
+true);
+
+
+</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
