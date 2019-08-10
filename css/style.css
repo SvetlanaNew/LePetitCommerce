@@ -21,12 +21,18 @@ html{scroll-behavior:smooth;}
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic&display=swap');
 
 /**************modif classes bootstrap***********************/
-.container-fluid{
+.container-fluid {
 	padding-right: 0;
 	padding-left: 0;
 	margin-right: 0;
 	margin-left: 0;
 }
+
+
+
+
+
+
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
@@ -95,7 +101,7 @@ figcaption{position: absolute;background: rgba(255, 253, 253, 0.75);padding: 5px
 figure:hover figcaption{bottom: 0;color: black;}
 
 /************************************************/
-input, textarea{box-shadow: 5px 5px 5px black;}
+input, textarea, select{box-shadow: 5px 5px 5px black;}
 input .civilite {box-shadow: 5px 5px 5px white;}
 ::placeholder{font-style: italic;color:rgb(182, 181, 179)!important;text-align: center;font-size: 14px;}
 /**************************Modal****************************/
@@ -104,14 +110,17 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 .modal-body .card-body input{box-shadow: 5px 5px 5px black;}
 .modal-body .card-body .radio{box-shadow: 0px 0px 0px black;}
 .modal-body .card-body form{text-align: center;} 
-/*************card compteClient, card Panier et cardcontact**********/
-.compteClient, .contact, .partie1 .card-body, .partie2 .card-body{box-shadow: 5px 5px 5px black;}
+/*************card compteClient, card Panier,  card Contact, card Recrutement**********/
+.compteClient, .contact, .partie1 .card-body, .partie2 .card-body, .recrutement .card-body
+{box-shadow: 5px 5px 5px black;}
+.compteClient .card-body, .contact .card-body{background: black;border: 10px solid white;}
 .compteClient button:hover, .contact button:hover{text-decoration: none;}
-.compteClient .card-body, .contact .card-body{background: black;}
-.partie1 .card-header, .partie2 .card-header{background:black;color:white;font-weight: bold; text-shadow: 1px 6px 2px #929090;text-align: center;}
-.contact .card-body p, .contact .card-body ul,.contact .card-body ol{background: white;}
-.contact .card-body ul li{padding:10px;padding-left: 30px; font-weight: bold;}
+.contact .card-body ul,.contact .card-body ol{background: white;border-radius: 5px;text-align: justify;letter-spacing: 1px;}
 .contact .card-body strong{font-weight: bold;}
+.card-body ul a{text-decoration: none;color: black; font-weight: bold;}
+
+.partie1 .card-header, .partie2 .card-header, .recrutement .card-header{background:black;color:white;font-weight: bold; text-shadow: 1px 6px 2px #929090;text-align: center;}
+
 /****************************************************************/
 .fs-1{font-size: 1em;}
 .fs-1-5{font-size: 1.5em;}
@@ -132,7 +141,6 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 	
 	
 	}
-
 	.navbar-collapse div {margin: 8px;padding: 5px;}
 	.navbar-collapse div a{font-size:2vh;letter-spacing: 1px;}
 	.navbar-collapse a{letter-spacing: 1px;font-size:3vh; font-family: 'Bad Script', cursive;}

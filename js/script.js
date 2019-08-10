@@ -1,7 +1,4 @@
-/*********************carousel***********************************/
-$('.carousel').carousel({
-  interval: 4000
-})
+
 /*****************************************formulaire1 connexion************************/
 
 function resultat(){
@@ -19,37 +16,15 @@ function resultat(){
      && document.formulaire1.pseudo.value.length <= 15
        && document.formulaire1.mdp.value.length >= 8
           && document.formulaire1.mdp.value.length <=16)
-    {
-      var continuer = confirm('Voulez vous voir votre compte ?');
-      if(continuer == true){
-        window.open('compteClient.html');
-      }else{
-        window.open('index.html');
-      }
-  };
+          { 
+            alert('Bienvenue! vous êtes connecté')
+           
+            }else{
+              alert("ERREUR! Votre coonexion a échoué");
+        
+            };
 };
-      //focus et blur du formulaire de connexion
-document.getElementById("pseudo").onfocus = function () {
-this.style.textdecoration="none";
-this.style.border = "4px solid black";
-this.style.background = "black";
-this.style.color = "white";
-}
-document.getElementById("mdp").onfocus = function () {
-this.style.border = "4px solid black";
-this.style.background = "black";
-this.style.color = "white";
-}
-document.getElementById("pseudo").onblur = function () {
-this.style.border = "2px inset threedface" ;
-this.style.background = "white";
-this.style.color = "black";
-}
-document.getElementById("mdp").onblur = function () {
-this.style.border = "2px inset threedface";
-this.style.background = "white";
-this.style.color = "black";
-}
+   
 
 /*******************************formulaire2 inscription*************************/
 
@@ -109,131 +84,154 @@ if(document.formulaire2.pseudo2.value.length >= 5
 // && document.formulaire2.tel.value.typeof ==='number'
 // && document.formulaire2.code_postal.value.typeof === 'number'
 
-){
-  var continuer = confirm('Voulez vous voir votre compte ?');
-    if(continuer == true){
-        window.open('compteClient.html');
-    }else{
-      window.open('index.html');
-    }
+)      { 
+  alert('Votre compte a été créé avec succes!')
+ 
+  }else{
+    alert("ERREUR! Votre inscription a échoué");
+
   };
 };
-                 //focus et blur du formulaire d'inscription
-document.getElementById("pseudo2").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
+
+
+  /*****************Formulaire3 contact**********************************************/
+
+
+  function resultat3(){
+    if(document.formulaireContact.nom3.value.length < 3 
+      || document.formulaireContact.nom3.value.length > 25)
+    {
+      alert('Le nom doit comporter entre 3 et 25 caractères !');
+    }
+    if(document.formulaireContact.prenom3.value.length < 3 
+      || document.formulaireContact.prenom3.value.length > 25)
+    {
+      alert('Le prénom doit comporter entre 3 et 25 caractères !');
+    }
+    if(document.formulaireContact.email3.value.length == "")
+    {
+      alert('mail non valide');
+    }
+    if(document.formulaireContact.entreprise.value.length == "")
+    {
+      alert('entreprise non valide');
+    }
+    if(document.formulaireContact.pays3.value.length == "")
+    {
+      alert('pays non valide');
+    }
+    if(document.formulaireContact.message3.value.length == "")
+    {
+      alert('message non valide');
+    }
+
+    
+    if( document.formulaireContact.nom3.value.length > 3 
+          && document.formulaireContact.nom3.value.length < 25
+            && document.formulaireContact.prenom3.value.length > 3 
+              && document.formulaireContact.prenom3.value.length < 25
+                && document.formulaireContact.email3.value.length != ""
+                  && document.formulaireContact.entreprise.value.length != ""
+                    && document.formulaireContact.pays3.value.length != ""
+                      && document.formulaireContact.message3.value.length != ""
+      ){ 
+      alert('Votre message a bien été envoyer! Vous recevrez un mail de confirmation dès reception de votre message.')
+     
+      }else{
+        alert("ERREUR! Votre demande n'a pas abouti!");
+  
+      }
+  };
+
+ /*****************Formulaire4 candidature**********************************************/
+
+
+ function resultat4(){
+  if(document.formulaireRecrutement.nom4.value.length < 3 
+    || document.formulaireRecrutement.nom4.value.length > 25)
+  {
+    alert('Le nom doit comporter entre 3 et 25 caractères !');
   }
-document.getElementById("prenom").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
-}
-document.getElementById("nom").onfocus = function () {
-  this.style.textdecoration="none";
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
+  if(document.formulaireRecrutement.prenom4.value.length < 3 
+    || document.formulaireRecrutement.prenom4.value.length > 25)
+  {
+    alert('Le prénom doit comporter entre 3 et 25 caractères !');
   }
-document.getElementById("date_de_naissance").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
+  if(document.formulaireRecrutement.email4.value.length == "")
+  {
+    alert('mail non valide');
   }
-document.getElementById("email").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
+  if(document.formulaireRecrutement.entreprise2.value.length == "")
+  {
+    alert('entreprise non valide');
   }
-document.getElementById("tel").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
+  if(document.formulaireRecrutement.cv.value.length == "")
+  {
+    alert('aucun fichier choisi');
   }
-document.getElementById("adresse").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
+  if(document.formulaireRecrutement.lettreM.value.length == "")
+  {
+    alert('aucun fichier choisi');
   }
-document.getElementById("ville").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
-  }
-document.getElementById("code_postal").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
-  }
-document.getElementById("mdp2").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
-  }
-document.getElementById("avatar").onfocus = function () {
-  this.style.border = "4px solid black";
-  this.style.background = "black";
-  this.style.color = "white";
+  if(document.formulaireRecrutement.message4.value.length == "")
+  {
+    alert('message non valide');
   }
 
-      //Blur
-document.getElementById("pseudo2").onblur = function () {
-  this.style.border = "2px inset threedface" ;
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("prenom").onblur = function () {
-  this.style.border = "2px inset threedface";
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("nom").onblur = function () {
-  this.style.border = "2px inset threedface" ;
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("date_de_naissance").onblur = function () {
-  this.style.border = "2px inset threedface";
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("email").onblur = function () {
-  this.style.border = "2px inset threedface" ;
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("tel").onblur = function () {
-  this.style.border = "2px inset threedface";
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("adresse").onblur = function () {
-  this.style.border = "2px inset threedface" ;
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("ville").onblur = function () {
-  this.style.border = "2px inset threedface";
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("code_postal").onblur = function () {
-  this.style.border = "2px inset threedface" ;
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("mdp2").onblur = function () {
-  this.style.border = "2px inset threedface";
-  this.style.background = "white";
-  this.style.color = "black";
-  }
-document.getElementById("avatar").onblur = function () {
-  this.style.border = "2px inset threedface";
-  this.style.background = "white";
-  this.style.color = "black";
-  }
+  
+  if( document.formulaireRecrutement.nom4.value.length > 3 
+        && document.formulaireRecrutement.nom4.value.length < 25
+          && document.formulaireRecrutement.prenom4.value.length > 3 
+            && document.formulaireRecrutement.prenom4.value.length < 25
+              && document.formulaireRecrutement.email4.value.length != ""
+                && document.formulaireRecrutement.entreprise2.value.length != ""
+                  && document.formulaireRecrutement.cv.value.length != ""
+                    && document.formulaireRecrutement.lettreM.value.length != ""
+                      && document.formulaireRecrutement.message4.value.length != ""
+    ){ 
+    alert('Votre candidature a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.')
+   
+    }else{
+      alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");
 
-  /***************************************************************/
+    }
+};
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
@@ -285,4 +283,4 @@ $('.add-to-cart').click(function() {
   // affiche le contenu du panier si c'est le premier article
   cartEmptyToggle();
 });
-Les commentaires sont ass*/
+Les commentaires sont ass */

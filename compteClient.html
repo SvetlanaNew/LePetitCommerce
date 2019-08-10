@@ -108,26 +108,40 @@
     <!--2eme partie le Corps-->
   <div class="corps col col-lg-10 my-lg-0">  
 
-    <header class="container-fluid service p-2" >
-          <ul  class=" d-flex flex-row flex-wrap justify-content-around justify-content-lg-around">                     
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
-              <div class="dropdown-menu">       
-                <a class="dropdown-item" href="#"> Royaume Uni </a>
-                <a class="dropdown-item" href="#"> Espagne </a>       
-                <a class="dropdown-item" href="#"> Italie </a>
+      <header class="container-fluid service p-2" >
+          <ul  class=" d-flex flex-row flex-wrap justify-content-around justify-content-lg-around">                   
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Langues</a>
+              <div class="dropdown-menu ">      
+                <ul class="container-fluid d-flex justify-content-around">
+                  <li>
+                    <a target="_blank" rel="nofollow" onclick="window.open('https://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=fr%7Cen&hl=fr&ie=UTF8'); return false;">
+                    <img style="cursor:pointer; cursor:hand;" alt="Translate this page in English" src="https://www.numelion.com/images/flag/royaume-uni.png" 
+                    title="Translate this page in English" width="30"/></a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="nofollow" onclick="window.open('https://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=fr%7Ces&hl=fr&ie=UTF8'); 
+                    return false;"><img style="cursor:pointer; cursor:hand;" 
+                    alt="Traducir esta página en español" src="https://www.numelion.com/images/flag//espagne.png" title="Traducir esta página en español" width="30"/></a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="nofollow" onclick="window.open('https://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=fr%7Cit&hl=fr&ie=UTF8'); 
+                    return false;"><img style="cursor:pointer; cursor:hand;" 
+                    alt="Traduci questa pagina in italiano" src="https://www.numelion.com/images/flag/italie.png" title="Traduci questa pagina in italiano" width="30"/></a>
+                  </li>
+                </ul>                       
               </div>
             </li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
               <div class="dropdown-menu">       
-                <a class="dropdown-item" href="quiSommesNous.html" target="_blank">Qui Sommes-nous</a>
-                <a class="dropdown-item" href="contact.html" target="_blank">Contact</a>       
-                <a class="dropdown-item" href="recrutements.html" target="_blank">Recrutements</a>
-                <a class="dropdown-item" href="evenements.html" target="_blank">Evénements</a>
-                <a class="dropdown-item" href="presse.html" target="_blank">Presse</a>
+                <a class="dropdown-item" href="quiSommesNous.html">Qui Sommes-nous</a>
+                <a class="dropdown-item" href="contact.html">Contact</a>       
+                <a class="dropdown-item" href="recrutements.html">Recrutements</a>
+                <a class="dropdown-item" href="evenements.html">Evénements</a>
+                <a class="dropdown-item" href="presse.html">Presse</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pointDeVentes.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
+              <a class="nav-link" href="pointDeVentes.html"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="connexionInscription.html"><i class="fas fa-user"></i></a>
@@ -147,11 +161,11 @@
     <!---->
         <h2 class="col-12">Profil Personnel</h2>
    
-        <div class="accordion compteClient col-10 offset-1 mb-3" id="accordionExample">
+        <div class="accordion compteClient col col-lg-10 offset-lg-1 mb-3" id="accordionExample">
           <div class="card ">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-link col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                  mes informations personnelles
                 </button>
               </h2>
@@ -174,19 +188,19 @@
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Mes commandes
                 </button>
               </h2>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div class="card-body">
-                <ul class="list-group">
-                  <li class="list-group-item">Numéro de commande 1</li>
+                <ul class="list-group">                 
                   <li class="list-group-item">Numéro de commande 1</li>
                   <li class="list-group-item">Numéro de commande 2</li>
                   <li class="list-group-item">Numéro de commande 3</li>
                   <li class="list-group-item">Numéro de commande 4</li>
+                  <li class="list-group-item">Numéro de commande 5</li>
                 </ul>
               </div>
             </div>
@@ -194,27 +208,26 @@
           <div class="card ">
             <div class="card-header" id="headingThree">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Renvoyer un article / Mes retours
                 </button>
               </h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
               <div class="card-body">
-                <ul class="list-group">
-                  <li class="list-group-item">Numéro de commande 1</li>
-                  <li class="list-group-item">Numéro de commande 1</li>
-                  <li class="list-group-item">Numéro de commande 2</li>
-                  <li class="list-group-item">Numéro de commande 3</li>
-                  <li class="list-group-item">Numéro de commande 4</li>
+                <ul class="list-group">                  
+                  <li class="list-group-item">Retour de commande 1</li>
+                  <li class="list-group-item">Retour de commande 2</li>
+                  <li class="list-group-item">Retour de commande 3</li>
+                  <li class="list-group-item">Retour de commande 4</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="card ">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="headingFour">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   Mes newsletters
                 </button>
               </h2>
@@ -222,19 +235,18 @@
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
               <div class="card-body">
                 <ul class="list-group">
-                  <li class="list-group-item">Numéro de commande 1</li>
-                  <li class="list-group-item">Numéro de commande 1</li>
-                  <li class="list-group-item">Numéro de commande 2</li>
-                  <li class="list-group-item">Numéro de commande 3</li>
-                  <li class="list-group-item">Numéro de commande 4</li>
+                  <li class="list-group-item">NewsLetter 1</li>
+                  <li class="list-group-item">NewsLetter 2</li>
+                  <li class="list-group-item">NewsLetter 3</li>
+                  <li class="list-group-item">NewsLetter 4</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="card ">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="headingFive">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   Mes marques préférées
                 </button>
               </h2>
@@ -242,26 +254,28 @@
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
               <div class="card-body">
                 <ul class="list-group">
-                  <li class="list-group-item">Numéro de commande 1</li>
-                  <li class="list-group-item">Numéro de commande 1</li>
-                  <li class="list-group-item">Numéro de commande 2</li>
-                  <li class="list-group-item">Numéro de commande 3</li>
-                  <li class="list-group-item">Numéro de commande 4</li>
+                  <li class="list-group-item">Préférence 1</li>
+                  <li class="list-group-item">Préférence 2</li>
+                  <li class="list-group-item">Préférence 3</li>
+                  <li class="list-group-item">Préférence 4</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="card ">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="headingSix">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <button class="btn btn-link collapsed col-8 col-lg-4" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                   Aide & contact
                 </button>
               </h2>
             </div>
             <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-              <div class="card-body">              
-                  <a href="">Formulaire de contact</a>             
+              <div class="card-body">   
+                  <ul class="list-group">
+                      <li class="list-group-item"><a href="contact.html">Vous trouverez des réponses sur de nombreux sujets et si vous ne trouvez pas de réponse alors compléter le formulaire et nous répondrons dans les plus brefs délais </a></li>
+                  </ul>           
+           
               </div>
             </div>
           </div>
