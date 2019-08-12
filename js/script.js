@@ -196,22 +196,40 @@ if(document.formulaire2.pseudo2.value.length >= 5
 
     }
 };
+/*********************Formulaire prise rendez vous***************************/
+function resultat5(){
+  if(document.formulaireRendezVous.nom5.value.length < 3 
+    || document.formulaireRendezVous.nom5.value.length > 25)
+  {
+    alert('Le nom doit comporter entre 3 et 25 caractères !');
+  }
+  if(document.formulaireRendezVous.prenom5.value.length < 3 
+    || document.formulaireRendezVous.prenom5.value.length > 25)
+  {
+    alert('Le prénom doit comporter entre 3 et 25 caractères !');
+  }
+  if(document.formulaireRendezVous.email5.value.length == "")
+  {
+    alert('mail non valide');
+  }
+  if(document.formulaireRendezVous.calendrier.value.length == "")
+  {
+    alert('Date non valide');
+  }
+  if( document.formulaireRendezVous.nom5.value.length > 3 
+        && document.formulaireRendezVous.nom5.value.length < 25
+          && document.formulaireRendezVous.prenom5.value.length > 3 
+            && document.formulaireRendezVous.prenom5.value.length < 25
+              && document.formulaireRendezVous.email5.value.length != ""
+                      && document.formulaireRendezVous.calendrier.value.length != ""
+    ){ 
+    alert('Votre DEMANDE a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.')
+   
+    }else{
+      alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");
 
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+};
 
 
 

@@ -79,18 +79,17 @@
               </div>
           </li>   
           <li class="nav-item">
-            <a class="nav-link ml-2 " href="actualites.html" target="_blank" style="text-align: left;">Coach personnel Shopper</a>
-    </li>
+            <a class="nav-link ml-2 " href="coachPersonnel.html"style="text-align: left;">Coach personnel Shopper</a>
+          </li>
           <li class="nav-item">
-                  <a class="nav-link ml-2 " href="actualites.html" target="_blank">Actualités</a>
+                  <a class="nav-link ml-2 " href="actualites.html">Actualités</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avis</a>
-              <div class="dropdown-menu">
-               
+              <div class="dropdown-menu">             
                   <ul >
-                    <li><a href="" target="_blank">Boutique en ligne</a></li>
-                    <li><a href="" target="_blank">Points de ventes</a></li>          
+                    <li><a href="avis_e_boutique.html">Boutique en ligne</a></li>
+                    <li><a href="avis_boutique.html">Points de ventes</a></li>          
                   </ul>
                             
               </div>
@@ -160,7 +159,79 @@
       
       <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
             <!------------début nvo contenu----------------------------------->
-          
+            <h2 class="col col-lg-8 offset-lg-2 p-4" >Coaching en prêt à porter</h2> 
+            <div class="mag card mb-3 m-lg-4 p-4">   
+                <div class="card-header text-center">Qui suis-je?</div>          
+                  <div class="card-body ">
+                      <p class="card-text col col-lg-8 offset-lg-2 font-weight-bold font-italic" >Passionné par les vêtements depuis mon plus jeune âge, j'ai eu l'opportunité de travailler durant 10 années pour de grandes marques du prêt à porter après mes études de management et marketing.<br>Cette expérience m'a fait réaliser que le métier de conseiller de vente n'existera plus !<br>Les formations en morphologie et produits n'ont plus leur place dans le budget des boutiques. Cela se traduit par une absence de conseiller de vente laissant place au libre service.Au vu de ce constat, je me suis posé une simple question : comment puis-je être conseillé en magasin s'il n'y a personne pour le faire ?Cela m'a conduit à devenir coach en prêt à porter afin de pouvoir apporter des conseils personnalisés à chaque personne le désirant.Ayant été formé à l'analyse morphologique et colorimétrique et aux différentes matières des vêtements, je vous apporte les conseils les plus adaptés à vos besoins.
+                      </p>
+                  </div> 
+            </div>
+            <div class="mag card mb-3 m-lg-4 p-4">   
+                <div class="card-header text-center">Est-ce du relooking ?</div>          
+                  <div class="card-body ">
+                      <p class="card-text col col-lg-8 offset-lg-2 font-weight-bold font-italic">Le Petit Commerce vous propose des conseils personnalisés en prêt à porter selon votre style, votre morphologie et surtout selon votre budget.
+                      </p>
+                  </div> 
+            </div>
+            <div class="mag card mb-3 m-lg-4 p-4">   
+                <div class="card-header text-center">Le rôle du personal shopper ?</div>          
+                  <div class="card-body ">
+                      <p class="card-text col col-lg-8 offset-lg-2 font-weight-bold font-italic">Le personal shopper est la personne idéale pour vous faire gagner du temps !
+                          Vous pourrez par exemple : 
+                          Eviter la foule pendant les soldes
+                          Découvrir de nouvelles idées tenues
+                          Redéfinir votre style vestimentaire
+                          Optimiser l'espace de votre dressing
+                          Comprendre ce qui vous met en valeur
+                      </p>
+                  </div> 
+            </div>
+        
+            <div class="mag card mb-3 m-lg-4 p-4">   
+                <div class="card-header text-center">Prendre un rendez-vous avec le personal shopper ?</div>          
+                <div class="card-body">
+                    <h5 class="card-title">Pour cela, notre entreprise a besoin d'hommes et de femmes audacieux et intelligents qui aiment innover et remettre en question le statu quo. Envoyez-nous votre canditature</p>
+                          <!--Modal formulaire prise de rndez vous-->
+                          <button type="button" class="btn col-10 offset-1 p-2" data-toggle="modal" data-target="#exampleModalLong">Prise de rendez-vous</button>
+                          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLongTitle">Prise de rendez-vous</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                              <div class="modal-body">
+                              <form method="POST" action="index.html" name="formulaireRendezVous" id="formulaireRendezVous" enctype="multipart/form-data" class="col">      
+                                <div class="form-group">	
+                                  <label for="nom5">Nom *</label>
+                                  <input type="text" class="form-control" name="nom5" id="nom5"  value="" placeholder="Votre nom..." required/>
+                                </div>
+                                <div class="form-group">	
+                                  <label for="prenom5">Prénom *</label>
+                                  <input type="text" class="form-control" name="prenom5" id="prenom5" value="" placeholder="Votre prénom..." required/>
+                                </div>   
+                                <div class="form-group">	
+                                  <label for="email5">Email *</label>
+                                  <input type="email" class="form-control" name="email5" id="email5" value="" placeholder="Votre adresse mail..." required/>
+                                </div>                 
+                                <div class="form-group">	
+                                    <label for="calendrier">Calendrier *</label>
+                                    <input type="date" class="form-control" name="calendrier" id="calendrier" value="" required/>
+                                  </div>
+
+                                <div class="modal-footer ">
+                                  <input type="submit" class="btn" value="Envoi" onclick="resultat5()">
+                                </div>
+                              </form>    
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+            </div>
+
             <!-------------fin nvo contenu------------------------------------>
       </div>
 
@@ -223,7 +294,22 @@
       <a href="">Copyright &copy; Svetlana & Samy </a>   
     </footer>
   </div>
-
+  <script>
+      const formulaireRendezVous = document.getElementById("formulaireRendezVous"); 
+      formulaireRendezVous.addEventListener('focus', (event) => {
+         event.target.style.background = 'black'; 
+         event.target.style.border = '4px solid black';  
+         event.target.style.color = 'white'; 
+       }, 
+         true);
+   
+         formulaireRendezVous.addEventListener('blur', (event) => {
+         event.target.style.background = "none";
+         event.target.style.border ="2px inset threedface" ;
+         event.target.style.color = "black"; 
+       },
+         true);
+     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
