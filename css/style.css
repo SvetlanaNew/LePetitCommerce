@@ -123,10 +123,51 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 .mag .card-header{background: black;color:white;}
 
 
-
-
-.fs-1{font-size: 1em;}
-.fs-1-5{font-size: 1.5em;}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------SLIDER-------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.carousel-item img{height:100%;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;}
+  
+  .containerdescription{text-align: center;}
+  
+  
+  /*Changement couleur des flèches du slider*/
+  .carousel-control-prev-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");}
+	  
+  .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");}
+  
+  
+  
+  .fs-1{font-size: 1em;}
+	
+  .fs-1-5{font-size: 1.5em;}
+  .zoom {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+ .zoom:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+  }
+  
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------BLOCK PHOTO MINIATURES-------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+   
+  
+  #containerPhotos div img{width: 70px;
+	
+	margin: 20px;
+		border: 5px solid #eee;
+		box-shadow: 14px 22px 15px -6px rgba(0,0,0,0.75);}
+	
+  #containerPhotos{display: none;}
 
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -136,6 +177,10 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 /******************Medium  devices xs 768px and up********************************/
 @media screen and  (min-width: 768px) {
 	.modal-content{font-size: 1em;}
+	#containerPhotos{display: flex;vertical-align: bottom;}
+	.carousel{display: none;}
+	.containerMenuDeroulant{display: none;}
+	.containerDescription{line-height: 1.5em;font-size: 1em;width: 25%;}
 
 }
 /******************Large devices xs 992px and up********************************/
