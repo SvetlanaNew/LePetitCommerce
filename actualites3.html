@@ -158,91 +158,54 @@
     <main class="container-fluid">
       
       <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
-            <!------------début nvo contenu----------------------------------->
-            <h2 class="col col-lg-8 offset-lg-2 p-4" >Coaching en prêt à porter</h2> 
-            <div class="card mag col col-lg-10 offset-lg-1 p-4 mb-4">   
-              <div class="card-header text-center">
-                  <h3>Qui suis-je?</h3>
-              </div>          
-              <div class="card-body ">
-                <p class="card-text col col-lg-8 offset-lg-2 " ><span class="marge"></span>Passionné par les vêtements depuis mon plus jeune âge, j'ai eu l'opportunité de travailler durant 10 années pour de grandes marques du prêt à porter après mes études de management et marketing.</p><p class="card-text col col-lg-8 offset-lg-2 "><span class="marge"></span>Cette expérience m'a fait réaliser que le métier de conseiller de vente n'existera plus !</p><p class="card-text col col-lg-8 offset-lg-2 "><span class="marge"></span>Les formations en morphologie et produits n'ont plus leur place dans le budget des boutiques. Cela se traduit par une absence de conseiller de vente laissant place au libre service.Au vu de ce constat, je me suis posé une simple question : comment puis-je être conseillé en magasin s'il n'y a personne pour le faire ?Cela m'a conduit à devenir coach en prêt à porter afin de pouvoir apporter des conseils personnalisés à chaque personne le désirant.Ayant été formé à l'analyse morphologique et colorimétrique et aux différentes matières des vêtements, je vous apporte les conseils les plus adaptés à vos besoins.
-                </p>
-              </div> 
-            </div>
-            <div class="card mag col col-lg-10 offset-lg-1 p-4 mb-4">   
-              <div class="card-header text-center">
-                <h3>Est-ce du relooking ?</h3>
-              </div>          
-              <div class="card-body ">
-                <p class="card-text col col-lg-8 offset-lg-2"><span class="marge"></span>Le Petit Commerce vous propose des conseils personnalisés en prêt à porter selon votre style, votre morphologie et surtout selon votre budget.
-                </p>
-              </div> 
-            </div>
-            <div class="card mag col col-lg-10 offset-lg-1 p-4 mb-4">   
-              <div class="card-header text-center">
-                <h3>Le rôle du personal shopper ?</h3>
-              </div>          
-              <div class="card-body ">
-                <p class="card-text col col-lg-8 offset-lg-2"><span class="marge"></span>Le personal shopper est la personne idéale pour vous faire gagner du temps ! Vous pourrez par exemple:</p>
-                  <ul class="text-center">
-                    <li>Eviter la foule pendant les soldes</li>
-                    <li>Découvrir de nouvelles idées tenues</li>
-                    <li>Redéfinir votre style vestimentaire</li>
-                    <li>Optimiser l'espace de votre dressing</li>
-                    <li>Comprendre ce qui vous met en valeur</li>
-                  </ul>
-              </div> 
-            </div>
-        
-            <div class="card mag col col-lg-10 offset-lg-1 p-4 mb-4">   
-              <div class="card-header font-weight-bold">
-                <h3> Prendre un rendez-vous avec le personal shopper ?</h3>
-              </div>          
-              <div class="card-body">
-                  <p class="card-text col col-lg-8 offset-lg-2"><span class="marge"></span>Pour cela, notre entreprise a besoin d'hommes et de femmes audacieux et intelligents qui aiment innover et remettre en question le statu quo. Envoyez-nous votre canditature</p>
-                        <!--Modal formulaire prise de rndez vous-->
-                        <button type="button" class="btn col-10 offset-1 p-2" data-toggle="modal" data-target="#exampleModalLong">Prise de rendez-vous</button>
-                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Prise de rendez-vous</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                            <div class="modal-body">
-                            <form method="POST" action="index.html" name="formulaireRendezVous" id="formulaireRendezVous" enctype="multipart/form-data" class="col">      
-                              <div class="form-group">	
-                                <label for="nom5">Nom *</label>
-                                <input type="text" class="form-control" name="nom5" id="nom5"  value="" placeholder="Votre nom..." required/>
-                              </div>
-                              <div class="form-group">	
-                                <label for="prenom5">Prénom *</label>
-                                <input type="text" class="form-control" name="prenom5" id="prenom5" value="" placeholder="Votre prénom..." required/>
-                              </div>   
-                              <div class="form-group">	
-                                <label for="email5">Email *</label>
-                                <input type="email" class="form-control" name="email5" id="email5" value="" placeholder="Votre adresse mail..." required/>
-                              </div>                 
-                              <div class="form-group">	
-                                  <label for="calendrier">Calendrier *</label>
-                                  <input type="date" class="form-control" name="calendrier" id="calendrier" value="" required/>
-                                </div>
-
-                              <div class="modal-footer ">
-                                <input type="submit" class="btn" value="Envoi" onclick="resultat5()">
-                              </div>
-                            </form>    
-                            </div>
-                            </div>
-                          </div>
-                        </div>
+        <div class="mag  col col-lg-10 offset-lg-1 " > 
+          <h2>Le Petit Commerce Mag</h2>
+            <p class="card-text  col col-lg-8 offset-lg-2 p-2 text-center">Vous trouverez les articles des 3 derniers mois</p>
+              <div class="card text-center">
+                <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualites.html">Aout 2019</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualites2.html">Juillet 2019</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="actualites3.html">Juin 2019</a>
+                  </li>
+                </ul>
+                </div>
+                <div class="card mb-3 m-lg-4 p-4"> 
+                    <div class="card-header">MAGNIFICENCES</div>      
+                    <div class="card-body">
+                      <h5 class="card-title">30 Juin 2019</h5>
+                        <p class="card-text col col-lg-8 offset-lg-2 font-weight-bold font-italic" >
+                        </p>
+                    </div> 
+                      <img src=""  class="card-img-top img-fluid img-thumbnail col col-lg-8 offset-lg-2" alt="savoir-faire Jean-Pierre Ollier" title="savoir-faire Jean-Pierre Ollier">
+                </div>        
+                <div class="card mb-3 m-lg-4 p-4">   
+                    <div class="card-header">JEUX DE RUBANS</div>    
+                    <div class="card-body">
+                      <h5 class="card-title">20 Juin 2019</h5>
+                        <p class="card-text col col-lg-8 offset-lg-2 font-weight-bold font-italic" > 
+                          
+                        </p>
+                    </div> 
+                      <img src=""  class="card-img-top img-fluid img-thumbnail col col-lg-8 offset-lg-2" alt="broderies" title="broderies">
+                </div>
+                <div class="card mb-3 m-lg-4 p-4"> 
+                    <div class="card-header">OMBRES LUMINEUSES</div>      
+                    <div class="card-body">
+                      <h5 class="card-title">01 Juin 2019</h5>
+                        <p class="card-text col col-lg-8 offset-lg-2 font-weight-bold font-italic" >
+                        </p>
+                    </div> 
+                      <img src=""  class="card-img-top img-fluid img-thumbnail col col-lg-8 offset-lg-2" alt="Peter Philips" title="Peter Philips">
+                </div>
               </div>
-            </div>
-
-            <!-------------fin nvo contenu------------------------------------>
+        </div>
       </div>
-
       <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap p-3" >
         <h3 class="col col-lg-12 p-2">AVANTAGES E-BOUTIQUE</h3>
   
@@ -250,28 +213,35 @@
             <article class="col col-lg-4 p-3">
               <h4><i class="fas fa-shipping-fast"></i></h4>
               <h4>LIVRAISON OFFERTE</h4>
-              <p><span class="marge"></span>La livraison standard est offerte, à partir d’un montant minimum d’achat de 24.90 €.Nous proposons également la livraison express pour 9.95 €. 
-              </p>  
+              <p><span class="marge"></span>La livraison standard est offerte, à partir d’un montant minimum d’achat de 24.90 €.Nous proposons également la livraison express pour 9.95 €. </p>
+              
             </article>
   
             <article class="col col-lg-4 p-3">
               <h4><i class="fas fa-undo-alt"></i></h4>
-              <h4> RETOUR OFFERT</h4>
-              <p><span class="marge"></span>Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br> Les frais de port sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit !</p>           
+             <h4> RETOUR OFFERT</h4>
+             <p><span class="marge"></span>Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br> Les frais de port sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit !</p>
+            
             </article>
             
             <article class="col col-lg-4 p-3 ">
               <h4><i class="fas fa-gift"></i></h'>
               <h4>L'ART D'OFFRIR</h4>
-              <p><span class="marge"></span>Avant chaque anniversaire, chaque fête et chaque Noël, nous nous trouvons confrontés à la même question : à quoi ressemble le cadeau parfait ?<br> Avec un coffret personnalisé Le Petit Commerce, vous avez trouvé la réponse.<br>Votre commande sera sublimée dans un coffret cadeau personnalisé</p>       
-            </article>      
-          </section>
+              <p><span class="marge"></span>Avant chaque anniversaire, chaque fête et chaque Noël, nous nous trouvons confrontés à la même question : à quoi ressemble le cadeau parfait ?<br> Avec un coffret personnalisé Le Petit Commerce, vous avez trouvé la réponse.<br>Votre commande sera sublimée dans un coffret cadeau personnalisé</p> 
+                    
+            </article> 
+  
+        
+      </section>
 
       <section class="contenair-fluid prefooter2 d-flex flex-column flex-lg-row  p-3">
             <article class="col p-3">
                 <h3>NEWSLETTER</h3>
-                  <a href="newsletters.html" class="stretched-link">       <p class="p-4"><span class="marge"></span>Et si vous profitiez de 10% de réduction sur votre prochaine commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p></a>         
+
+                  <a href="newsletters.html" class="stretched-link">       <p class="p-4"><span class="marge"></span>Et si vous profitiez de 10% de réduction sur votre prochaine commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p></a>
+          
             </article>
+
             <article class="col p-3">
                 <h3>NOUS CONTACTER</h3>
                 <a href="contact.html" class="stretched-link"> <p class="p-4"><span class="marge"></span>Vous avez une question, Vous avez besoins d'aides, n'hésitez pas nous sommes là pour vous!</p></a>
@@ -285,6 +255,7 @@
                  </div>    
             </article> 
       </section>
+
     </main>  
 
     <footer class="container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around text-center">
@@ -294,26 +265,12 @@
       <a href="">Copyright &copy; Svetlana & Samy </a>   
     </footer>
   </div>
-  <script>
-      const formulaireRendezVous = document.getElementById("formulaireRendezVous"); 
-      formulaireRendezVous.addEventListener('focus', (event) => {
-         event.target.style.background = 'black'; 
-         event.target.style.border = '4px solid black';  
-         event.target.style.color = 'white'; 
-       }, 
-         true);
-   
-         formulaireRendezVous.addEventListener('blur', (event) => {
-         event.target.style.background = "none";
-         event.target.style.border ="2px inset threedface" ;
-         event.target.style.color = "black"; 
-       },
-         true);
-     </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/script.js"></script> 
+
          
 </body>
 </html
