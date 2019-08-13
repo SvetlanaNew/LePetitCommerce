@@ -230,7 +230,66 @@ function resultat5(){
 
     }
 };
+/**************evaluation commentaires***********************/
+var done=false
+var pic = new Array();
+pic[0]=new Image();
+  pic[0].src="img/star.png";
+pic[1]=new Image();
+  pic[1].src="img/star2.png";
+var bareme = new Array("peu ","passablement ","moyennement","presque","") 
+ 
+  function rate(level){
+  if (done){return false;}
+    for(i=1;i<6;i++){ document.getElementById('_'+i).src=(level<i)?pic[0].src:pic[1].src;
+    document.getElementById('choix').innerHTML="Votre choix : "+level+" étoile(s)   "+bareme[level-1]+" satisfaisant" 
+    }
+    }
+    
+  function zero(){
+      for(i=1;i<6;i++){ document.getElementById('_'+i).src=pic[0].src;
+      done=false;
+      document.getElementById('choix').innerHTML="Votre choix : 0 étoile(s)" 
+  
+      }
+      }
+  function valider(){
+    alert('Votre évaluation a été enregistrée!');
+  done=true;
+  document.getElementById('choix').innerHTML+='   VALID&Eacute;';
 
+}
+/*********************Formulaire Commentaire***************************/
+function resultat6(){
+  if(document.formulaireCommentaire.nom6.value.length < 3 
+    || document.formulaireCommentaire.nom6.value.length > 25)
+  {
+    alert('Le nom doit comporter entre 3 et 25 caractères !');
+  }
+  if(document.formulaireCommentaire.prenom6.value.length < 3 
+    || document.formulaireCommentaire.prenom6.value.length > 25)
+  {
+    alert('Le prénom doit comporter entre 3 et 25 caractères !');
+  }
+  if(document.formulaireCommentaire.email6.value.length == "")
+  {
+    alert('mail non valide');
+  }
+  if(document.formulaireCommentaire.message6.value.length == "")
+  {
+    alert('message non valide');
+  }
+  if( document.formulaireCommentaire.nom6.value.length > 3 
+        && document.formulaireCommentaire.nom6.value.length < 25
+          && document.formulaireCommentaire.prenom6.value.length > 3 
+            && document.formulaireCommentaire.prenom6.value.length < 25
+              && document.formulaireCommentaire.email6.value.length != ""
+                && document.formulaireCommentaire.message6.value.length != ""
+    ){ 
+    alert('Votre Commentaire a bien été envoyer! il sera visible dans 24H! Vous recevrez un email de confirmation dès sa parution')
+   
+    }else{
+      alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");
 
 
 

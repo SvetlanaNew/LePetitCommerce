@@ -118,10 +118,13 @@ input .civilite {box-shadow: 5px 5px 5px white;}
   }
   .evenements h2{background: white;margin: 10px;border: solid white;}
 /*******************************************************************/
-
+.mag .card{box-shadow: 5px 5px 5px black;}
 .mag a{text-decoration: none;color: white;}
 .mag .card-header{background: black;color:white;}
-
+.membres{border: white;}
+.membres div{background: white;border: white;}
+.membres a .badge{background: black;}
+.membres ul li a {box-shadow: 5px 5px 5px black;text-decoration: none;color: black;border: white;margin: 5px;}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------SLIDER-------------------------------------------------------------*/
