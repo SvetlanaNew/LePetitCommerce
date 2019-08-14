@@ -122,7 +122,8 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 .mag a{text-decoration: none;color: white;}
 .mag .card-header{background: black;color:white;}
 .membres{border: white;}
-.membres div{background: white;border: white;}
+.membres .card-header{background: black;color:white;}
+
 .membres a .badge{background: black;}
 .membres ul li a {box-shadow: 5px 5px 5px black;text-decoration: none;color: black;border: white;margin: 5px;}
 
@@ -199,6 +200,7 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 	.historique,.evenements {background: none;}
 	.historique .card, .evenements .card{box-shadow: 5px 5px 5px black;}
 	.evenements h2{background: none;margin: 20px;border:none;}
+
  }
 /******************xl devices xs 1200px and up********************************/
 @media screen and (min-width: 1200px) {  }
