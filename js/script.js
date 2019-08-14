@@ -289,10 +289,9 @@ function resultat6(){
     alert('Votre Commentaire a bien été envoyer! il sera visible dans 24H! Vous recevrez un email de confirmation dès sa parution')
    
     }else{
-      alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");
-
-
-
+    
+      alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");}
+    }
 
 
 
@@ -309,9 +308,9 @@ function resultat6(){
 
   
   /* click bouton ajout panier
-$('.add-to-cart').click(function() {
+$('.add-to-cart').click(function() {*/
 
-  // récupération des infos du produit
+  /* récupération des infos du produit
   var $this = $(this);
   var id = $this.attr('data-id');
   var name = $this.attr('data-name');
@@ -319,14 +318,14 @@ $('.add-to-cart').click(function() {
   var weight = $this.attr('data-weight');
   var url = $this.attr('data-url');
   var qt = parseInt($('#qt').val());
-  inCartItemsNum += qt;
+  inCartItemsNum += qt;*/
 
-  // mise à jour du nombre de produit dans le widget
+  /* mise à jour du nombre de produit dans le widget
   $('#in-cart-items-num').html(inCartItemsNum);
 
-  var newArticle = true;
+  var newArticle = true;*/
 
-  // vérifie si l'article est pas déjà dans le panier
+  /* vérifie si l'article est pas déjà dans le panier
   cartArticles.forEach(function(v) {
     // si l'article est déjà présent, on incrémente la quantité
     if (v.id == id) {
@@ -334,9 +333,9 @@ $('.add-to-cart').click(function() {
       v.qt += qt;
       $('#'+ id).html('<a href="'+ url +'">'+ name +'<br><small>Quantité : <span class="qt">'+ v.qt +'</span></small></a>');
     }
-  });
+  });*/
 
-  // s'il est nouveau, on l'ajoute
+  /* s'il est nouveau, on l'ajoute
   if (newArticle) {
     $('#cart-dropdown').prepend('<li id="'+ id +'"><a href="'+ url +'">'+ name +'<br><small>Quantité : <span class="qt">'+ qt +'</span></small></a></li>');
 
@@ -348,12 +347,12 @@ $('.add-to-cart').click(function() {
       qt: qt,
       url: url
     });
-  }
+  }*/
 
-  // sauvegarde le panier
-  saveCart(inCartItemsNum, cartArticles);
+  /* sauvegarde le panier
+  saveCart(inCartItemsNum, cartArticles);*/
 
-  // affiche le contenu du panier si c'est le premier article
+  /* affiche le contenu du panier si c'est le premier article
   cartEmptyToggle();
 });
-Les commentaires sont ass */
+Les commentaires sont ass*/
