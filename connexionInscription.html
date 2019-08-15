@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="description" content="Découvrez la nouvelle collection Printemps Eté 2020. Retour sous 100 jours. Paiement Sécurisé. Satisfait ou Remboursé. Retour Gratuit. Livraison Gratuite. Types: Vêtements, Chaussures, Accessoires, Sports, Luxe, Lingerie.">
+  <meta name="author" content="Svetlana et Samy">
+  <meta name="robots" content="INDEX,FOLLOW">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <title>Connexion et inscription</title>
 </head>
 <body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
@@ -241,60 +247,60 @@
         </button>
       </div>
       <div class="modal-body">
-          <form method="POST" action="compteClient.html" id="formulaire2" name="formulaire2"  enctype="multipart/form-data" class="col">      
-            <div class="form-group">
-              <label for="civilite" >Civilite</label><br>               
-              <input type="radio" class="mb-2" name="civilite" id="civilite" value="femm">  Femme <br>  
-              <input type="radio"  class="mb-2" name="civilite" id="civilite" value="homme"> Homme 
-            </div>
-            <div class="form-group">
-              <label for="pseudo2">Pseudo *</label>
-              <input type="text" class="form-control" name="pseudo2" id="pseudo2" value="" placeholder="Votre pseudo..." required >
-            </div>
-            <div class="form-group">	
-              <label for="prenom">Prénom *</label>
-              <input type="text" class="form-control" name="prenom" id="prenom" value="" placeholder="Votre prénom..." required>
-            </div>
-            <div class="form-group">	
-              <label for="nom">Nom *</label>
-              <input type="text" class="form-control" name="nom" id="nom"  value="" placeholder="Votre nom..." required>
-            </div>           
-            <div class="form-group">	
-              <label for="date_de_naissance">Date de Naissance *</label>
-              <input type="date" class="form-control" name="date_de_naissance" id="date_de_naissance"    required>
-            </div>
-            <div class="form-group">	
-              <label for="email">Email *</label>
-              <input type="email" class="form-control" name="email" id="email"  value="" placeholder="Votre adresse mail..." required>
-            </div>
-            <div class="form-group">
-              <label for="tel">Telephone *</label>
-              <input type="tel" class="form-control" name="tel" id="tel" pattern="^[0-9]{10}$" maxlength="10" placeholder="Votre numéro de téléphone..." required>
-            </div>
-            <div class="form-group">	
-              <label for="adresse">Adresse *</label>
-              <input type="text" class="form-control" name="adresse" id="adresse" value="" placeholder="Votre adresse..." required>
-            </div>
-            <div class="form-group">	
-              <label for="ville">Ville *</label>
-              <input type="text" class="form-control" name="ville" id="ville" value="" placeholder="Votre ville..." required>
-            </div>
-            <div class="form-group">	
-              <label>Code Postal *</label>
-              <input type="text" class="form-control" name="code_postal" id="code_postal" value="" pattern="[0-9]{5}" title="5 chiffres requis entre 0 et 9" placeholder="Votre code postal..." required>
-            </div>
-            <div class="form-group">
-              <label for="mdp2">Mot de passe *</label>
-              <input type="password" class="form-control" name="mdp2" id="mdp2" pattern="[a-zA-Z0-9_]{8,16}" value="" placeholder="votre mot de passe..." required>
-            </div>
-            <div class="form-group">
-              <label for="avatar">Avatar</label>
-              <input type="file" class="form-control" id="avatar" name="avatar" value="" multiple>
-            </div>
-            <div class="modal-footer">
-              <input type="submit" class="btn" value="Identification" onclick="resultat2();">
-            </div>
-          </form>    
+        <form method="POST" action="compteClient.html" id="formulaire2" name="formulaire2"  enctype="multipart/form-data" class="col">      
+          <div class="form-group">
+            <label for="civilite" >Civilite</label><br>               
+            <input type="radio" class="mb-2" name="civilite" id="civilite" value="femm">  Femme <br>  
+            <input type="radio"  class="mb-2" name="civilite" id="civilite" value="homme"> Homme 
+          </div>
+          <div class="form-group">
+            <label for="pseudo2">Pseudo *</label>
+            <input type="text" class="form-control" name="pseudo2" id="pseudo2" value="" placeholder="Votre pseudo..." required >
+          </div>
+          <div class="form-group">	
+            <label for="prenom">Prénom *</label>
+            <input type="text" class="form-control" name="prenom" id="prenom" value="" placeholder="Votre prénom..." required>
+          </div>
+          <div class="form-group">	
+            <label for="nom">Nom *</label>
+            <input type="text" class="form-control" name="nom" id="nom"  value="" placeholder="Votre nom..." required>
+          </div>           
+          <div class="form-group">	
+            <label for="date_de_naissance">Date de Naissance *</label>
+            <input type="date" class="form-control" name="date_de_naissance" id="date_de_naissance"    required>
+          </div>
+          <div class="form-group">	
+            <label for="email">Email *</label>
+            <input type="email" class="form-control" name="email" id="email"  value="" placeholder="Votre adresse mail..." required>
+          </div>
+          <div class="form-group">
+            <label for="tel">Telephone *</label>
+            <input type="tel" class="form-control" name="tel" id="tel" pattern="^[0-9]{10}$" maxlength="10" placeholder="Votre numéro de téléphone..." required>
+          </div>
+          <div class="form-group">	
+            <label for="adresse">Adresse *</label>
+            <input type="text" class="form-control" name="adresse" id="adresse" value="" placeholder="Votre adresse..." required>
+          </div>
+          <div class="form-group">	
+            <label for="ville">Ville *</label>
+            <input type="text" class="form-control" name="ville" id="ville" value="" placeholder="Votre ville..." required>
+          </div>
+          <div class="form-group">	
+            <label>Code Postal *</label>
+            <input type="text" class="form-control" name="code_postal" id="code_postal" value="" pattern="[0-9]{5}" title="5 chiffres requis entre 0 et 9" placeholder="Votre code postal..." required>
+          </div>
+          <div class="form-group">
+            <label for="mdp2">Mot de passe *</label>
+            <input type="password" class="form-control" name="mdp2" id="mdp2" pattern="[a-zA-Z0-9_]{8,16}" value="" placeholder="votre mot de passe..." required>
+          </div>
+          <div class="form-group">
+            <label for="avatar">Avatar</label>
+            <input type="file" class="form-control" id="avatar" name="avatar" value="" multiple>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" class="btn" value="Identification" onclick="resultat2();">
+          </div>
+        </form>    
       </div>
     </div>
   </div>
@@ -355,12 +361,15 @@
         </section>  
       </main>  
   
-      <footer class="container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around text-center">
-        <a href="cgv.html " >Conditions generales de ventes</a>
-        <a href="mentionsLegales.html" >Mentions légales</a>   
-        <a href="planSite.html" >plan du site</a>    
-        <a href="">Copyright &copy; Svetlana & Samy </a>   
-      </footer>
+      <div class="liens container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around text-center">
+          <a href="cgv.html " >Conditions generales de ventes</a>
+          <a href="mentionsLegales.html" >Mentions légales</a>   
+          <a href="planSite.html" >plan du site</a>    
+          <a href="#" >imprimer la page</a>
+        </div>  
+        <p class="col text-center">Copyright &copy; Svetlana & Samy </p>   
+        </footer>
+        
   </div>
 <script>
  //focus et blur du formulaire d'inscription

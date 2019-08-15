@@ -293,3 +293,32 @@ function resultat6(){
     document.getElementById('choix').innerHTML+='   VALID&Eacute;';
   
   }
+/*********************Formulaire Commentaire***************************/
+function resultat7(){
+  if(document.formulaireNewsletters.nom7.value.length < 3 
+    || document.formulaireNewsletters.nom7.value.length > 25)
+  {
+    alert('Le nom doit comporter entre 3 et 25 caractères !');
+  }
+  if(document.formulaireNewsletters.prenom7.value.length < 3 
+    || document.formulaireNewsletters.prenom7.value.length > 25)
+  {
+    alert('Le prénom doit comporter entre 3 et 25 caractères !');
+  }
+  if(document.formulaireNewsletters.email7.value.length == "")
+  {
+    alert('mail non valide');
+  }
+  
+  if( document.formulaireNewsletters.nom7.value.length > 3 
+        && document.formulaireNewsletters.nom7.value.length < 25
+          && document.formulaireNewsletters.prenom7.value.length > 3 
+            && document.formulaireNewsletters.prenom7.value.length < 25
+              && document.formulaireNewsletters.email7.value.length != ""
+    ){ 
+    alert('Votre inscription a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.')
+   
+    }else{
+      alert("ERREUR! Votre inscription n'a pas abouti! veuillez re-commencer");
+    }
+  };

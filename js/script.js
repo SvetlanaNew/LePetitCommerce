@@ -30,53 +30,8 @@ $(document).ready(function(){
     
       for(var i = 0; i < listimg.length; i++){
          alert(listimg[i].src);
+
       }
-<<<<<<< HEAD
-      }
-  function valider(){
-    alert('Votre évaluation a été enregistrée!');
-  done=true;
-  document.getElementById('choix').innerHTML+='   VALID&Eacute;';
-
-}
-/*********************Formulaire Commentaire***************************/
-function resultat6(){
-  if(document.formulaireCommentaire.nom6.value.length < 3 
-    || document.formulaireCommentaire.nom6.value.length > 25)
-  {
-    alert('Le nom doit comporter entre 3 et 25 caractères !');
-  }
-  if(document.formulaireCommentaire.prenom6.value.length < 3 
-    || document.formulaireCommentaire.prenom6.value.length > 25)
-  {
-    alert('Le prénom doit comporter entre 3 et 25 caractères !');
-  }
-  if(document.formulaireCommentaire.email6.value.length == "")
-  {
-    alert('mail non valide');
-  }
-  if(document.formulaireCommentaire.message6.value.length == "")
-  {
-    alert('message non valide');
-  }
-  if( document.formulaireCommentaire.nom6.value.length > 3 
-        && document.formulaireCommentaire.nom6.value.length < 25
-          && document.formulaireCommentaire.prenom6.value.length > 3 
-            && document.formulaireCommentaire.prenom6.value.length < 25
-              && document.formulaireCommentaire.email6.value.length != ""
-                && document.formulaireCommentaire.message6.value.length != ""
-    ){ 
-    alert('Votre Commentaire a bien été envoyer! il sera visible dans 24H! Vous recevrez un email de confirmation dès sa parution')
-   
-    }else{
-    
-      alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");}
-    }
-
-
-=======
-   }
->>>>>>> 964d2ae067102e7792e11a942a81591279945674
 
 
 
@@ -84,14 +39,10 @@ function resultat6(){
 
 
 
-
-
-
-
-<<<<<<< HEAD
 
   
-  /* click bouton ajout panier
+  /*
+   click bouton ajout panier
 $('.add-to-cart').click(function() {*/
 
   /* récupération des infos du produit
@@ -139,6 +90,5 @@ $('.add-to-cart').click(function() {*/
   /* affiche le contenu du panier si c'est le premier article
   cartEmptyToggle();
 });
-Les commentaires sont ass*/
-=======
->>>>>>> 964d2ae067102e7792e11a942a81591279945674
+Les commentaires sont ass
+*/
