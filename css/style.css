@@ -67,6 +67,8 @@ nav a:hover,nav .dropdown-menu a:hover{text-decoration: none;background:black;co
 .service  i{color:white;text-shadow: -2px 0px 2px #929090;font-size:2vh;}
 .service h1 {text-decoration: none;line-height: 7vh;}
 .service a:hover, .service i:hover{ text-shadow: 1px 6px 2px #929090;}	
+.favoris{background: black;color:white;}
+.service .btn{box-shadow: none;}
 /**************main	********************************************/
 .corps{margin-top: 70px;}
 .imgFemme, .imgHomme, .img-thumbnail{box-shadow: 5px 5px 15px black;padding-bottom: 10px;}
@@ -126,6 +128,9 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 
 .membres a .badge{background: black;}
 .membres ul li a {box-shadow: 5px 5px 5px black;text-decoration: none;color: black;border: white;margin: 5px;}
+.map .card-body .card {
+	height: 100%;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------SLIDER-------------------------------------------------------------*/
