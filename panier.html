@@ -206,12 +206,55 @@
       <h2 class="col-12">Mon panier</h2>
         <div class="container-fluid d-flex flex-column flex-lg-row">
           <!------------début nvo contenu----------------------------------->
-          <section class="partie1 col-8 ">       
+          <section class="partie1 col-8 offset-2 ">       
             <div class="card mb-3">
               <div class="card-header">Mon Panier</div>
               <div class="card-body">
                 <h5 class="card-title">Mon Panier</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+
+                <section  class="container-fluid">
+                  <article class="well form-inline pull-left col-lg-5">
+                      <legend>article</legend>
+
+                      
+                      <label for="id" class="col-lg-3">Identifiant</label> : 
+                      <input type = "number" id = "id" style="width:120px" class="input-sm form-control"></input><br><br>
+
+                      <label for="qte" class="col-lg-3" >Quantité</label> : 
+                      <input type = "number" id = "qte" style="width:120px" class="input-sm form-control"></input><br><br>
+
+                      <label for="prix" class="col-lg-3">Prix</label> :
+                       <input type = "number" id = "prix" style="width:120px" class="input-sm form-control"></input><br><br>
+
+                      <button class="btn btn-primary" type="submit" onclick="ajouter();"> Ajouter au panier</button>
+                  </article>
+              </section>
+
+
+              <section class="container-fluid">
+                  <article class="well form-inline pull-left col-lg-5">
+                      <legend>Contenu du panier</legend>
+                      <table id="tableau" class="table">
+                          <thead>
+                              <tr>
+                                  <th>Code </th>
+                                  <th>Qte</th>
+                                  <th>Prix unitaire</th>
+                                  <th>Prix de la ligne</th>
+                                  <th>Supprimer</th>
+                              </tr>
+                          </thead>
+                      </table>
+                      <br><label>Prix du panier total</label> : <label id = "prixTotal"></label>
+                      <label id = "nbreLignes" hidden>0</label>
+                  </article>
+              </section>
+
+
+
+             
               </div>
             </div>
             <div class="card mb-3">
@@ -228,15 +271,6 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
-          </section>
-          <section class="partie2 col-4 mb-3">      
-            <div class="card h-100 ">
-              <div class="card-header">Total</div>
-              <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
           </section>
           <!-------------fin nvo contenu------------------------------------>
         </div>
@@ -308,7 +342,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
-    <script src="js/script.js"></script> 
+    <script src="js/panier.js"></script> 
          
 </body>
 </html>
