@@ -127,9 +127,7 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 
 .membres a .badge{background: black;}
 .membres ul li a {box-shadow: 5px 5px 5px black;text-decoration: none;color: black;border: white;margin: 5px;}
-.map .card-body .card {
-	height: 100%;
-}
+.map .card-body .card {height: 100%;}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------SLIDER-------------------------------------------------------------*/
