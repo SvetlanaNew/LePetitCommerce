@@ -176,7 +176,7 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 		border: 5px solid #eee;
 		box-shadow: 14px 22px 15px -6px rgba(0,0,0,0.75);}
 	
-  #containerPhotos{display: none;}
+		#containerPhotos{display: none;}
 
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -188,8 +188,8 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 	.modal-content{font-size: 1em;}
 	#containerPhotos{display: flex;vertical-align: bottom;}
 	.carousel{display: none;}
-	.containerMenuDeroulant{display: none;}
-	.containerDescription{line-height: 1.5em;font-size: 1em;width: 25%;}
+	
+	.containerDescription{line-height: 1.5em;font-size: 1em;width: 100%;}
 
 }
 /******************Large devices xs 992px and up********************************/
