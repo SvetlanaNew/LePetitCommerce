@@ -14,6 +14,33 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Le Petit Commerce, escarpins</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+   $('#barre').click(function(){
+         
+         $('#rideau').slideToggle(500);
+      });
+
+     $('#barre2').click(function(){
+         
+         $('#rideau2').slideToggle(500);
+      });
+  
+     $('#barre3').click(function(){
+         
+         $('#rideau3').slideToggle(500);
+      });
+    
+     $('#barre4').click(function(){
+         
+         $('#rideau4').slideToggle(500);
+      });
+
+     });
+   </script>
 </head>
 <body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
@@ -180,8 +207,8 @@
 
             <div class="container-fluid d-flex flex-column">                
                 <div class="row d-flex justify-content-center">
-                  
-                    <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+<!--article 1-->             
+                  <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                       <a class="thumbnail">
                         <figure>
                           <img class="img-thumbnail" src="img\femme\chaussures\escarpins\escarpin_argent_1.jpg" alt="escarpins argent">
@@ -198,10 +225,104 @@
                         <p style="text-align: center; margin-bottom: 20px;">Escarpins argent<br>
                           <span style="font-weight: bold">69,99€</span>
                         </p>
+                      </div>      
+                      <!--------------------------début modal 1---------------------------------------------------------------------------->
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit1" >
+                          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                        </button>
                       </div>
-                  </div>
+                      <!---->
+                      <div class="modal fade" id="produit1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                <div class="container-fluid ">
+                                  <!--BLOC SLIDER-->
+                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                      </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_argent_1.jpg" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_argent_2.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_argent_3.jpg" alt="Third slide">
+                                      </div>
+                                    </div>
+                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Avant</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Aprés</span>
+                                      </a>
+                                </div>                                   
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                                      <img src="img/femme/chaussures/escarpins/escarpin_argent_3.jpg" alt="Escarpins argent" class="zoom">         
+                                      <img src="img/femme/chaussures/escarpins/escarpin_argent_2.jpg" alt="Escarpins argent" class="zoom">
+                                      <img src="img/femme/chaussures/escarpins/escarpin_argent_1.jpg" alt="Escarpins argent" style="height: 500px;width:300px;" id="premiereImage">
+                                    </div>  
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins argent</strong><br>69,99 €</p></div>         
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <br>
+                                    <hr class="col-6">
+                                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                          ve, 26.07. - ma, 30.07.
+                                    </div> 
+                                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                          1-2 jours ouvrables en commandant avant 15h
+                                    </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
                 
-                                          
+                                    <div id="barre" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                    <div id="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    
+                                    <div id="barre2" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                    <div id="rideau2" class="btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                
+                                  
+                                    <div id="barre3" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                    <div id="rideau3" class="btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                
+                                    
+                                    <div id="barre4" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                    <div id="rideau4" class="btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                    
+                                </div>     
+                                </div>
+                            </div>
+                            </div>                             
+                          </div>
+                        </div>
+                      </div>
+                    <!--------------------------------fin Modal------------------------------------------------------------------------> 
+                  </div>
+<!--article 2-->                                                        
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2"  >
                       <a class="thumbnail">
                         <figure>
@@ -219,9 +340,104 @@
                         <p style="text-align: center; margin-bottom: 20px;">Escarpins crème<br>
                         <span style="font-weight: bold">89,99€</span>
                         </p>
+                      </div>      
+                      <!--------------------------début modal 2---------------------------------------------------------------------------->     
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit2" >
+                          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                        </button>
                       </div>
+                      <!---->
+                      <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                <div class="container-fluid ">
+                                  <!--BLOC SLIDER-->
+                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                      </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_creme_1.jpg" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_creme_2.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_creme_3.jpg" alt="Third slide">
+                                      </div>
+                                    </div>
+                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Avant</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Aprés</span>
+                                      </a>
+                                </div>                                   
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                                      <img src="img/femme/chaussures/escarpins/escarpin_creme_3.jpg" alt="Escarpins crème" class="zoom">         
+                                      <img src="img/femme/chaussures/escarpins/escarpin_creme_2.jpg" alt="Escarpins crème" class="zoom">
+                                      <img src="img/femme/chaussures/escarpins/escarpin_creme_1.jpg" alt="Escarpins crème" style="height: 500px;width:300px;" id="premiereImage">
+                                    </div>  
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins crème</strong><br>89,99 €</p></div>         
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <br>
+                                    <hr class="col-6">
+                                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                          ve, 26.07. - ma, 30.07.
+                                    </div> 
+                                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                          1-2 jours ouvrables en commandant avant 15h
+                                    </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+                
+                                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    
+                                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                
+                                  
+                                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                
+                                    
+                                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                
+                                </div>      
+                                </div>
+                            </div>
+                            </div>                             
+                          </div>
+                        </div>
+                      </div>
+                    <!--------------------------------fin Modal 2------------------------------------------------------------------------> 
                   </div>    
-      
+<!--article 3-->        
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                           <a class="thumbnail">
                             <figure>
@@ -239,9 +455,104 @@
                                 <p style="text-align: center; margin-bottom: 20px;">Escarpins noir<br>
                                   <span style="font-weight: bold">89,99€</span>
                                 </p>
+                              </div>      
+                              <!--------------------------début modal 3---------------------------------------------------------------------------->     
+                              <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit3" >
+                                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                                </button>
                               </div>
+                              <!---->
+                              <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                        <div class="container-fluid ">
+                                          <!--BLOC SLIDER-->
+                                        <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                              <ol class="carousel-indicators">
+                                                <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                                <li data-target="#containerSlider" data-slide-to="1"></li>
+                                                <li data-target="#containerSlider" data-slide-to="2"></li>
+                                              </ol>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_noir_1.jpg" alt="First slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_noir_2.jpg" alt="Second slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_noir_3.jpg" alt="Third slide">
+                                              </div>
+                                            </div>
+                                              <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Avant</span>
+                                              </a>
+                                              <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Aprés</span>
+                                              </a>
+                                        </div>                                   
+                                        <!---BLOC PHOTOS MINIATURE-->
+                                        <div id="containerPhotos">
+                                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                            400px;height: 520px">
+                                              <img src="img/femme/chaussures/escarpins/escarpin_noir_3.jpg" class="zoom" alt="Escarpins noir">         
+                                              <img src="img/femme/chaussures/escarpins/escarpin_noir_2.jpg" alt="Escarpins noir" class="zoom">
+                                              <img src="img/femme/chaussures/escarpins/escarpin_noir_1.jpg" alt="Escarpins noir" style="height: 500px;width:300px;" id="premiereImage">
+                                            </div>  
+                                        </div>
+                                        <!--BLOC DESCRIPTION PRODUIT-->
+                                        <div class="container-fluid mt-5">
+                                          <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins noir</strong><br>89,99 €</p></div>         
+                                            <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                            <br>
+                                            <hr class="col-6">
+                                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                              <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                                  ve, 26.07. - ma, 30.07.
+                                            </div> 
+                                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                                  1-2 jours ouvrables en commandant avant 15h
+                                            </div>
+                                        </div>
+                                        <!--BLOC MENU DEROULANT-->
+                                        <div class="containerMenuDeroulant col-12 offset-1">
+                        
+                                            <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                            <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                            
+                                            <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                            <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                        
+                                          
+                                            <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                            <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                        
+                                            
+                                            <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                            <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                        
+                                        </div>      
+                                        </div>
+                                    </div>
+                                    </div>                             
+                                  </div>
+                                </div>
+                              </div>
+                            <!--------------------------------fin Modal 3------------------------------------------------------------------------> 
                   </div>
-      
+<!--article 4-->       
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                           <a class="thumbnail">
                             <figure>
@@ -259,9 +570,104 @@
                               <p style="text-align: center; margin-bottom: 20px;">Escarpins noir déco<br>
                                 <span style="font-weight: bold">99,99€</span>
                               </p>
+                            </div>      
+                            <!--------------------------début modal 4---------------------------------------------------------------------------->     
+                            <div class="d-flex justify-content-center">
+                              <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit4" >
+                                <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                              </button>
                             </div>
+                            <!---->
+                            <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                      <div class="container-fluid ">
+                                        <!--BLOC SLIDER-->
+                                      <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                              <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                              <li data-target="#containerSlider" data-slide-to="1"></li>
+                                              <li data-target="#containerSlider" data-slide-to="2"></li>
+                                            </ol>
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_noir_deco_3.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_noir_deco_2.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_noir_deco_1.jpg" alt="Third slide">
+                                            </div>
+                                          </div>
+                                            <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Avant</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Aprés</span>
+                                            </a>
+                                      </div>                                   
+                                      <!---BLOC PHOTOS MINIATURE-->
+                                      <div id="containerPhotos">
+                                          <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                          400px;height: 520px">
+                                            <img src="img/femme/chaussures/escarpins/escarpin_noir_deco_1.jpg" alt="Escarpins noir déco" class="zoom">         
+                                            <img src="img/femme/chaussures/escarpins/escarpin_noir_deco_2.jpg" alt="Escarpins noir déco" class="zoom">
+                                            <img src="img/femme/chaussures/escarpins/escarpin_noir_deco_3.jpg" alt="Escarpins noir déco" style="height: 500px;width:300px;" id="premiereImage">
+                                          </div>  
+                                      </div>
+                                      <!--BLOC DESCRIPTION PRODUIT-->
+                                      <div class="container-fluid mt-5">
+                                        <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins noir déco</strong><br>99,99 €</p></div>         
+                                          <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                          <br>
+                                          <hr class="col-6">
+                                          <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                            <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                                ve, 26.07. - ma, 30.07.
+                                          </div> 
+                                          <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                            <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                                1-2 jours ouvrables en commandant avant 15h
+                                          </div>
+                                      </div>
+                                      <!--BLOC MENU DEROULANT-->
+                                      <div class="containerMenuDeroulant col-12 offset-1">
+                      
+                                          <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                          <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                          
+                                          <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                          <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                      
+                                        
+                                          <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                          <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                      
+                                          
+                                          <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                          <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                      
+                                      </div>      
+                                      </div>
+                                  </div>
+                                  </div>                             
+                                </div>
+                              </div>
+                            </div>
+                          <!--------------------------------fin Modal 4------------------------------------------------------------------------> 
                   </div>
-      
+<!--article 5-->       
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                           <a class="thumbnail">
                             <figure>
@@ -279,9 +685,104 @@
                             <p style="text-align: center; margin-bottom: 20px;">Escarpins Rose clair<br>
                               <span style="font-weight: bold">139,99€</span>
                             </p>
+                          </div>      
+                          <!--------------------------début modal 5---------------------------------------------------------------------------->     
+                          <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit5" >
+                              <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                            </button>
                           </div>
+                          <!---->
+                          <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                    <div class="container-fluid ">
+                                      <!--BLOC SLIDER-->
+                                    <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                          <ol class="carousel-indicators">
+                                            <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                            <li data-target="#containerSlider" data-slide-to="1"></li>
+                                            <li data-target="#containerSlider" data-slide-to="2"></li>
+                                          </ol>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_rose_clair_1.jpg" alt="First slide">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_rose_clair_2.jpg" alt="Second slide">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_rose_clair_3.jpg" alt="Third slide">
+                                          </div>
+                                        </div>
+                                          <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Avant</span>
+                                          </a>
+                                          <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Aprés</span>
+                                          </a>
+                                    </div>                                   
+                                    <!---BLOC PHOTOS MINIATURE-->
+                                    <div id="containerPhotos">
+                                        <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                        400px;height: 520px">
+                                          <img src="img/femme/chaussures/escarpins/escarpin_rose_clair_3.jpg" alt="Escarpins Rose clair" class="zoom">         
+                                          <img src="img/femme/chaussures/escarpins/escarpin_rose_clair_2.jpg" alt="Escarpins Rose clair" class="zoom">
+                                          <img src="img/femme/chaussures/escarpins/escarpin_rose_clair_1.jpg" alt="Escarpins Rose clair" style="height: 500px;width:300px;" id="premiereImage">
+                                        </div>  
+                                    </div>
+                                    <!--BLOC DESCRIPTION PRODUIT-->
+                                    <div class="container-fluid mt-5">
+                                      <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins Rose clair</strong><br>139,99 €</p></div>         
+                                        <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                        <br>
+                                        <hr class="col-6">
+                                        <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                          <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                              ve, 26.07. - ma, 30.07.
+                                        </div> 
+                                        <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                          <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                              1-2 jours ouvrables en commandant avant 15h
+                                        </div>
+                                    </div>
+                                    <!--BLOC MENU DEROULANT-->
+                                    <div class="containerMenuDeroulant col-12 offset-1">
+                    
+                                        <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                        <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                        
+                                        <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                        <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    
+                                      
+                                        <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                        <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                    
+                                        
+                                        <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                        <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                    
+                                    </div>      
+                                    </div>
+                                </div>
+                                </div>                             
+                              </div>
+                            </div>
+                          </div>
+                        <!--------------------------------fin Modal 5------------------------------------------------------------------------> 
                   </div>
-                          
+<!--article 6-->                          
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                       <a class="thumbnail">
                           <figure>
@@ -299,9 +800,104 @@
                           <p style="text-align: center; margin-bottom: 20px;">Escarpins serpent<br>
                             <span style="font-weight: bold">159,99€</span>
                           </p>
+                        </div>      
+                        <!--------------------------début modal 6---------------------------------------------------------------------------->     
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit6" >
+                            <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                          </button>
                         </div>
+                        <!---->
+                        <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                  <div class="container-fluid ">
+                                    <!--BLOC SLIDER-->
+                                  <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                          <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                          <li data-target="#containerSlider" data-slide-to="1"></li>
+                                          <li data-target="#containerSlider" data-slide-to="2"></li>
+                                        </ol>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_serpent_lacet_1.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_serpent_lacet_2.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_serpent_lacet_3.jpg" alt="Third slide">
+                                        </div>
+                                      </div>
+                                        <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Avant</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Aprés</span>
+                                        </a>
+                                  </div>                                   
+                                  <!---BLOC PHOTOS MINIATURE-->
+                                  <div id="containerPhotos">
+                                      <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                      400px;height: 520px">
+                                        <img src="img/femme/chaussures/escarpins/escarpin_serpent_lacet_3.jpg" alt="Escarpins serpent" class="zoom">         
+                                        <img src="img/femme/chaussures/escarpins/escarpin_serpent_lacet_2.jpg" alt="Escarpins serpent" class="zoom">
+                                        <img src="img/femme/chaussures/escarpins/escarpin_serpent_lacet_1.jpg" alt="Escarpins serpent" style="height: 500px;width:300px;" id="premiereImage">
+                                      </div>  
+                                  </div>
+                                  <!--BLOC DESCRIPTION PRODUIT-->
+                                  <div class="container-fluid mt-5">
+                                    <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins serpent</strong><br>159,99 €</p></div>         
+                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                      <br>
+                                      <hr class="col-6">
+                                      <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                        <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                            ve, 26.07. - ma, 30.07.
+                                      </div> 
+                                      <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                        <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                            1-2 jours ouvrables en commandant avant 15h
+                                      </div>
+                                  </div>
+                                  <!--BLOC MENU DEROULANT-->
+                                  <div class="containerMenuDeroulant col-12 offset-1">
+                  
+                                      <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                      <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                      
+                                      <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                      <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  
+                                    
+                                      <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                      <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                  
+                                      
+                                      <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                      <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                  
+                                  </div>      
+                                  </div>
+                              </div>
+                              </div>                             
+                            </div>
+                          </div>
+                        </div>
+                      <!--------------------------------fin Modal 6------------------------------------------------------------------------> 
                   </div>
-      
+<!--article 7-->       
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                         <a class="thumbnail">
                             <figure>
@@ -319,9 +915,104 @@
                           <p style="text-align: center; margin-bottom: 20px;">Escarpins rose<br>
                             <span style="font-weight: bold">179,99€</span>
                           </p>
+                      </div>        
+                      <!--------------------------début modal 7---------------------------------------------------------------------------->     
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit7" >
+                          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                        </button>
                       </div>
+                      <!---->
+                      <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                <div class="container-fluid ">
+                                  <!--BLOC SLIDER-->
+                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                      </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_rose_jaune-1.jpg" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_rose_jaune-2.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_rose_jaune-3.jpg" alt="Third slide">
+                                      </div>
+                                    </div>
+                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Avant</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Aprés</span>
+                                      </a>
+                                </div>                                   
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                                      <img src="img/femme/chaussures/escarpins/escarpin_rose_jaune-3.jpg" alt="Escarpins rose" class="zoom">         
+                                      <img src="img/femme/chaussures/escarpins/escarpin_rose_jaune-2.jpg" alt="Escarpins rose" class="zoom">
+                                      <img src="img/femme/chaussures/escarpins/escarpin_rose_jaune-1.jpg" alt="Escarpins rose" style="height: 500px;width:300px;" id="premiereImage">
+                                    </div>  
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins rose</strong><br>179,99 €</p></div>         
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <br>
+                                    <hr class="col-6">
+                                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                          ve, 26.07. - ma, 30.07.
+                                    </div> 
+                                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                          1-2 jours ouvrables en commandant avant 15h
+                                    </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+              
+                                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    
+                                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+              
+                                  
+                                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+              
+                                    
+                                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+              
+                                </div>      
+                                </div>
+                            </div>
+                            </div>                             
+                          </div>
+                        </div>
+                      </div>
+                    <!--------------------------------fin Modal 7------------------------------------------------------------------------> 
                   </div>
-      
+<!--article 8-->       
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                         <a class="thumbnail">
                           <figure>
@@ -339,9 +1030,104 @@
                           <p style="text-align: center; margin-bottom: 20px;">Escarpins rouge<br>
                             <span style="font-weight: bold">119,99€</span>
                           </p>
+                        </div>     
+                         <!--------------------------début modal 8---------------------------------------------------------------------------->     
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit8" >
+                            <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                          </button>
                         </div>
+                        <!---->
+                        <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                  <div class="container-fluid ">
+                                    <!--BLOC SLIDER-->
+                                  <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                          <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                          <li data-target="#containerSlider" data-slide-to="1"></li>
+                                          <li data-target="#containerSlider" data-slide-to="2"></li>
+                                        </ol>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_rouge_lacet_1.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_rouge_lacet_2.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_rouge_lacet_3.jpg" alt="Third slide">
+                                        </div>
+                                      </div>
+                                        <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Avant</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Aprés</span>
+                                        </a>
+                                  </div>                                   
+                                  <!---BLOC PHOTOS MINIATURE-->
+                                  <div id="containerPhotos">
+                                      <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                      400px;height: 520px">
+                                        <img src="img/femme/chaussures/escarpins/escarpin_rouge_lacet_3.jpg" alt="Escarpins rouge" class="zoom">         
+                                        <img src="img/femme/chaussures/escarpins/escarpin_rouge_lacet_2.jpg" alt="Escarpins rouge" class="zoom">
+                                        <img src="img/femme/chaussures/escarpins/escarpin_rouge_lacet_1.jpg" alt="Escarpins rouge" style="height: 500px;width:300px;" id="premiereImage">
+                                      </div>  
+                                  </div>
+                                  <!--BLOC DESCRIPTION PRODUIT-->
+                                  <div class="container-fluid mt-5">
+                                    <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins rouge</strong><br>119,99 €</p></div>         
+                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                      <br>
+                                      <hr class="col-6">
+                                      <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                        <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                            ve, 26.07. - ma, 30.07.
+                                      </div> 
+                                      <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                        <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                            1-2 jours ouvrables en commandant avant 15h
+                                      </div>
+                                  </div>
+                                  <!--BLOC MENU DEROULANT-->
+                                  <div class="containerMenuDeroulant col-12 offset-1">
+                  
+                                      <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                      <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                      
+                                      <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                      <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  
+                                    
+                                      <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                      <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                  
+                                      
+                                      <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                      <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                  
+                                  </div>      
+                                  </div>
+                              </div>
+                              </div>                             
+                            </div>
+                          </div>
+                        </div>
+                      <!--------------------------------fin Modal 8------------------------------------------------------------------------> 
                   </div>
-                                                                  
+<!--article 9-->                                                                   
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 mb-5 m-2">
                     <a class="thumbnail">
                       <figure>
@@ -359,10 +1145,104 @@
                       <p style="text-align: center; margin-bottom: 20px;">Escarpins violet métal<br>
                       <span style="font-weight: bold">189,99€</span>
                     </p>
+                    </div>      
+                    <!--------------------------début modal 9---------------------------------------------------------------------------->     
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit9" >
+                        <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                      </button>
                     </div>
+                    <!---->
+                    <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                              <div class="container-fluid ">
+                                <!--BLOC SLIDER-->
+                              <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                      <li data-target="#containerSlider" data-slide-to="1"></li>
+                                      <li data-target="#containerSlider" data-slide-to="2"></li>
+                                    </ol>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-flex " src="img/femme/chaussures/escarpins/escarpin_violet_metal_1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_violet_metal_2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img/femme/chaussures/escarpins/escarpin_violet_metal_3.jpg" alt="Third slide">
+                                    </div>
+                                  </div>
+                                    <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Avant</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Aprés</span>
+                                    </a>
+                              </div>                                   
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                  <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                  400px;height: 520px">
+                                    <img src="img/femme/chaussures/escarpins/escarpin_violet_metal_3.jpg" alt="Escarpins violet métal" class="zoom">         
+                                    <img src="img/femme/chaussures/escarpins/escarpin_violet_metal_2.jpg" alt="Escarpins violet métal" class="zoom">
+                                    <img src="img/femme/chaussures/escarpins/escarpin_violet_metal_1.jpg" alt="Escarpins violet métal" style="height: 500px;width:300px;" id="premiereImage">
+                                  </div>  
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1"><p class="text-center "><strong>Escarpins violet métal</strong><br>189,99 €</p></div>         
+                                  <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                  <br>
+                                  <hr class="col-6">
+                                  <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                    <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                        ve, 26.07. - ma, 30.07.
+                                  </div> 
+                                  <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                    <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                        1-2 jours ouvrables en commandant avant 15h
+                                  </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+              
+                                  <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                  <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                  
+                                  <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                  <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+              
+                                
+                                  <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                  <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+              
+                                  
+                                  <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                  <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+              
+                              </div>      
+                              </div>
+                          </div>
+                          </div>                             
+                        </div>
+                      </div>
+                    </div>
+                  <!--------------------------------fin Modal 9------------------------------------------------------------------------> 
                   </div>
-
-                    
+<!-- fin article -->   
                 </div>
             </div>
             

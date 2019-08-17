@@ -14,6 +14,33 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Le Petit Commerce, Tee-shirt Polos</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+   $('#barre').click(function(){
+         
+         $('#rideau').slideToggle(500);
+      });
+
+     $('#barre2').click(function(){
+         
+         $('#rideau2').slideToggle(500);
+      });
+  
+     $('#barre3').click(function(){
+         
+         $('#rideau3').slideToggle(500);
+      });
+    
+     $('#barre4').click(function(){
+         
+         $('#rideau4').slideToggle(500);
+      });
+
+     });
+   </script>
 </head>
 <body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
@@ -180,8 +207,8 @@
 
             <div class="container-fluid d-flex flex-column">                
                 <div class="row d-flex justify-content-center">
-                  
-                    <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+   <!--produit 1-->              
+                  <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                       <a class="thumbnail">
                         <figure>
                           <img class="img-thumbnail"  src="img\femme\vetements\tshirt-top/top_bretelle_noir_satin_face.jpg" alt="Top bretelle noir">
@@ -195,13 +222,107 @@
                         </figure>
                       </a>
                       <div class="d-lg-none mr-0">
-                        <p style="text-align: center; margin-bottom: 20px;">Top bretelle noir<br>
+                        <p style="text-align: center; margin-bottom: 20px;">Top noir à bretelles<br>
                           <span style="font-weight: bold">69,99€</span>
                         </p>
+                      </div>      
+                      <!--------------------------début modal 1---------------------------------------------------------------------------->
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit1" >
+                          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                        </button>
                       </div>
-                  </div>
+                      <!---->
+                      <div class="modal fade" id="produit1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                <div class="container-fluid ">
+                                  <!--BLOC SLIDER-->
+                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                      </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-flex " src="img/femme/vetements/tshirt-top/top_bretelle_noir_satin_face.jpg" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/top_bretelle_noir_satin_arriere.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/top_bretelle_noir_satin.jpg" alt="Third slide">
+                                      </div>
+                                    </div>
+                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Avant</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Aprés</span>
+                                      </a>
+                                </div>                                   
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                                      <img src="img/femme/vetements/tshirt-top/top_bretelle_noir_satin.jpg" alt="Top bretelle noir" class="zoom">         
+                                      <img src="img/femme/vetements/tshirt-top/top_bretelle_noir_satin_arriere.jpg" alt="Top bretelle noir" class="zoom">
+                                      <img src="img/femme/vetements/tshirt-top/top_bretelle_noir_satin_face.jpg" alt="Top bretelle noir" style="height: 500px;width:300px;" id="premiereImage">
+                                    </div>  
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1"><p class="text-center "><strong>Top bretelle noir</strong><br>69,99 €</p></div>         
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <br>
+                                    <hr class="col-6">
+                                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                          ve, 26.07. - ma, 30.07.
+                                    </div> 
+                                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                          1-2 jours ouvrables en commandant avant 15h
+                                    </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
                 
-                                          
+                                    <div id="barre" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                    <div id="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    
+                                    <div id="barre2" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                    <div id="rideau2" class="btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                
+                                  
+                                    <div id="barre3" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                    <div id="rideau3" class="btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                
+                                    
+                                    <div id="barre4" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                    <div id="rideau4" class="btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                    
+                                </div>     
+                                </div>
+                            </div>
+                            </div>                             
+                          </div>
+                        </div>
+                      </div>
+                    <!--------------------------------fin Modal------------------------------------------------------------------------>                      
+                  </div>
+    <!--produit 2-->                                     
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                       <a class="thumbnail">
                         <figure>
@@ -219,9 +340,104 @@
                         <p style="text-align: center; margin-bottom: 20px;">T-shirt rouge<br>
                         <span style="font-weight: bold">59,99€</span>
                         </p>
+                      </div>     
+                      <!--------------------------début modal 2---------------------------------------------------------------------------->     
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit2" >
+                          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                        </button>
                       </div>
+                      <!---->
+                      <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                <div class="container-fluid ">
+                                  <!--BLOC SLIDER-->
+                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                      </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_rouge_face.jpg" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rouge_arriere.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rouge.jpg.jpg" alt="Third slide">
+                                      </div>
+                                    </div>
+                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Avant</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Aprés</span>
+                                      </a>
+                                </div>                                   
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                                      <img src="img/femme/vetements/tshirt-top/teeshirt_rouge_face.jpg" alt="T-shirt rouge" class="zoom">         
+                                      <img src="img/femme/vetements/tshirt-top/teeshirt_rouge_arriere.jpg" alt="T-shirt rouge" class="zoom">
+                                      <img src="img/femme/vetements/tshirt-top/teeshirt_rouge.jpg" alt="T-shirt rouge" style="height: 500px;width:300px;" id="premiereImage">
+                                    </div>  
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt rouge</strong><br>59,99 €</p></div>         
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <br>
+                                    <hr class="col-6">
+                                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                          ve, 26.07. - ma, 30.07.
+                                    </div> 
+                                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                          1-2 jours ouvrables en commandant avant 15h
+                                    </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+                
+                                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    
+                                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                
+                                  
+                                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                
+                                    
+                                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                
+                                </div>      
+                                </div>
+                            </div>
+                            </div>                             
+                          </div>
+                        </div>
+                      </div>
+                    <!--------------------------------fin Modal 2------------------------------------------------------------------------>
                   </div>    
-      
+    <!--produit 3-->    
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                           <a class="thumbnail">
                             <figure>
@@ -239,9 +455,103 @@
                                 <p style="text-align: center; margin-bottom: 20px;">T-shirt jaune fluo<br>
                                   <span style="font-weight: bold">49,99€</span>
                                 </p>
+                              </div>      <!--------------------------début modal 3---------------------------------------------------------------------------->     
+                              <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit3" >
+                                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                                </button>
                               </div>
+                              <!---->
+                              <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                        <div class="container-fluid ">
+                                          <!--BLOC SLIDER-->
+                                        <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                              <ol class="carousel-indicators">
+                                                <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                                <li data-target="#containerSlider" data-slide-to="1"></li>
+                                                <li data-target="#containerSlider" data-slide-to="2"></li>
+                                              </ol>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_jaunefluo_face.jpg" alt="First slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_jaunefluo_arriere.jpg" alt="Second slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_jaunefluo.jpg" alt="Third slide">
+                                              </div>
+                                            </div>
+                                              <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Avant</span>
+                                              </a>
+                                              <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Aprés</span>
+                                              </a>
+                                        </div>                                   
+                                        <!---BLOC PHOTOS MINIATURE-->
+                                        <div id="containerPhotos">
+                                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                            400px;height: 520px">
+                                              <img src="img/femme/vetements/tshirt-top/teeshirt_jaunefluo.jpg" alt="T-shirt jaune fluo" class="zoom">         
+                                              <img src="img/femme/vetements/tshirt-top/teeshirt_jaunefluo_arriere.jpg" alt="T-shirt jaune fluo" class="zoom">
+                                              <img src="img/femme/vetements/tshirt-top/teeshirt_jaunefluo_face.jpg" alt="T-shirt jaune fluo" style="height: 500px;width:300px;" id="premiereImage">
+                                            </div>  
+                                        </div>
+                                        <!--BLOC DESCRIPTION PRODUIT-->
+                                        <div class="container-fluid mt-5">
+                                          <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt jaune fluo</strong><br>49,99 €</p></div>         
+                                            <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                            <br>
+                                            <hr class="col-6">
+                                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                              <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                                  ve, 26.07. - ma, 30.07.
+                                            </div> 
+                                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                                  1-2 jours ouvrables en commandant avant 15h
+                                            </div>
+                                        </div>
+                                        <!--BLOC MENU DEROULANT-->
+                                        <div class="containerMenuDeroulant col-12 offset-1">
+                        
+                                            <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                            <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                            
+                                            <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                            <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                        
+                                          
+                                            <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                            <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                        
+                                            
+                                            <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                            <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                        
+                                        </div>      
+                                        </div>
+                                    </div>
+                                    </div>                             
+                                  </div>
+                                </div>
+                              </div>
+                            <!--------------------------------fin Modal 3------------------------------------------------------------------------> 
                   </div>
-      
+    <!--produit 4-->   
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                           <a class="thumbnail">
                             <figure>
@@ -259,9 +569,103 @@
                               <p style="text-align: center; margin-bottom: 20px;">T-shirt bleu<br>
                                 <span style="font-weight: bold">59,99€</span>
                               </p>
+                            </div>  <!--------------------------début modal 4---------------------------------------------------------------------------->     
+                            <div class="d-flex justify-content-center">
+                              <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit4" >
+                                <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                              </button>
                             </div>
+                            <!---->
+                            <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                      <div class="container-fluid ">
+                                        <!--BLOC SLIDER-->
+                                      <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                              <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                              <li data-target="#containerSlider" data-slide-to="1"></li>
+                                              <li data-target="#containerSlider" data-slide-to="2"></li>
+                                            </ol>
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_bleu_volant.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_bleu_volant_arriere.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_bleu_volant_face.jpg" alt="Third slide">
+                                            </div>
+                                          </div>
+                                            <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Avant</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Aprés</span>
+                                            </a>
+                                      </div>                                   
+                                      <!---BLOC PHOTOS MINIATURE-->
+                                      <div id="containerPhotos">
+                                          <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                          400px;height: 520px">
+                                            <img src="img/femme/vetements/tshirt-top/teeshirt_bleu_volant.jpg" alt="T-shirt bleu" class="zoom">         
+                                            <img src="img/femme/vetements/tshirt-top/teeshirt_bleu_volant_arriere.jpg" alt="T-shirt bleu" class="zoom">
+                                            <img src="img/femme/vetements/tshirt-top/teeshirt_bleu_volant_face.jpg" alt="T-shirt bleu" style="height: 500px;width:300px;" id="premiereImage">
+                                          </div>  
+                                      </div>
+                                      <!--BLOC DESCRIPTION PRODUIT-->
+                                      <div class="container-fluid mt-5">
+                                        <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt bleu</strong><br>59,99 €</p></div>         
+                                          <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                          <br>
+                                          <hr class="col-6">
+                                          <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                            <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                                ve, 26.07. - ma, 30.07.
+                                          </div> 
+                                          <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                            <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                                1-2 jours ouvrables en commandant avant 15h
+                                          </div>
+                                      </div>
+                                      <!--BLOC MENU DEROULANT-->
+                                      <div class="containerMenuDeroulant col-12 offset-1">
+                      
+                                          <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                          <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                          
+                                          <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                          <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                      
+                                        
+                                          <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                          <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                      
+                                          
+                                          <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                          <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                      
+                                      </div>      
+                                      </div>
+                                  </div>
+                                  </div>                             
+                                </div>
+                              </div>
+                            </div>
+                          <!--------------------------------fin Modal 4------------------------------------------------------------------------> 
                   </div>
-      
+    <!--produit 5-->     
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                           <a class="thumbnail">
                             <figure>
@@ -280,8 +684,103 @@
                               <span style="font-weight: bold">79,99€</span>
                             </p>
                           </div>
+                             <!--------------------------début modal 5---------------------------------------------------------------------------->     
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit5" >
+          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+        </button>
+      </div>
+      <!---->
+      <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                <div class="container-fluid ">
+                  <!--BLOC SLIDER-->
+                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_kaki_face.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_kaki_arriere.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_kaki.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Avant</span>
+                      </a>
+                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Aprés</span>
+                      </a>
+                </div>                                   
+                <!---BLOC PHOTOS MINIATURE-->
+                <div id="containerPhotos">
+                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                    400px;height: 520px">
+                      <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_kaki.jpg" alt="T-shirt kaki long" class="zoom">  
+                      <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_kaki_arriere.jpg" alt="T-shirt kaki long" class="zoom">
+                      <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_kaki_face.jpg" alt="T-shirt kaki long" style="height: 500px;width:300px;" id="premiereImage">
+                    </div>  
+                </div>
+                <!--BLOC DESCRIPTION PRODUIT-->
+                <div class="container-fluid mt-5">
+                  <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt kaki long</strong><br>79,99 €</p></div>         
+                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                    <br>
+                    <hr class="col-6">
+                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                          ve, 26.07. - ma, 30.07.
+                    </div> 
+                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                          1-2 jours ouvrables en commandant avant 15h
+                    </div>
+                </div>
+                <!--BLOC MENU DEROULANT-->
+                <div class="containerMenuDeroulant col-12 offset-1">
+
+                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    
+                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                  
+                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+                    
+                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+
+                </div>      
+                </div>
+            </div>
+            </div>                             
+          </div>
+        </div>
+      </div>
+    <!--------------------------------fin Modal 5------------------------------------------------------------------------> 
                   </div>
-                          
+    <!--produit 6-->                        
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                       <a class="thumbnail">
                           <figure>
@@ -299,9 +798,104 @@
                           <p style="text-align: center; margin-bottom: 20px;">T-shirt bleu marine<br>
                             <span style="font-weight: bold">49,99€</span>
                           </p>
+                        </div>    
+                        <!--------------------------début modal 6---------------------------------------------------------------------------->     
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit6" >
+                            <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                          </button>
                         </div>
+                        <!---->
+                        <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                  <div class="container-fluid ">
+                                    <!--BLOC SLIDER-->
+                                  <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                          <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                          <li data-target="#containerSlider" data-slide-to="1"></li>
+                                          <li data-target="#containerSlider" data-slide-to="2"></li>
+                                        </ol>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_bleumarine_face.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_bleumarine_arriere.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_bleumarine.jpg" alt="Third slide">
+                                        </div>
+                                      </div>
+                                        <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Avant</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Aprés</span>
+                                        </a>
+                                  </div>                                   
+                                  <!---BLOC PHOTOS MINIATURE-->
+                                  <div id="containerPhotos">
+                                      <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                      400px;height: 520px">
+                                        <img src="img/femme/vetements/tshirt-top/teeshirt_bleumarine.jpg" alt="T-shirt bleu marine" class="zoom">         
+                                        <img src="img/femme/vetements/tshirt-top/teeshirt_bleumarine_arriere.jpg" alt="T-shirt bleu marine" class="zoom">
+                                        <img src="img/femme/vetements/tshirt-top/teeshirt_bleumarine_face.jpg" alt="T-shirt bleu marine" style="height: 500px;width:300px;" id="premiereImage">
+                                      </div>  
+                                  </div>
+                                  <!--BLOC DESCRIPTION PRODUIT-->
+                                  <div class="container-fluid mt-5">
+                                    <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt bleu marine</strong><br>49,99 €</p></div>         
+                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                      <br>
+                                      <hr class="col-6">
+                                      <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                        <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                            ve, 26.07. - ma, 30.07.
+                                      </div> 
+                                      <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                        <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                            1-2 jours ouvrables en commandant avant 15h
+                                      </div>
+                                  </div>
+                                  <!--BLOC MENU DEROULANT-->
+                                  <div class="containerMenuDeroulant col-12 offset-1">
+                  
+                                      <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                      <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                      
+                                      <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                      <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  
+                                    
+                                      <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                      <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                  
+                                      
+                                      <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                      <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                  
+                                  </div>      
+                                  </div>
+                              </div>
+                              </div>                             
+                            </div>
+                          </div>
+                        </div>
+                      <!--------------------------------fin Modal 6------------------------------------------------------------------------> 
                   </div>
-      
+    <!--produit 7-->   
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                         <a class="thumbnail">
                             <figure>
@@ -319,9 +913,103 @@
                           <p style="text-align: center; margin-bottom: 20px;">T-shirt rose<br>
                             <span style="font-weight: bold">59,99€</span>
                           </p>
+                      </div>        <!--------------------------début modal 7---------------------------------------------------------------------------->     
+                      <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit7" >
+                          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                        </button>
                       </div>
+                      <!---->
+                      <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                <div class="container-fluid ">
+                                  <!--BLOC SLIDER-->
+                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                      </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_rose_face.jpg" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rose_arriere.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rose.jpg" alt="Third slide">
+                                      </div>
+                                    </div>
+                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Avant</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Aprés</span>
+                                      </a>
+                                </div>                                   
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                                      <img src="img/femme/vetements/tshirt-top/teeshirt_rose.jpg" alt="T-shirt rose" class="zoom">         
+                                      <img src="img/femme/vetements/tshirt-top/teeshirt_rose_arriere.jpg" alt="T-shirt rose" class="zoom">
+                                      <img src="img/femme/vetements/tshirt-top/teeshirt_rose_face.jpg" alt="T-shirt rose" style="height: 500px;width:300px;" id="premiereImage">
+                                    </div>  
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt rose</strong><br>59,99 €</p></div>         
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <br>
+                                    <hr class="col-6">
+                                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                          ve, 26.07. - ma, 30.07.
+                                    </div> 
+                                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                          1-2 jours ouvrables en commandant avant 15h
+                                    </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+              
+                                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    
+                                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+              
+                                  
+                                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+              
+                                    
+                                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+              
+                                </div>      
+                                </div>
+                            </div>
+                            </div>                             
+                          </div>
+                        </div>
+                      </div>
+                    <!--------------------------------fin Modal 7------------------------------------------------------------------------> 
                   </div>
-      
+    <!--produit 8-->    
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                         <a class="thumbnail">
                           <figure>
@@ -339,9 +1027,104 @@
                           <p style="text-align: center; margin-bottom: 20px;">T-shirt long marron<br>
                             <span style="font-weight: bold">79,99€</span>
                           </p>
+                        </div>      <!--------------------------début modal 8---------------------------------------------------------------------------->     
+                        <div class="d-flex justify-content-center">
+                          <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit8" >
+                            <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                          </button>
                         </div>
+                        <!---->
+                        <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                  <div class="container-fluid ">
+                                    <!--BLOC SLIDER-->
+                                  <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                          <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                          <li data-target="#containerSlider" data-slide-to="1"></li>
+                                          <li data-target="#containerSlider" data-slide-to="2"></li>
+                                        </ol>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_marron_face.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_marron_arriere.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_marron.jpg" alt="Third slide">
+                                        </div>
+                                      </div>
+                                        <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Avant</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Aprés</span>
+                                        </a>
+                                  </div>                                   
+                                  <!---BLOC PHOTOS MINIATURE-->
+                                  <div id="containerPhotos">
+                                      <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                      400px;height: 520px">
+                                        <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_marron.jpg" alt="T-shirt long marron" class="zoom">         
+                                        <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_marron_arriere.jpg" alt="T-shirt long marron" class="zoom">
+                                        <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_marron_face.jpg" alt="T-shirt long marron" style="height: 500px;width:300px;" id="premiereImage">
+                                      </div>  
+                                  </div>
+                                  <!--BLOC DESCRIPTION PRODUIT-->
+                                  <div class="container-fluid mt-5">
+                                    <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt long marron</strong><br>79,99 €</p></div>         
+                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                      <br>
+                                      <hr class="col-6">
+                                      <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                        <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                            ve, 26.07. - ma, 30.07.
+                                      </div> 
+                                      <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                        <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                            1-2 jours ouvrables en commandant avant 15h
+                                      </div>
+                                  </div>
+                                  <!--BLOC MENU DEROULANT-->
+                                  <div class="containerMenuDeroulant col-12 offset-1">
+                  
+                                      <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                      <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                      
+                                      <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                      <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  
+                                    
+                                      <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                      <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                  
+                                      
+                                      <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                      <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                  
+                                  </div>      
+                                  </div>
+                              </div>
+                              </div>                             
+                            </div>
+                          </div>
+                        </div>
+                      <!--------------------------------fin Modal 8------------------------------------------------------------------------> 
+                        
                   </div>
-                                                                  
+    <!--produit 9-->                                                               
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                     <a class="thumbnail">
                       <figure>
@@ -359,9 +1142,104 @@
                       <p style="text-align: center; margin-bottom: 20px;">T-shirt long noir<br>
                       <span style="font-weight: bold">89,99€</span>
                     </p>
+                    </div>     
+                    <!--------------------------début modal 9---------------------------------------------------------------------------->     
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit9" >
+                        <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                      </button>
                     </div>
+                    <!---->
+                    <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                              <div class="container-fluid ">
+                                <!--BLOC SLIDER-->
+                              <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                      <li data-target="#containerSlider" data-slide-to="1"></li>
+                                      <li data-target="#containerSlider" data-slide-to="2"></li>
+                                    </ol>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_noir_face.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_noir_arriere.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_noir.jpg" alt="Third slide">
+                                    </div>
+                                  </div>
+                                    <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Avant</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Aprés</span>
+                                    </a>
+                              </div>                                   
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                  <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                  400px;height: 520px">
+                                    <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_noir.jpg" alt="veste_cuir_noir" class="zoom">         
+                                    <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_noir_arriere.jpg" alt="veste_cuir_noir" class="zoom">
+                                    <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_noir_face.jpg" alt="veste_cuir_noir" style="height: 500px;width:300px;" id="premiereImage">
+                                  </div>  
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt long noir</strong><br>89,99 €</p></div>         
+                                  <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                  <br>
+                                  <hr class="col-6">
+                                  <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                    <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                        ve, 26.07. - ma, 30.07.
+                                  </div> 
+                                  <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                    <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                        1-2 jours ouvrables en commandant avant 15h
+                                  </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+              
+                                  <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                  <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                  
+                                  <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                  <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+              
+                                
+                                  <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                  <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+              
+                                  
+                                  <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                  <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+              
+                              </div>      
+                              </div>
+                          </div>
+                          </div>                             
+                        </div>
+                      </div>
+                    </div>
+                  <!--------------------------------fin Modal 9------------------------------------------------------------------------> 
                   </div>
-      
+    <!--produit 10-->  
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                       <a class="thumbnail">
                         <figure>
@@ -377,11 +1255,106 @@
                       </a>
                       <div class="d-lg-none mr-0">
                         <p style="text-align: center; margin-bottom: 20px;">T-shirt orange<br>
-                          <span style="font-weight: bold">49,99€</span>
-                        </p>
-                      </div>
+                        <span style="font-weight: bold">49,99</span>
+                      </p>
+                      </div>  
+                 <!--------------------------début modal 10---------------------------------------------------------------------------->     
+                          <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit10" >
+                              <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                            </button>
+                          </div>
+                          <!---->
+                          <div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                    <div class="container-fluid ">
+                                      <!--BLOC SLIDER-->
+                                    <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                          <ol class="carousel-indicators">
+                                            <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                            <li data-target="#containerSlider" data-slide-to="1"></li>
+                                            <li data-target="#containerSlider" data-slide-to="2"></li>
+                                          </ol>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_orange_face.jpg" alt="First slide">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_orange_arriere.jpg" alt="Second slide">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_orange.jpg" alt="Third slide">
+                                          </div>
+                                        </div>
+                                          <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Avant</span>
+                                          </a>
+                                          <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Aprés</span>
+                                          </a>
+                                    </div>                                   
+                                    <!---BLOC PHOTOS MINIATURE-->
+                                    <div id="containerPhotos">
+                                        <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                        400px;height: 520px">
+                                          <img src="img/femme/vetements/tshirt-top/teeshirt_orange.jpg" alt="T-shirt orange" class="zoom">         
+                                          <img src="img/femme/vetements/tshirt-top/teeshirt_orange_arriere.jpg" alt="T-shirt orange" class="zoom">
+                                          <img src="img/femme/vetements/tshirt-top/teeshirt_orange_face.jpg" alt="T-shirt orange" style="height: 500px;width:300px;" id="premiereImage">
+                                        </div>  
+                                    </div>
+                                    <!--BLOC DESCRIPTION PRODUIT-->
+                                    <div class="container-fluid mt-5">
+                                      <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt orange</strong><br>49,99 €</p></div>         
+                                        <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                        <br>
+                                        <hr class="col-6">
+                                        <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                          <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                              ve, 26.07. - ma, 30.07.
+                                        </div> 
+                                        <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                          <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                              1-2 jours ouvrables en commandant avant 15h
+                                        </div>
+                                    </div>
+                                    <!--BLOC MENU DEROULANT-->
+                                    <div class="containerMenuDeroulant col-12 offset-1">
+                    
+                                        <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                        <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                        
+                                        <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                        <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    
+                                      
+                                        <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                        <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                    
+                                        
+                                        <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                        <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                    
+                                    </div>      
+                                    </div>
+                                </div>
+                                </div>                             
+                              </div>
+                            </div>
+                          </div>
+                        <!--------------------------------fin Modal 10------------------------------------------------------------------------>
                   </div>
-      
+    <!--produit 11-->  
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                         <a class="thumbnail">
                           <figure>
@@ -399,9 +1372,104 @@
                           <p style="text-align: center; margin-bottom: 20px;">Top rouge<br>
                             <span style="font-weight: bold">39,90€</span>
                           </p>
-                        </div>
+                        </div>    
+                        <!--------------------------début modal 11---------------------------------------------------------------------------->     
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit11" >
+          <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+        </button>
+      </div>
+      <!---->
+      <div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                <div class="container-fluid ">
+                  <!--BLOC SLIDER-->
+                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#containerSlider" data-slide-to="1"></li>
+                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-flex " src="img/femme/vetements/tshirt-top/top_rouge_volantface.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-flex" src="img/femme/vetements/tshirt-top/top_rouge_volant_arriere.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-flex" src="img/femme/vetements/tshirt-top/top_rouge_volant_longue.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Avant</span>
+                      </a>
+                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Aprés</span>
+                      </a>
+                </div>                                   
+                <!---BLOC PHOTOS MINIATURE-->
+                <div id="containerPhotos">
+                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                    400px;height: 520px">
+                      <img src="img/femme/vetements/tshirt-top/top_rouge_volant.jpg" alt="Top rouge" class="zoom">         
+                      <img src="img/femme/vetements/tshirt-top/top_rouge_volant_arriere.jpg" alt="Top rouge" class="zoom">
+                      <img src="img/femme/vetements/tshirt-top/top_rouge_volant_face.jpg" alt="Top rouge" style="height: 500px;width:300px;" id="premiereImage">
+                    </div>  
+                </div>
+                <!--BLOC DESCRIPTION PRODUIT-->
+                <div class="container-fluid mt-5">
+                  <div class="col-12 offset-1"><p class="text-center "><strong>Top rouge</strong><br>39,99 €</p></div>         
+                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                    <br>
+                    <hr class="col-6">
+                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                          ve, 26.07. - ma, 30.07.
+                    </div> 
+                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                          1-2 jours ouvrables en commandant avant 15h
+                    </div>
+                </div>
+                <!--BLOC MENU DEROULANT-->
+                <div class="containerMenuDeroulant col-12 offset-1">
+
+                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    
+                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                  
+                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+                    
+                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+
+                </div>      
+                </div>
+            </div>
+            </div>                             
+          </div>
+        </div>
+      </div>
+    <!--------------------------------fin Modal 11------------------------------------------------------------------------>  
                   </div>
-      
+    <!--produit 12-->  
                   <div class="col-10 col-sm-6 col-md-5 col-lg-3 mb-5 m-2">
                           <a class="thumbnail">
                             <figure>
@@ -420,12 +1488,103 @@
                               <span style="font-weight: bold">59,99€</span>
                             </p>
                           </div>
-                  </div>
-      
-                                                    
-                
-          
+                                 <!--------------------------début modal 12---------------------------------------------------------------------------->     
+                          <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit12" >
+                              <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                            </button>
+                          </div>
+                          <!---->
+                          <div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title descriptionFicheProduit" >Fiche produit</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                    <div class="container-fluid ">
+                                      <!--BLOC SLIDER-->
+                                    <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                          <ol class="carousel-indicators">
+                                            <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
+                                            <li data-target="#containerSlider" data-slide-to="1"></li>
+                                            <li data-target="#containerSlider" data-slide-to="2"></li>
+                                          </ol>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img class="d-flex " src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_bleu.jpg" alt="First slide">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_bleu_arriere.jpg" alt="Second slide">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_bleu.jpg" alt="Third slide">
+                                          </div>
+                                        </div>
+                                          <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Avant</span>
+                                          </a>
+                                          <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Aprés</span>
+                                          </a>
+                                    </div>                                   
+                                    <!---BLOC PHOTOS MINIATURE-->
+                                    <div id="containerPhotos">
+                                        <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                        400px;height: 520px">
+                                          <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_bleu.jpg" alt="T-shirt manche longue bleu" class="zoom">         
+                                          <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_bleu_arriere.jpg" alt="T-shirt manche longue bleu" class="zoom">
+                                          <img src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_bleu_face.jpg" alt="T-shirt manche longue bleu" style="height: 500px;width:300px;" id="premiereImage">
+                                        </div>  
+                                    </div>
+                                    <!--BLOC DESCRIPTION PRODUIT-->
+                                    <div class="container-fluid mt-5">
+                                      <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt manche longue bleu</strong><br>59,99 €</p></div>         
+                                        <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                        <br>
+                                        <hr class="col-6">
+                                        <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                          <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                              ve, 26.07. - ma, 30.07.
+                                        </div> 
+                                        <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                          <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                              1-2 jours ouvrables en commandant avant 15h
+                                        </div>
+                                    </div>
+                                    <!--BLOC MENU DEROULANT-->
+                                    <div class="containerMenuDeroulant col-12 offset-1">
                     
+                                        <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
+                                        <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                        
+                                        <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
+                                        <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                    
+                                      
+                                        <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
+                                        <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
+                    
+                                        
+                                        <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
+                                        <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                    
+                                    </div>      
+                                    </div>
+                                </div>
+                                </div>                             
+                              </div>
+                            </div>
+                          </div>
+                        <!--------------------------------fin Modal 12------------------------------------------------------------------------>  
+                  </div>
+ <!--fin produit-->  
                 </div>
             </div>
             
