@@ -161,7 +161,8 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
   }
-
+/****************************************************Liens plan du site******************************************************************/
+  .conteneurLiens div a {text-decoration: none;color: black;}
   
   /*------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------BLOCK PHOTO MINIATURES-------------------------------------------------------------*/
@@ -174,7 +175,7 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 		border: 5px solid #eee;
 		box-shadow: 14px 22px 15px -6px rgba(0,0,0,0.75);}
 	
-		#containerPhotos{display: none;}
+#containerPhotos{display: none;}
 
 
 /* Small devices (landscape phones, 576px and up)*/
