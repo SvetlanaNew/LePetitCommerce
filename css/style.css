@@ -138,6 +138,8 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 	margin-bottom: 20px;}
   
   .containerdescription{text-align: center;}
+
+ 
   
   
   /*Changement couleur des flèches du slider*/
@@ -169,13 +171,16 @@ input .civilite {box-shadow: 5px 5px 5px white;}
   /*------------------------------------------------------------------------------------------------------------------------------------*/
    
   
-  #containerPhotos div img{width: 70px;
-	
-	margin: 20px;
-		border: 5px solid #eee;
-		box-shadow: 14px 22px 15px -6px rgba(0,0,0,0.75);}
-	
+  #containerPhotos div img{width: 70px;margin: 20px;border: 5px solid #eee;box-shadow: 14px 22px 15px -6px rgba(0,0,0,0.75);}
 #containerPhotos{display: none;}
+
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------BLOCK PHOTO PRODUIT-------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------*/
+
+  .img-thumbnail{border: 5px solid black;}
+  .ligneCategories a {color: black;}
+  .ligneCategories{color: #929090;font-size:2vh;text-align:justify;font-family: 'Gentium Book Basic', serif;}
 
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -210,10 +215,3 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 @media screen and (min-width: 1200px) {  }
 
 
-  /*------------------------------------------------------------------------------------------------------------------------------------*/
-  /*-------------------------------------------------BLOCK PHOTO PRODUIT-------------------------------------------------------------*/
-  /*------------------------------------------------------------------------------------------------------------------------------------*/
-
-  .img-thumbnail{border: 5px solid black;}
-  .ligneCategories a {color: black;}
-  .ligneCategories{color: #929090;font-size:2vh;text-align:justify;font-family: 'Gentium Book Basic', serif;}
