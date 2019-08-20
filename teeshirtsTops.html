@@ -17,30 +17,7 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 
-  <script>
-    $(document).ready(function(){
-   $('#barre').click(function(){
-         
-         $('#rideau').slideToggle(500);
-      });
 
-     $('#barre2').click(function(){
-         
-         $('#rideau2').slideToggle(500);
-      });
-  
-     $('#barre3').click(function(){
-         
-         $('#rideau3').slideToggle(500);
-      });
-    
-     $('#barre4').click(function(){
-         
-         $('#rideau4').slideToggle(500);
-      });
-
-     });
-   </script>
 </head>
 <body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
@@ -246,11 +223,11 @@
                               <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                 <div class="container-fluid ">
                                   <!--BLOC SLIDER-->
-                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                <div id="containerSliderttF1" class="carousel offset-2" data-ride="carousel">
                                       <ol class="carousel-indicators">
-                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                        <li data-target="#containerSlider" data-slide-to="1"></li>
-                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                        <li data-target="#containerSliderttF1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSliderttF1" data-slide-to="1"></li>
+                                        <li data-target="#containerSliderttF1" data-slide-to="2"></li>
                                       </ol>
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
@@ -263,11 +240,11 @@
                                         <img class="d-flex" src="img/femme/vetements/tshirt-top/top_bretelle_noir_satin.jpg" alt="Third slide">
                                       </div>
                                     </div>
-                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                      <a class="carousel-control-prev" href="#containerSliderttF1" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Avant</span>
                                       </a>
-                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                      <a class="carousel-control-next" href="#containerSliderttF1" role="button" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Aprés</span>
                                       </a>
@@ -284,7 +261,7 @@
                                 <!--BLOC DESCRIPTION PRODUIT-->
                                 <div class="container-fluid mt-5">
                                   <div class="col-12 offset-1"><p class="text-center "><strong>Top bretelle noir</strong><br>69,99 €</p></div>         
-                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                     <br>
                                     <hr class="col-6">
                                     <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -298,22 +275,31 @@
                                 </div>
                                 <!--BLOC MENU DEROULANT-->
                                 <div class="containerMenuDeroulant col-12 offset-1">
-                
-                                    <div id="barre" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                    <div id="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                    
-                                    <div id="barre2" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                    <div id="rideau2" class="btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                
-                                  
-                                    <div id="barre3" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                    <div id="rideau3" class="btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                
-                                    
-                                    <div id="barre4" class="btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                    <div id="rideau4" class="btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                    
-                                </div>     
+                                    <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Description
+                                    </div>
+                                    <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </div>
+                                    <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Taille et coupe
+                                    </div>
+                                    <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </div>
+                                    <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Livraison
+                                    </div>
+                                    <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                    </div>
+                                    <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Avis
+                                    </div>
+                                    <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                             </div>                             
@@ -361,11 +347,11 @@
                               <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                 <div class="container-fluid ">
                                   <!--BLOC SLIDER-->
-                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                <div id="containerSliderttF2" class="carousel offset-2" data-ride="carousel">
                                       <ol class="carousel-indicators">
-                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                        <li data-target="#containerSlider" data-slide-to="1"></li>
-                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                        <li data-target="#containerSliderttF2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSliderttF2" data-slide-to="1"></li>
+                                        <li data-target="#containerSliderttF2" data-slide-to="2"></li>
                                       </ol>
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
@@ -375,14 +361,14 @@
                                         <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rouge_arriere.jpg" alt="Second slide">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rouge.jpg.jpg" alt="Third slide">
+                                        <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rouge.jpg" alt="Third slide">
                                       </div>
                                     </div>
-                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                      <a class="carousel-control-prev" href="#containerSliderttF2" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Avant</span>
                                       </a>
-                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                      <a class="carousel-control-next" href="#containerSliderttF2" role="button" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Aprés</span>
                                       </a>
@@ -399,7 +385,7 @@
                                 <!--BLOC DESCRIPTION PRODUIT-->
                                 <div class="container-fluid mt-5">
                                   <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt rouge</strong><br>59,99 €</p></div>         
-                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                     <br>
                                     <hr class="col-6">
                                     <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -413,22 +399,31 @@
                                 </div>
                                 <!--BLOC MENU DEROULANT-->
                                 <div class="containerMenuDeroulant col-12 offset-1">
-                
-                                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                    
-                                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                
-                                  
-                                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                
-                                    
-                                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                
-                                </div>      
+                                    <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Description
+                                    </div>
+                                    <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </div>
+                                    <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Taille et coupe
+                                    </div>
+                                    <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </div>
+                                    <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Livraison
+                                    </div>
+                                    <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                    </div>
+                                    <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Avis
+                                    </div>
+                                    <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                    </div>
+                                  </div>  
                                 </div>
                             </div>
                             </div>                             
@@ -475,11 +470,11 @@
                                       <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                         <div class="container-fluid ">
                                           <!--BLOC SLIDER-->
-                                        <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                        <div id="containerSliderttF3" class="carousel offset-2" data-ride="carousel">
                                               <ol class="carousel-indicators">
-                                                <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                                <li data-target="#containerSlider" data-slide-to="1"></li>
-                                                <li data-target="#containerSlider" data-slide-to="2"></li>
+                                                <li data-target="#containerSliderttF3" data-slide-to="0" class="active"></li>
+                                                <li data-target="#containerSliderttF3" data-slide-to="1"></li>
+                                                <li data-target="#containerSliderttF3" data-slide-to="2"></li>
                                               </ol>
                                             <div class="carousel-inner">
                                               <div class="carousel-item active">
@@ -492,11 +487,11 @@
                                                 <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_jaunefluo.jpg" alt="Third slide">
                                               </div>
                                             </div>
-                                              <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                              <a class="carousel-control-prev" href="#containerSliderttF3" role="button" data-slide="prev">
                                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                 <span class="sr-only">Avant</span>
                                               </a>
-                                              <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                              <a class="carousel-control-next" href="#containerSliderttF3" role="button" data-slide="next">
                                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                 <span class="sr-only">Aprés</span>
                                               </a>
@@ -513,7 +508,7 @@
                                         <!--BLOC DESCRIPTION PRODUIT-->
                                         <div class="container-fluid mt-5">
                                           <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt jaune fluo</strong><br>49,99 €</p></div>         
-                                            <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                            <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                             <br>
                                             <hr class="col-6">
                                             <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -527,22 +522,31 @@
                                         </div>
                                         <!--BLOC MENU DEROULANT-->
                                         <div class="containerMenuDeroulant col-12 offset-1">
-                        
-                                            <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                            <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                            
-                                            <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                            <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                        
-                                          
-                                            <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                            <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                        
-                                            
-                                            <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                            <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                        
-                                        </div>      
+                                            <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                              Description
+                                            </div>
+                                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </div>
+                                            <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                              Taille et coupe
+                                            </div>
+                                            <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            </div>
+                                            <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                              Livraison
+                                            </div>
+                                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                            </div>
+                                            <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                              Avis
+                                            </div>
+                                            <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                            </div>
+                                          </div>    
                                         </div>
                                     </div>
                                     </div>                             
@@ -589,11 +593,11 @@
                                     <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                       <div class="container-fluid ">
                                         <!--BLOC SLIDER-->
-                                      <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                      <div id="containerSliderttF4" class="carousel offset-2" data-ride="carousel">
                                             <ol class="carousel-indicators">
-                                              <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                              <li data-target="#containerSlider" data-slide-to="1"></li>
-                                              <li data-target="#containerSlider" data-slide-to="2"></li>
+                                              <li data-target="#containerSliderttF4" data-slide-to="0" class="active"></li>
+                                              <li data-target="#containerSliderttF4" data-slide-to="1"></li>
+                                              <li data-target="#containerSliderttF4" data-slide-to="2"></li>
                                             </ol>
                                           <div class="carousel-inner">
                                             <div class="carousel-item active">
@@ -606,11 +610,11 @@
                                               <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_bleu_volant_face.jpg" alt="Third slide">
                                             </div>
                                           </div>
-                                            <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                            <a class="carousel-control-prev" href="#containerSliderttF4" role="button" data-slide="prev">
                                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                               <span class="sr-only">Avant</span>
                                             </a>
-                                            <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                            <a class="carousel-control-next" href="#containerSliderttF4" role="button" data-slide="next">
                                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                               <span class="sr-only">Aprés</span>
                                             </a>
@@ -627,7 +631,7 @@
                                       <!--BLOC DESCRIPTION PRODUIT-->
                                       <div class="container-fluid mt-5">
                                         <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt bleu</strong><br>59,99 €</p></div>         
-                                          <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                          <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                           <br>
                                           <hr class="col-6">
                                           <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -641,22 +645,31 @@
                                       </div>
                                       <!--BLOC MENU DEROULANT-->
                                       <div class="containerMenuDeroulant col-12 offset-1">
-                      
-                                          <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                          <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                          
-                                          <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                          <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                      
-                                        
-                                          <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                          <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                      
-                                          
-                                          <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                          <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                      
-                                      </div>      
+                                          <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                            Description
+                                          </div>
+                                          <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                          </div>
+                                          <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                            Taille et coupe
+                                          </div>
+                                          <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                          </div>
+                                          <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                            Livraison
+                                          </div>
+                                          <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                          </div>
+                                          <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                            Avis
+                                          </div>
+                                          <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                          </div>
+                                        </div>    
                                       </div>
                                   </div>
                                   </div>                             
@@ -704,11 +717,11 @@
               <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                 <div class="container-fluid ">
                   <!--BLOC SLIDER-->
-                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                <div id="containerSliderttF5" class="carousel offset-2" data-ride="carousel">
                       <ol class="carousel-indicators">
-                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                        <li data-target="#containerSlider" data-slide-to="1"></li>
-                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                        <li data-target="#containerSliderttF5" data-slide-to="0" class="active"></li>
+                        <li data-target="#containerSliderttF5" data-slide-to="1"></li>
+                        <li data-target="#containerSliderttF5" data-slide-to="2"></li>
                       </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -721,11 +734,11 @@
                         <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_kaki.jpg" alt="Third slide">
                       </div>
                     </div>
-                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                      <a class="carousel-control-prev" href="#containerSliderttF5" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Avant</span>
                       </a>
-                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                      <a class="carousel-control-next" href="#containerSliderttF5" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Aprés</span>
                       </a>
@@ -742,7 +755,7 @@
                 <!--BLOC DESCRIPTION PRODUIT-->
                 <div class="container-fluid mt-5">
                   <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt kaki long</strong><br>79,99 €</p></div>         
-                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                    <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                     <br>
                     <hr class="col-6">
                     <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -756,22 +769,31 @@
                 </div>
                 <!--BLOC MENU DEROULANT-->
                 <div class="containerMenuDeroulant col-12 offset-1">
-
-                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                    
-                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-
-                  
-                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-
-                    
-                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-
-                </div>      
+                    <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Description
+                    </div>
+                    <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Taille et coupe
+                    </div>
+                    <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Livraison
+                    </div>
+                    <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                    </div>
+                    <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Avis
+                    </div>
+                    <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                    </div>
+                  </div>
                 </div>
             </div>
             </div>                             
@@ -819,11 +841,11 @@
                                 <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                   <div class="container-fluid ">
                                     <!--BLOC SLIDER-->
-                                  <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                  <div id="containerSliderttF6" class="carousel offset-2" data-ride="carousel">
                                         <ol class="carousel-indicators">
-                                          <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                          <li data-target="#containerSlider" data-slide-to="1"></li>
-                                          <li data-target="#containerSlider" data-slide-to="2"></li>
+                                          <li data-target="#containerSliderttF6" data-slide-to="0" class="active"></li>
+                                          <li data-target="#containerSliderttF6" data-slide-to="1"></li>
+                                          <li data-target="#containerSliderttF6" data-slide-to="2"></li>
                                         </ol>
                                       <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -836,11 +858,11 @@
                                           <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_bleumarine.jpg" alt="Third slide">
                                         </div>
                                       </div>
-                                        <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev" href="#containerSliderttF6" role="button" data-slide="prev">
                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Avant</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <a class="carousel-control-next" href="#containerSliderttF6" role="button" data-slide="next">
                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Aprés</span>
                                         </a>
@@ -857,7 +879,7 @@
                                   <!--BLOC DESCRIPTION PRODUIT-->
                                   <div class="container-fluid mt-5">
                                     <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt bleu marine</strong><br>49,99 €</p></div>         
-                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                       <br>
                                       <hr class="col-6">
                                       <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -871,22 +893,31 @@
                                   </div>
                                   <!--BLOC MENU DEROULANT-->
                                   <div class="containerMenuDeroulant col-12 offset-1">
-                  
-                                      <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                      <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                      
-                                      <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                      <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                  
-                                    
-                                      <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                      <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                  
-                                      
-                                      <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                      <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                  
-                                  </div>      
+                                      <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Description
+                                      </div>
+                                      <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                      </div>
+                                      <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Taille et coupe
+                                      </div>
+                                      <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                      </div>
+                                      <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Livraison
+                                      </div>
+                                      <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                      </div>
+                                      <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Avis
+                                      </div>
+                                      <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                      </div>
+                                    </div>   
                                   </div>
                               </div>
                               </div>                             
@@ -933,11 +964,11 @@
                               <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                 <div class="container-fluid ">
                                   <!--BLOC SLIDER-->
-                                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                <div id="containerSliderttF7" class="carousel offset-2" data-ride="carousel">
                                       <ol class="carousel-indicators">
-                                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                        <li data-target="#containerSlider" data-slide-to="1"></li>
-                                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                                        <li data-target="#containerSliderttF7" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSliderttF7" data-slide-to="1"></li>
+                                        <li data-target="#containerSliderttF7" data-slide-to="2"></li>
                                       </ol>
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
@@ -950,11 +981,11 @@
                                         <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_rose.jpg" alt="Third slide">
                                       </div>
                                     </div>
-                                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                      <a class="carousel-control-prev" href="#containerSliderttF7" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Avant</span>
                                       </a>
-                                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                      <a class="carousel-control-next" href="#containerSliderttF7" role="button" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Aprés</span>
                                       </a>
@@ -971,7 +1002,7 @@
                                 <!--BLOC DESCRIPTION PRODUIT-->
                                 <div class="container-fluid mt-5">
                                   <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt rose</strong><br>59,99 €</p></div>         
-                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                    <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                     <br>
                                     <hr class="col-6">
                                     <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -985,22 +1016,31 @@
                                 </div>
                                 <!--BLOC MENU DEROULANT-->
                                 <div class="containerMenuDeroulant col-12 offset-1">
-              
-                                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                    
-                                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-              
-                                  
-                                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-              
-                                    
-                                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-              
-                                </div>      
+                                    <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Description
+                                    </div>
+                                    <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </div>
+                                    <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Taille et coupe
+                                    </div>
+                                    <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </div>
+                                    <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Livraison
+                                    </div>
+                                    <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                    </div>
+                                    <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                      Avis
+                                    </div>
+                                    <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                             </div>                             
@@ -1047,11 +1087,11 @@
                                 <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                   <div class="container-fluid ">
                                     <!--BLOC SLIDER-->
-                                  <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                  <div id="containerSliderttF8" class="carousel offset-2" data-ride="carousel">
                                         <ol class="carousel-indicators">
-                                          <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                          <li data-target="#containerSlider" data-slide-to="1"></li>
-                                          <li data-target="#containerSlider" data-slide-to="2"></li>
+                                          <li data-target="#containerSliderttF8" data-slide-to="0" class="active"></li>
+                                          <li data-target="#containerSliderttF8" data-slide-to="1"></li>
+                                          <li data-target="#containerSliderttF8" data-slide-to="2"></li>
                                         </ol>
                                       <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -1064,11 +1104,11 @@
                                           <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_marron.jpg" alt="Third slide">
                                         </div>
                                       </div>
-                                        <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev" href="#containerSliderttF8" role="button" data-slide="prev">
                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Avant</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                        <a class="carousel-control-next" href="#containerSliderttF8" role="button" data-slide="next">
                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Aprés</span>
                                         </a>
@@ -1085,7 +1125,7 @@
                                   <!--BLOC DESCRIPTION PRODUIT-->
                                   <div class="container-fluid mt-5">
                                     <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt long marron</strong><br>79,99 €</p></div>         
-                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                      <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                       <br>
                                       <hr class="col-6">
                                       <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -1099,22 +1139,31 @@
                                   </div>
                                   <!--BLOC MENU DEROULANT-->
                                   <div class="containerMenuDeroulant col-12 offset-1">
-                  
-                                      <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                      <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                      
-                                      <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                      <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                  
-                                    
-                                      <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                      <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                  
-                                      
-                                      <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                      <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                  
-                                  </div>      
+                                      <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Description
+                                      </div>
+                                      <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                      </div>
+                                      <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Taille et coupe
+                                      </div>
+                                      <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                      </div>
+                                      <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Livraison
+                                      </div>
+                                      <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                      </div>
+                                      <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Avis
+                                      </div>
+                                      <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                      </div>
+                                    </div>    
                                   </div>
                               </div>
                               </div>                             
@@ -1163,11 +1212,11 @@
                             <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                               <div class="container-fluid ">
                                 <!--BLOC SLIDER-->
-                              <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                              <div id="containerSliderttF9" class="carousel offset-2" data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                      <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                      <li data-target="#containerSlider" data-slide-to="1"></li>
-                                      <li data-target="#containerSlider" data-slide-to="2"></li>
+                                      <li data-target="#containerSliderttF9" data-slide-to="0" class="active"></li>
+                                      <li data-target="#containerSliderttF9" data-slide-to="1"></li>
+                                      <li data-target="#containerSliderttF9" data-slide-to="2"></li>
                                     </ol>
                                   <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -1180,11 +1229,11 @@
                                       <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_noir.jpg" alt="Third slide">
                                     </div>
                                   </div>
-                                    <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#containerSliderttF9" role="button" data-slide="prev">
                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                       <span class="sr-only">Avant</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#containerSliderttF9" role="button" data-slide="next">
                                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                       <span class="sr-only">Aprés</span>
                                     </a>
@@ -1201,7 +1250,7 @@
                               <!--BLOC DESCRIPTION PRODUIT-->
                               <div class="container-fluid mt-5">
                                 <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt long noir</strong><br>89,99 €</p></div>         
-                                  <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                  <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                   <br>
                                   <hr class="col-6">
                                   <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -1215,22 +1264,31 @@
                               </div>
                               <!--BLOC MENU DEROULANT-->
                               <div class="containerMenuDeroulant col-12 offset-1">
-              
-                                  <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                  <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                  
-                                  <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                  <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-              
-                                
-                                  <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                  <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-              
-                                  
-                                  <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                  <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-              
-                              </div>      
+                                  <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Description
+                                  </div>
+                                  <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Taille et coupe
+                                  </div>
+                                  <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Livraison
+                                  </div>
+                                  <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                  </div>
+                                  <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Avis
+                                  </div>
+                                  <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                  </div>
+                                </div>
                               </div>
                           </div>
                           </div>                             
@@ -1278,11 +1336,11 @@
                                   <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                     <div class="container-fluid ">
                                       <!--BLOC SLIDER-->
-                                    <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                    <div id="containerSliderttF10" class="carousel offset-2" data-ride="carousel">
                                           <ol class="carousel-indicators">
-                                            <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                            <li data-target="#containerSlider" data-slide-to="1"></li>
-                                            <li data-target="#containerSlider" data-slide-to="2"></li>
+                                            <li data-target="#containerSliderttF10" data-slide-to="0" class="active"></li>
+                                            <li data-target="#containerSliderttF10" data-slide-to="1"></li>
+                                            <li data-target="#containerSliderttF10" data-slide-to="2"></li>
                                           </ol>
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
@@ -1295,11 +1353,11 @@
                                             <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_orange.jpg" alt="Third slide">
                                           </div>
                                         </div>
-                                          <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                          <a class="carousel-control-prev" href="#containerSliderttF10" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Avant</span>
                                           </a>
-                                          <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                          <a class="carousel-control-next" href="#containerSliderttF10" role="button" data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Aprés</span>
                                           </a>
@@ -1316,7 +1374,7 @@
                                     <!--BLOC DESCRIPTION PRODUIT-->
                                     <div class="container-fluid mt-5">
                                       <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt orange</strong><br>49,99 €</p></div>         
-                                        <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                        <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                         <br>
                                         <hr class="col-6">
                                         <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -1330,22 +1388,31 @@
                                     </div>
                                     <!--BLOC MENU DEROULANT-->
                                     <div class="containerMenuDeroulant col-12 offset-1">
-                    
-                                        <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                        <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                        
-                                        <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                        <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                    
-                                      
-                                        <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                        <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                    
-                                        
-                                        <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                        <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                    
-                                    </div>      
+                                        <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Description
+                                        </div>
+                                        <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </div>
+                                        <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Taille et coupe
+                                        </div>
+                                        <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </div>
+                                        <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Livraison
+                                        </div>
+                                        <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                        </div>
+                                        <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Avis
+                                        </div>
+                                        <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </div>
+                                      </div>  
                                     </div>
                                 </div>
                                 </div>                             
@@ -1393,28 +1460,28 @@
               <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                 <div class="container-fluid ">
                   <!--BLOC SLIDER-->
-                <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                <div id="containerSliderttF11" class="carousel offset-2" data-ride="carousel">
                       <ol class="carousel-indicators">
-                        <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                        <li data-target="#containerSlider" data-slide-to="1"></li>
-                        <li data-target="#containerSlider" data-slide-to="2"></li>
+                        <li data-target="#containerSliderttF11" data-slide-to="0" class="active"></li>
+                        <li data-target="#containerSliderttF11" data-slide-to="1"></li>
+                        <li data-target="#containerSliderttF11" data-slide-to="2"></li>
                       </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-flex " src="img/femme/vetements/tshirt-top/top_rouge_volantface.jpg" alt="First slide">
+                        <img class="d-flex " src="img/femme/vetements/tshirt-top/top_rouge_volant_face.jpg" alt="First slide">
                       </div>
                       <div class="carousel-item">
                         <img class="d-flex" src="img/femme/vetements/tshirt-top/top_rouge_volant_arriere.jpg" alt="Second slide">
                       </div>
                       <div class="carousel-item">
-                        <img class="d-flex" src="img/femme/vetements/tshirt-top/top_rouge_volant_longue.jpg" alt="Third slide">
+                        <img class="d-flex" src="img/femme/vetements/tshirt-top/top_rouge_volant.jpg" alt="Third slide">
                       </div>
                     </div>
-                      <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                      <a class="carousel-control-prev" href="#containerSliderttF11" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Avant</span>
                       </a>
-                      <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                      <a class="carousel-control-next" href="#containerSliderttF11" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Aprés</span>
                       </a>
@@ -1431,7 +1498,7 @@
                 <!--BLOC DESCRIPTION PRODUIT-->
                 <div class="container-fluid mt-5">
                   <div class="col-12 offset-1"><p class="text-center "><strong>Top rouge</strong><br>39,99 €</p></div>         
-                    <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                    <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                     <br>
                     <hr class="col-6">
                     <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -1445,22 +1512,31 @@
                 </div>
                 <!--BLOC MENU DEROULANT-->
                 <div class="containerMenuDeroulant col-12 offset-1">
-
-                    <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                    <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                    
-                    <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                    <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-
-                  
-                    <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                    <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-
-                    
-                    <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                    <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-
-                </div>      
+                    <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Description
+                    </div>
+                    <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Taille et coupe
+                    </div>
+                    <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Livraison
+                    </div>
+                    <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                    </div>
+                    <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Avis
+                    </div>
+                    <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                    </div>
+                  </div>
                 </div>
             </div>
             </div>                             
@@ -1508,11 +1584,11 @@
                                   <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
                                     <div class="container-fluid ">
                                       <!--BLOC SLIDER-->
-                                    <div id="containerSlider 1" class="carousel offset-2" data-ride="carousel">
+                                    <div id="containerSliderttF12" class="carousel offset-2" data-ride="carousel">
                                           <ol class="carousel-indicators">
-                                            <li data-target="#containerSlider" data-slide-to="0" class="active"></li>
-                                            <li data-target="#containerSlider" data-slide-to="1"></li>
-                                            <li data-target="#containerSlider" data-slide-to="2"></li>
+                                            <li data-target="#containerSliderttF12" data-slide-to="0" class="active"></li>
+                                            <li data-target="#containerSliderttF12" data-slide-to="1"></li>
+                                            <li data-target="#containerSliderttF12" data-slide-to="2"></li>
                                           </ol>
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
@@ -1525,11 +1601,11 @@
                                             <img class="d-flex" src="img/femme/vetements/tshirt-top/teeshirt_manchelongue_bleu.jpg" alt="Third slide">
                                           </div>
                                         </div>
-                                          <a class="carousel-control-prev" href="#containerSlider" role="button" data-slide="prev">
+                                          <a class="carousel-control-prev" href="#containerSliderttF12" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Avant</span>
                                           </a>
-                                          <a class="carousel-control-next" href="#containerSlider" role="button" data-slide="next">
+                                          <a class="carousel-control-next" href="#containerSliderttF12" role="button" data-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Aprés</span>
                                           </a>
@@ -1546,7 +1622,7 @@
                                     <!--BLOC DESCRIPTION PRODUIT-->
                                     <div class="container-fluid mt-5">
                                       <div class="col-12 offset-1"><p class="text-center "><strong>T-shirt manche longue bleu</strong><br>59,99 €</p></div>         
-                                        <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                        <button class="add btn-lg h-1.5 offset-1 boutonpanier btn-success col-12 ">Ajouter au panier</button>
                                         <br>
                                         <hr class="col-6">
                                         <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
@@ -1560,22 +1636,31 @@
                                     </div>
                                     <!--BLOC MENU DEROULANT-->
                                     <div class="containerMenuDeroulant col-12 offset-1">
-                    
-                                        <div  class="barre btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Description</div>
-                                        <div class="rideau" class="btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                                        
-                                        <div  class="barre2 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Taille et coupe</div>
-                                        <div  class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                    
-                                      
-                                        <div  class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Livraison</div>
-                                        <div  class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. M </div>
-                    
-                                        
-                                        <div  class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">Avis</div>
-                                        <div  class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
-                    
-                                    </div>      
+                                        <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Description
+                                        </div>
+                                        <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </div>
+                                        <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Taille et coupe
+                                        </div>
+                                        <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </div>
+                                        <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Livraison
+                                        </div>
+                                        <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                        </div>
+                                        <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                          Avis
+                                        </div>
+                                        <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                        </div>
+                                      </div>    
                                     </div>
                                 </div>
                                 </div>                             
@@ -1655,7 +1740,7 @@
         </footer>
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/script.js"></script> 
