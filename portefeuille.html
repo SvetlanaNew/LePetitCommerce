@@ -179,6 +179,7 @@
             <div class="container-fluid d-flex flex-column">
 
               <div class="row d-flex justify-content-center mb-5">
+                <!--Produit 1-->
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -197,8 +198,124 @@
                         <span style="font-weight: bold">59,99€</span>
                       </p>
                     </div>
+           <!--------------------------début modal 1---------------------------------------------------------------------------->
+								<div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit1" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                  </div>
+                  <!---->
+                  <div class="modal fade" id="produit1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSliderpH1" class="carousel offset-2" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#containerSliderpH1" data-slide-to="0" class="active"></li>
+                                  <li data-target="#containerSliderpH1" data-slide-to="1"></li>
+                                  <li data-target="#containerSliderpH1" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-flex " src="img\homme\accessoires\portefeuille_bordeaux_avant.jpg" alt="Portefeuille bordeaux">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_bordeaux_arriere.jpg" alt="Portefeuille bordeaux">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_bordeaux_interieur.jpg" alt="Portefeuille bordeaux">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#containerSliderpH1" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSliderpH1" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img\homme\accessoires\portefeuille_bordeaux_arriere.jpg" alt="Portefeuille bordeaux" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_bordeaux_interieur.jpg" alt="Portefeuille bordeaux" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_bordeaux_avant.jpg" alt="Portefeuille bordeaux" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                    <strong>Portefeuille bordeaux</strong>
+                                    <br>
+                                    59,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                    <option class="size" disabled selected>Votre taille</option>
+                                    <option class="size">S</option>
+                                    <option class="size">M</option>
+                                    <option class="size">L</option>
+                                    <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------fin Modal------------------------------------------------------------------------>
                 </div>
-                                        
+               <!--Produit 2-->                         
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -217,8 +334,124 @@
                         <span style="font-weight: bold">39,99€</span>
                       </p>
                     </div>
+             <!--------------------------début modal 2---------------------------------------------------------------------------->
+								<div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit2" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                  </div>
+                  <!---->
+                  <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSliderpH2" class="carousel offset-2" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#containerSliderpH2" data-slide-to="0" class="active"></li>
+                                  <li data-target="#containerSliderpH2" data-slide-to="1"></li>
+                                  <li data-target="#containerSliderpH2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-flex " src="img\homme\accessoires\portefeuille_camouflage_avant.jpg" alt="Portefeuille camouflage">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_camouflage_arriere.jpg" alt="Portefeuille camouflage">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_camouflage_interieur.jpg" alt="Portefeuille camouflage">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#containerSliderpH2" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSliderpH2" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img\homme\accessoires\portefeuille_camouflage_arriere.jpg" alt="Portefeuille camouflage" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_camouflage_interieur.jpg" alt="Portefeuille camouflage" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_camouflage_avant.jpg" alt="Portefeuille camouflage" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                    <strong>Portefeuille camouflage</strong>
+                                    <br>
+                                    39,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                    <option class="size" disabled selected>Votre taille</option>
+                                    <option class="size">S</option>
+                                    <option class="size">M</option>
+                                    <option class="size">L</option>
+                                    <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------fin Modal------------------------------------------------------------------------>
                 </div>    
-    
+              <!--Produit 3-->
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -237,8 +470,124 @@
                         <span style="font-weight: bold">59,99€</span>
                       </p>
                     </div>
+            <!--------------------------début modal 3---------------------------------------------------------------------------->
+								<div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit3" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                  </div>
+                  <!---->
+                  <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSliderpH3" class="carousel offset-2" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#containerSliderpH3" data-slide-to="0" class="active"></li>
+                                  <li data-target="#containerSliderpH3" data-slide-to="1"></li>
+                                  <li data-target="#containerSliderpH3" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-flex " src="img\homme\accessoires\portefeuille_bleu_avant.jpg" alt="Portefeuille camouflage">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_bleu_arriere.jpg" alt="Portefeuille camouflage">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_bleu_interieur.jpg" alt="Portefeuille camouflage">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#containerSliderpH3" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSliderpH3" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img\homme\accessoires\portefeuille_bleu_arriere.jpg" alt="Portefeuille camouflage" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_bleu_interieur.jpg" alt="Portefeuille camouflage" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_bleu_avant.jpg" alt="Portefeuille camouflage" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                    <strong>Portefeuille camouflage</strong>
+                                    <br>
+                                    39,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                    <option class="size" disabled selected>Votre taille</option>
+                                    <option class="size">S</option>
+                                    <option class="size">M</option>
+                                    <option class="size">L</option>
+                                    <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------fin Modal------------------------------------------------------------------------>
                 </div>
-    
+              <!--Produit 4-->
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -257,8 +606,124 @@
                         <span style="font-weight: bold">39,99€</span>
                       </p>
                     </div>
+            <!--------------------------début modal 4---------------------------------------------------------------------------->
+								<div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit4" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                  </div>
+                  <!---->
+                  <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSliderpH4" class="carousel offset-2" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#containerSliderpH4" data-slide-to="0" class="active"></li>
+                                  <li data-target="#containerSliderpH4" data-slide-to="1"></li>
+                                  <li data-target="#containerSliderpH4" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-flex " src="img\homme\accessoires\portefeuille_gris_avant.jpg" alt="Portefeuille gris">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_gris_profile.jpg" alt="Portefeuille gris">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_gris_arriere.jpg" alt="Portefeuille gris">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#containerSliderpH4" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSliderpH4" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img\homme\accessoires\portefeuille_gris_profile.jpg" alt="Portefeuille gris" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_gris_arriere.jpg" alt="Portefeuille gris" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_gris_avant.jpg" alt="Portefeuille gris" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                    <strong>Portefeuille gris</strong>
+                                    <br>
+                                    39,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                    <option class="size" disabled selected>Votre taille</option>
+                                    <option class="size">S</option>
+                                    <option class="size">M</option>
+                                    <option class="size">L</option>
+                                    <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------fin Modal------------------------------------------------------------------------>
                 </div>
-    
+              <!--Produit 5-->
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -277,8 +742,124 @@
                         <span style="font-weight: bold">79,99€</span>
                       </p>
                     </div>
+                  <!--------------------------début modal 5---------------------------------------------------------------------------->
+                  <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit5" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                    </div>
+                    <!---->
+                    <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title descriptionFicheProduit" >
+                              Fiche produit
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                              <div class="container-fluid ">
+                                <!--BLOC SLIDER-->
+                                <div id="containerSliderpH5" class="carousel offset-2" data-ride="carousel">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#containerSliderpH5" data-slide-to="0" class="active"></li>
+                                    <li data-target="#containerSliderpH5" data-slide-to="1"></li>
+                                    <li data-target="#containerSliderpH5" data-slide-to="2"></li>
+                                  </ol>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-flex " src="img\homme\accessoires\portefeuille_noir_avant.jpg" alt="Portefeuille gris">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img\homme\accessoires\portefeuille_noir_avant.jpg" alt="Portefeuille gris">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img\homme\accessoires\portefeuille_noir_interieur.jpg" alt="Portefeuille gris">
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#containerSliderpH5" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Avant</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#containerSliderpH5" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Aprés</span>
+                                  </a>
+                                </div>
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                  <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                    <img src="img\homme\accessoires\portefeuille_noir_avant.jpg" alt="Portefeuille gris" class="zoom">
+                                    <img src="img\homme\accessoires\portefeuille_noir_interieur.jpg" alt="Portefeuille gris" class="zoom">
+                                    <img src="img\homme\accessoires\portefeuille_noir_avant.jpg" alt="Portefeuille gris" style="height: 500px;width:300px;" id="premiereImage">
+                                  </div>
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1">
+                                    <p class="text-center ">
+                                      <strong>Portefeuille gris</strong>
+                                      <br>
+                                      39,99 €
+                                    </p>
+                                  </div>
+                                  <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                  <br>
+                                  <div class="mt-2">
+                                    <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                      <option class="size" disabled selected>Votre taille</option>
+                                      <option class="size">S</option>
+                                      <option class="size">M</option>
+                                      <option class="size">L</option>
+                                      <option class="size">XL</option>
+                                    </select>
+                                  </div>
+                                  <hr class="col-6">
+                                  <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                    <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                    ve, 26.07. - ma, 30.07.
+                                  </div>
+                                  <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                    <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                    1-2 jours ouvrables en commandant avant 15h
+                                  </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+                                  <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Description
+                                  </div>
+                                  <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Taille et coupe
+                                  </div>
+                                  <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Livraison
+                                  </div>
+                                  <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                  </div>
+                                  <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Avis
+                                  </div>
+                                  <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--------------------------------fin Modal------------------------------------------------------------------------>
                 </div>
-                        
+              <!--Produit 6-->        
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -297,8 +878,124 @@
                         <span style="font-weight: bold">39,99€</span>
                       </p>
                     </div>
+      <!--------------------------début modal 6---------------------------------------------------------------------------->
+                  <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit6" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                    </div>
+                    <!---->
+                    <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title descriptionFicheProduit" >
+                              Fiche produit
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                              <div class="container-fluid ">
+                                <!--BLOC SLIDER-->
+                                <div id="containerSliderpH6" class="carousel offset-2" data-ride="carousel">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#containerSliderpH6" data-slide-to="0" class="active"></li>
+                                    <li data-target="#containerSliderpH6" data-slide-to="1"></li>
+                                    <li data-target="#containerSliderpH6" data-slide-to="2"></li>
+                                  </ol>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-flex " src="img\homme\accessoires\portefeuille_carreau_avant.jpg" alt="Portefeuille carreaux">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img\homme\accessoires\portefeuille_carreau_arriere.jpg" alt="Portefeuille carreaux">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img\homme\accessoires\portefeuille_carreau_interieur.jpg" alt="Portefeuille carreaux">
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#containerSliderpH6" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Avant</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#containerSliderpH6" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Aprés</span>
+                                  </a>
+                                </div>
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                  <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                    <img src="img\homme\accessoires\portefeuille_carreau_arriere.jpg" alt="Portefeuille carreaux" class="zoom">
+                                    <img src="img\homme\accessoires\portefeuille_carreau_interieur.jpg" alt="Portefeuille carreaux" class="zoom">
+                                    <img src="img\homme\accessoires\portefeuille_carreau_avant.jpg" alt="Portefeuille carreaux" style="height: 500px;width:300px;" id="premiereImage">
+                                  </div>
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1">
+                                    <p class="text-center ">
+                                      <strong>Portefeuille carreaux</strong>
+                                      <br>
+                                      39,99 €
+                                    </p>
+                                  </div>
+                                  <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                  <br>
+                                  <div class="mt-2">
+                                    <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                      <option class="size" disabled selected>Votre taille</option>
+                                      <option class="size">S</option>
+                                      <option class="size">M</option>
+                                      <option class="size">L</option>
+                                      <option class="size">XL</option>
+                                    </select>
+                                  </div>
+                                  <hr class="col-6">
+                                  <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                    <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                    ve, 26.07. - ma, 30.07.
+                                  </div>
+                                  <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                    <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                    1-2 jours ouvrables en commandant avant 15h
+                                  </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+                                  <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Description
+                                  </div>
+                                  <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Taille et coupe
+                                  </div>
+                                  <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Livraison
+                                  </div>
+                                  <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                  </div>
+                                  <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Avis
+                                  </div>
+                                  <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--------------------------------fin Modal------------------------------------------------------------------------>       
                 </div>
-    
+            <!--Produit 8-->
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -317,8 +1014,124 @@
                         <span style="font-weight: bold">59,99€</span>
                       </p>
                     </div>
+        <!--------------------------début modal 7---------------------------------------------------------------------------->
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit7" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                  </div>
+                  <!---->
+                  <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSliderpH7" class="carousel offset-2" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#containerSliderpH7" data-slide-to="0" class="active"></li>
+                                  <li data-target="#containerSliderpH7" data-slide-to="1"></li>
+                                  <li data-target="#containerSliderpH7" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-flex " src="img\homme\accessoires\portefeuille_marron_avant.jpg" alt="Portefeuille marron">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_marron_arriere.jpg" alt="Portefeuille marron">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img\homme\accessoires\portefeuille_marron_interieur.jpg" alt="Portefeuille marron">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#containerSliderpH7" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSliderpH7" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img\homme\accessoires\portefeuille_marron_arriere.jpg" alt="Portefeuille marron" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_marron_interieur.jpg" alt="Portefeuille marron" class="zoom">
+                                  <img src="img\homme\accessoires\portefeuille_marron_avant.jpg" alt="Portefeuille marron" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                    <strong>Portefeuille marron</strong>
+                                    <br>
+                                    59,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                    <option class="size" disabled selected>Votre taille</option>
+                                    <option class="size">S</option>
+                                    <option class="size">M</option>
+                                    <option class="size">L</option>
+                                    <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        <!--------------------------------fin Modal------------------------------------------------------------------------> 
                 </div>
-    
+              <!--Produit 8-->
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -337,8 +1150,124 @@
                         <span style="font-weight: bold">39,99€</span>
                       </p>
                     </div>
+          <!--------------------------début modal 8---------------------------------------------------------------------------->
+                  <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit8" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                    </div>
+                    <!---->
+                    <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title descriptionFicheProduit" >
+                              Fiche produit
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                              <div class="container-fluid ">
+                                <!--BLOC SLIDER-->
+                                <div id="containerSliderpH8" class="carousel offset-2" data-ride="carousel">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#containerSliderpH8" data-slide-to="0" class="active"></li>
+                                    <li data-target="#containerSliderpH8" data-slide-to="1"></li>
+                                    <li data-target="#containerSliderpH8" data-slide-to="2"></li>
+                                  </ol>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-flex " src="img\homme\accessoires\portefeuille_rose_avant.jpg" alt="Portefeuille rose">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img\homme\accessoires\portefeuille_rose_arriere.jpg" alt="Portefeuille rose">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-flex" src="img\homme\accessoires\portefeuille_rose_interieur.jpg" alt="Portefeuille rose">
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#containerSliderpH8" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Avant</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#containerSliderpH8" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Aprés</span>
+                                  </a>
+                                </div>
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                  <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                    <img src="img\homme\accessoires\portefeuille_rose_arriere.jpg" alt="Portefeuille rose" class="zoom">
+                                    <img src="img\homme\accessoires\portefeuille_rose_interieur.jpg" alt="Portefeuille rose" class="zoom">
+                                    <img src="img\homme\accessoires\portefeuille_rose_avant.jpg" alt="Portefeuille rose" style="height: 500px;width:300px;" id="premiereImage">
+                                  </div>
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                  <div class="col-12 offset-1">
+                                    <p class="text-center ">
+                                      <strong>Portefeuille rose</strong>
+                                      <br>
+                                      59,99 €
+                                    </p>
+                                  </div>
+                                  <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                  <br>
+                                  <div class="mt-2">
+                                    <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                      <option class="size" disabled selected>Votre taille</option>
+                                      <option class="size">S</option>
+                                      <option class="size">M</option>
+                                      <option class="size">L</option>
+                                      <option class="size">XL</option>
+                                    </select>
+                                  </div>
+                                  <hr class="col-6">
+                                  <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                    <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                    ve, 26.07. - ma, 30.07.
+                                  </div>
+                                  <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                    <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                    1-2 jours ouvrables en commandant avant 15h
+                                  </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+                                  <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Description
+                                  </div>
+                                  <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Taille et coupe
+                                  </div>
+                                  <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                  </div>
+                                  <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Livraison
+                                  </div>
+                                  <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                  </div>
+                                  <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                    Avis
+                                  </div>
+                                  <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          <!--------------------------------fin Modal------------------------------------------------------------------------> 
                 </div>
-                                                                
+              <!--Produit 9-->                                                 
                 <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-3">
                     <a class="thumbnail">
                       <figure>
@@ -357,6 +1286,122 @@
                         <span style="font-weight: bold">79,99€</span>
                       </p>
                     </div>
+              <!--------------------------début modal 9---------------------------------------------------------------------------->
+                      <div class="d-flex justify-content-center">
+                          <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit9" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                        </div>
+                        <!---->
+                        <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title descriptionFicheProduit" >
+                                  Fiche produit
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                  <div class="container-fluid ">
+                                    <!--BLOC SLIDER-->
+                                    <div id="containerSliderpH9" class="carousel offset-2" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#containerSliderpH9" data-slide-to="0" class="active"></li>
+                                        <li data-target="#containerSliderpH9" data-slide-to="1"></li>
+                                        <li data-target="#containerSliderpH9" data-slide-to="2"></li>
+                                      </ol>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img class="d-flex " src="img\homme\accessoires\portefeuille_bordeaux_cuir_avant.jpg" alt="Portefeuille bordeaux">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img\homme\accessoires\portefeuille_bordeaux_cuir_arriere.jpg" alt="Portefeuille bordeaux">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img class="d-flex" src="img\homme\accessoires\portefeuille_bordeaux_cuir_interieur.jpg" alt="Portefeuille bordeaux">
+                                        </div>
+                                      </div>
+                                      <a class="carousel-control-prev" href="#containerSliderpH9" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Avant</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#containerSliderpH9" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Aprés</span>
+                                      </a>
+                                    </div>
+                                    <!---BLOC PHOTOS MINIATURE-->
+                                    <div id="containerPhotos">
+                                      <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                        <img src="img\homme\accessoires\portefeuille_bordeaux_cuir_arriere.jpg" alt="Portefeuille bordeaux" class="zoom">
+                                        <img src="img\homme\accessoires\portefeuille_bordeaux_cuir_interieur.jpg" alt="Portefeuille bordeaux" class="zoom">
+                                        <img src="img\homme\accessoires\portefeuille_bordeaux_cuir_avant.jpg" alt="Portefeuille bordeaux" style="height: 500px;width:300px;" id="premiereImage">
+                                      </div>
+                                    </div>
+                                    <!--BLOC DESCRIPTION PRODUIT-->
+                                    <div class="container-fluid mt-5">
+                                      <div class="col-12 offset-1">
+                                        <p class="text-center ">
+                                          <strong>Portefeuille bordeaux</strong>
+                                          <br>
+                                          79,99 €
+                                        </p>
+                                      </div>
+                                      <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                      <br>
+                                      <div class="mt-2">
+                                        <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                          <option class="size" disabled selected>Votre taille</option>
+                                          <option class="size">S</option>
+                                          <option class="size">M</option>
+                                          <option class="size">L</option>
+                                          <option class="size">XL</option>
+                                        </select>
+                                      </div>
+                                      <hr class="col-6">
+                                      <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                        <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                        ve, 26.07. - ma, 30.07.
+                                      </div>
+                                      <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                        <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                        1-2 jours ouvrables en commandant avant 15h
+                                      </div>
+                                    </div>
+                                    <!--BLOC MENU DEROULANT-->
+                                    <div class="containerMenuDeroulant col-12 offset-1">
+                                      <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Description
+                                      </div>
+                                      <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                      </div>
+                                      <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Taille et coupe
+                                      </div>
+                                      <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                      </div>
+                                      <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Livraison
+                                      </div>
+                                      <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                      </div>
+                                      <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                        Avis
+                                      </div>
+                                      <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              <!--------------------------------fin Modal------------------------------------------------------------------------> 
                 </div>
 
                                    
@@ -429,10 +1474,11 @@
         </footer>
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
-    <script src="js/script.js"></script> 
+    <script src="js/script.js"></script>
+    
          
 </body>
 </html

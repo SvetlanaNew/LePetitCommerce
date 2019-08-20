@@ -177,6 +177,7 @@
 
         <div class="container-fluid d-flex flex-column">                
           <div class="row d-flex justify-content-center">
+            <!--Produit 1-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                 <a class="thumbnail">
                   <figure>
@@ -195,8 +196,127 @@
                     <span style="font-weight: bold">49,99€</span>
                   </p>
                 </div>
+                
+								<!--------------------------début modal 1---------------------------------------------------------------------------->
+								<div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit1" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                  </div>
+                  <!---->
+                  <div class="modal fade" id="produit1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSlidertpH1" class="carousel offset-2" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#containerSlidertpH1" data-slide-to="0" class="active"></li>
+                                  <li data-target="#containerSlidertpH1" data-slide-to="1"></li>
+                                  <li data-target="#containerSlidertpH1" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_vert_avant.jpg" alt="T-shirt vert">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_vert_arriere.jpg" alt="T-shirt vert">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_vert_volant.jpg" alt="T-shirt vert">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#containerSlidertpH1" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSlidertpH1" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_vert_volant.jpg" alt="T-shirt vert" class="zoom">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_vert_arriere.jpg" alt="T-shirt vert" class="zoom">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_vert_avant.jpg" alt="T-shirt vert" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                    <strong>T-shirt vert</strong>
+                                    <br>
+                                    49,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                    <option class="size" disabled selected>Votre taille</option>
+                                    <option class="size">S</option>
+                                    <option class="size">M</option>
+                                    <option class="size">L</option>
+                                    <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------fin Modal------------------------------------------------------------------------>
+                
             </div>
-                                    
+            
+            <!--Produit 2-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                 <a class="thumbnail">
                   <figure>
@@ -215,8 +335,124 @@
                     <span style="font-weight: bold">49,99€</span>
                   </p>
                 </div>
+                <!--------------------------début modal 2---------------------------------------------------------------------------->
+								<div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit2" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                  </div>
+                  <!---->
+                  <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSlidertpH2" class="carousel offset-2" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#containerSlidertpH2" data-slide-to="0" class="active"></li>
+                                  <li data-target="#containerSlidertpH2" data-slide-to="1"></li>
+                                  <li data-target="#containerSlidertpH2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_surfeur_avant.jpg" alt="T-shirt surfeur">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_surfeur_arriere.jpg" alt="T-shirt surfeur">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_surfeur_volant.jpg" alt="T-shirt surfeur">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#containerSlidertpH2" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSlidertpH2" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_surfeur_volant.jpg" alt="T-shirt surfeur" class="zoom">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_surfeur_arriere.jpg" alt="T-shirt surfeur" class="zoom">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_surfeur_avant.jpg" alt="T-shirt surfeur" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                    <strong>T-shirt surfeur</strong>
+                                    <br>
+                                    49,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                    <option class="size" disabled selected>Votre taille</option>
+                                    <option class="size">S</option>
+                                    <option class="size">M</option>
+                                    <option class="size">L</option>
+                                    <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>    
-
+            <!--Produit 3-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                     <a class="thumbnail">
                       <figure>
@@ -235,8 +471,125 @@
                             <span style="font-weight: bold">49,99€</span>
                           </p>
                         </div>
-            </div>
-
+                        <!--------------------------début modal 3---------------------------------------------------------------------------->
+          <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit3" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title descriptionFicheProduit" >
+                  Fiche produit
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                  <div class="container-fluid ">
+                    <!--BLOC SLIDER-->
+                    <div id="containerSlidertpH3" class="carousel offset-2" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#containerSlidertpH3" data-slide-to="0" class="active"></li>
+                      <li data-target="#containerSlidertpH3" data-slide-to="1"></li>
+                      <li data-target="#containerSlidertpH3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                      <img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_rouge_avant.jpg" alt="T-shirt rouge">
+                      </div>
+                      <div class="carousel-item">
+                      <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_rouge_arriere.jpg" alt="T-shirt rouge">
+                      </div>
+                      <div class="carousel-item">
+                      <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_rouge_volant.jpg" alt="T-shirt rouge">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#containerSlidertpH3" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Avant</span>
+                    </a>
+                    <a class="carousel-control-next" href="#containerSlidertpH3" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Aprés</span>
+                    </a>
+                    </div>
+                    <!---BLOC PHOTOS MINIATURE-->
+                    <div id="containerPhotos">
+                    <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                      <img src="img/homme/vetements/teeshirt/teeshirt_rouge_volant.jpg" alt="T-shirt rouge" class="zoom">
+                      <img src="img/homme/vetements/teeshirt/teeshirt_rouge_arriere.jpg" alt="T-shirt rouge" class="zoom">
+                      <img src="img/homme/vetements/teeshirt/teeshirt_rouge_avant.jpg" alt="T-shirt rouge" style="height: 500px;width:300px;" id="premiereImage">
+                    </div>
+                    </div>
+                    <!--BLOC DESCRIPTION PRODUIT-->
+                    <div class="container-fluid mt-5">
+                    <div class="col-12 offset-1">
+                      <p class="text-center ">
+                      <strong>T-shirt rouge</strong>
+                      <br>
+                      49,99 €
+                      </p>
+                    </div>
+                    <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                    <br>
+                    <div class="mt-2">
+                      <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                      <option class="size" disabled selected>Votre taille</option>
+                      <option class="size">S</option>
+                      <option class="size">M</option>
+                      <option class="size">L</option>
+                      <option class="size">XL</option>
+                      </select>
+                    </div>
+                    <hr class="col-6">
+                    <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                      <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                      ve, 26.07. - ma, 30.07.
+                    </div>
+                    <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                      <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                      1-2 jours ouvrables en commandant avant 15h
+                    </div>
+                    </div>
+                    <!--BLOC MENU DEROULANT-->
+                    <div class="containerMenuDeroulant col-12 offset-1">
+                    <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Description
+                    </div>
+                    <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Taille et coupe
+                    </div>
+                    <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Livraison
+                    </div>
+                    <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                    </div>
+                    <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                      Avis
+                    </div>
+                    <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              </div>
+              <!--------------------------------fin Modal------------------------------------------------------------------------>
+                                
+                      </div>
+            <!--Produit 4-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                     <a class="thumbnail">
                       <figure>
@@ -255,7 +608,125 @@
                           <span style="font-weight: bold">49,99€</span>
                         </p>
                       </div>
-            </div>
+                      <!--------------------------début modal 4---------------------------------------------------------------------------->
+                      <div class="d-flex justify-content-center">
+                          <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit4" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                      </div>
+                          <!---->
+                          <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title descriptionFicheProduit" >
+                                    Fiche produit
+                                  </h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                  <div class="modal-body">
+                                    <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                                      <div class="container-fluid ">
+                                        <!--BLOC SLIDER-->
+                                        <div id="containerSlidertpH4" class="carousel offset-2" data-ride="carousel">
+                                          <ol class="carousel-indicators">
+                                            <li data-target="#containerSlidertpH4" data-slide-to="0" class="active"></li>
+                                            <li data-target="#containerSlidertpH4" data-slide-to="1"></li>
+                                            <li data-target="#containerSlidertpH4" data-slide-to="2"></li>
+                                          </ol>
+                                        <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_raye_avant.jpg" alt="T-shirt rayé">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_raye_arriere.jpg" alt="T-shirt rayé">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_raye_volant.jpg" alt="T-shirt rayé">
+                                        </div>
+                                        </div>
+                                <a class="carousel-control-prev" href="#containerSlidertpH4" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Avant</span>
+                                </a>
+                                <a class="carousel-control-next" href="#containerSlidertpH4" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Aprés</span>
+                                </a>
+                                </div>
+                                <!---BLOC PHOTOS MINIATURE-->
+                                <div id="containerPhotos">
+                                <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_raye_volant.jpg" alt="T-shirt rayé" class="zoom">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_raye_arriere.jpg" alt="T-shirt rayé" class="zoom">
+                                  <img src="img/homme/vetements/teeshirt/teeshirt_raye_avant.jpg" alt="T-shirt rayé" style="height: 500px;width:300px;" id="premiereImage">
+                                </div>
+                                </div>
+                                <!--BLOC DESCRIPTION PRODUIT-->
+                                <div class="container-fluid mt-5">
+                                <div class="col-12 offset-1">
+                                  <p class="text-center ">
+                                  <strong>T-shirt rayé</strong>
+                                  <br>
+                                  49,99 €
+                                  </p>
+                                </div>
+                                <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                                <br>
+                                <div class="mt-2">
+                                  <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                  <option class="size" disabled selected>Votre taille</option>
+                                  <option class="size">S</option>
+                                  <option class="size">M</option>
+                                  <option class="size">L</option>
+                                  <option class="size">XL</option>
+                                  </select>
+                                </div>
+                                <hr class="col-6">
+                                <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                  <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                  ve, 26.07. - ma, 30.07.
+                                </div>
+                                <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                  <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                  1-2 jours ouvrables en commandant avant 15h
+                                </div>
+                                </div>
+                                <!--BLOC MENU DEROULANT-->
+                                <div class="containerMenuDeroulant col-12 offset-1">
+                                <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Description
+                                </div>
+                                <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Taille et coupe
+                                </div>
+                                <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </div>
+                                <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Livraison
+                                </div>
+                                <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                                </div>
+                                <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                  Avis
+                                </div>
+                                <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                </div>
+                                </div>
+                              </div>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                          </div>
+                          <!--------------------------------fin Modal------------------------------------------------------------------------>
+                        </div>
+
+                      <!--Produit 5-->
 
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                     <a class="thumbnail">
@@ -275,8 +746,124 @@
                         <span style="font-weight: bold">59,99€</span>
                       </p>
                     </div>
+                    <!--------------------------début modal 5---------------------------------------------------------------------------->
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit5" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                </div>
+                <!---->
+                <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title descriptionFicheProduit" >
+                    Fiche produit
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                    <div class="container-fluid ">
+                      <!--BLOC SLIDER-->
+                      <div id="containerSlidertpH5" class="carousel offset-2" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#containerSlidertpH5" data-slide-to="0" class="active"></li>
+                        <li data-target="#containerSlidertpH5" data-slide-to="1"></li>
+                        <li data-target="#containerSlidertpH5" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_noir_avant.jpg" alt="T-shirt noir">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_noir_arriere.jpg" alt="T-shirt noir">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_noir_volant.jpg" alt="T-shirt noir">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#containerSlidertpH5" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Avant</span>
+                      </a>
+                      <a class="carousel-control-next" href="#containerSlidertpH5" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Aprés</span>
+                      </a>
+                      </div>
+                      <!---BLOC PHOTOS MINIATURE-->
+                      <div id="containerPhotos">
+                      <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                        <img src="img/homme/vetements/teeshirt/teeshirt_noir_volant.jpg" alt="T-shirt noir" class="zoom">
+                        <img src="img/homme/vetements/teeshirt/teeshirt_noir_arriere.jpg" alt="T-shirt noir" class="zoom">
+                        <img src="img/homme/vetements/teeshirt/teeshirt_noir_avant.jpg" alt="T-shirt noir" style="height: 500px;width:300px;" id="premiereImage">
+                      </div>
+                      </div>
+                      <!--BLOC DESCRIPTION PRODUIT-->
+                      <div class="container-fluid mt-5">
+                      <div class="col-12 offset-1">
+                        <p class="text-center ">
+                        <strong>T-shirt noir</strong>
+                        <br>
+                        59,99 €
+                        </p>
+                      </div>
+                      <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                      <br>
+                      <div class="mt-2">
+                        <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                        <option class="size" disabled selected>Votre taille</option>
+                        <option class="size">S</option>
+                        <option class="size">M</option>
+                        <option class="size">L</option>
+                        <option class="size">XL</option>
+                        </select>
+                      </div>
+                      <hr class="col-6">
+                      <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                        <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                        ve, 26.07. - ma, 30.07.
+                      </div>
+                      <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                        <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                        1-2 jours ouvrables en commandant avant 15h
+                      </div>
+                      </div>
+                      <!--BLOC MENU DEROULANT-->
+                      <div class="containerMenuDeroulant col-12 offset-1">
+                      <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                        Description
+                      </div>
+                      <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      </div>
+                      <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                        Taille et coupe
+                      </div>
+                      <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      </div>
+                      <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                        Livraison
+                      </div>
+                      <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                      </div>
+                      <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                        Avis
+                      </div>
+                      <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                </div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
-                    
+                 <!--Produit 6-->   
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                 <a class="thumbnail">
                     <figure>
@@ -295,8 +882,124 @@
                       <span style="font-weight: bold">59,99€</span>
                     </p>
                   </div>
+                  <!--------------------------début modal 6---------------------------------------------------------------------------->
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit6" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+                        </div>
+                        <!---->
+                        <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title descriptionFicheProduit" >
+                            Fiche produit
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                            <div class="container-fluid ">
+                              <!--BLOC SLIDER-->
+                              <div id="containerSlidertpH6" class="carousel offset-2" data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                <li data-target="#containerSlidertpH6" data-slide-to="0" class="active"></li>
+                                <li data-target="#containerSlidertpH6" data-slide-to="1"></li>
+                                <li data-target="#containerSlidertpH6" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_noir et blanc_avant.jpg" alt="T-shirt noir et blanc">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_noir et blanc_arriere.jpg" alt="T-shirt noir et blanc">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_noir et blanc_volant.jpg" alt="T-shirt noir et blanc">
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#containerSlidertpH6" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Avant</span>
+                              </a>
+                              <a class="carousel-control-next" href="#containerSlidertpH6" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Aprés</span>
+                              </a>
+                              </div>
+                              <!---BLOC PHOTOS MINIATURE-->
+                              <div id="containerPhotos">
+                              <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+                                <img src="img/homme/vetements/teeshirt/teeshirt_noir et blanc_volant.jpg" alt="T-shirt noir et blanc" class="zoom">
+                                <img src="img/homme/vetements/teeshirt/teeshirt_noir et blanc_arriere.jpg" alt="T-shirt noir et blanc" class="zoom">
+                                <img src="img/homme/vetements/teeshirt/teeshirt_noir et blanc_avant.jpg" alt="T-shirt noir et blanc" style="height: 500px;width:300px;" id="premiereImage">
+                              </div>
+                              </div>
+                              <!--BLOC DESCRIPTION PRODUIT-->
+                              <div class="container-fluid mt-5">
+                              <div class="col-12 offset-1">
+                                <p class="text-center ">
+                                <strong>T-shirt noir et blanc</strong>
+                                <br>
+                                59,99 €
+                                </p>
+                              </div>
+                              <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+                              <br>
+                              <div class="mt-2">
+                                <select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+                                <option class="size" disabled selected>Votre taille</option>
+                                <option class="size">S</option>
+                                <option class="size">M</option>
+                                <option class="size">L</option>
+                                <option class="size">XL</option>
+                                </select>
+                              </div>
+                              <hr class="col-6">
+                              <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                                <i class="fas fa-truck" > Livraison Standarde gratuite</i>
+                                ve, 26.07. - ma, 30.07.
+                              </div>
+                              <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                                <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                                1-2 jours ouvrables en commandant avant 15h
+                              </div>
+                              </div>
+                              <!--BLOC MENU DEROULANT-->
+                              <div class="containerMenuDeroulant col-12 offset-1">
+                              <div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                Description
+                              </div>
+                              <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              </div>
+                              <div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                Taille et coupe
+                              </div>
+                              <div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              </div>
+                              <div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                Livraison
+                              </div>
+                              <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+                              </div>
+                              <div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                                Avis
+                              </div>
+                              <div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                              </div>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                        </div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
-
+            <!--Produit 7-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                   <a class="thumbnail">
                       <figure>
@@ -315,8 +1018,124 @@
                       <span style="font-weight: bold">39,99€</span>
                     </p>
                 </div>
+                <!--------------------------début modal 7---------------------------------------------------------------------------->
+				<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit7" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+					</div>
+					<!---->
+					<div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title descriptionFicheProduit" >
+								Fiche produit
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+							<div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+								<div class="container-fluid ">
+								<!--BLOC SLIDER-->
+								<div id="containerSlidertpH7" class="carousel offset-2" data-ride="carousel">
+									<ol class="carousel-indicators">
+									<li data-target="#containerSlidertpH7" data-slide-to="0" class="active"></li>
+									<li data-target="#containerSlidertpH7" data-slide-to="1"></li>
+									<li data-target="#containerSlidertpH7" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-flex " src="img/homme/vetements/teeshirt/debardeur_gris_avant.jpg" alt="Débardeur gris">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/debardeur_gris_arriere.jpg" alt="Débardeur gris">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/debardeur_gris_volant.jpg" alt="Débardeur gris">
+									</div>
+									</div>
+									<a class="carousel-control-prev" href="#containerSlidertpH7" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Avant</span>
+									</a>
+									<a class="carousel-control-next" href="#containerSlidertpH7" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Aprés</span>
+									</a>
+								</div>
+								<!---BLOC PHOTOS MINIATURE-->
+								<div id="containerPhotos">
+									<div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+									<img src="img/homme/vetements/teeshirt/debardeur_gris_avant.jpg" alt="Débardeur gris" class="zoom">
+									<img src="img/homme/vetements/teeshirt/debardeur_gris_volant.jpg" alt="Débardeur gris" class="zoom">
+									<img src="img/homme/vetements/teeshirt/debardeur_gris_avant.jpg" alt="Débardeur gris" style="height: 500px;width:300px;" id="premiereImage">
+									</div>
+								</div>
+								<!--BLOC DESCRIPTION PRODUIT-->
+								<div class="container-fluid mt-5">
+									<div class="col-12 offset-1">
+									<p class="text-center ">
+										<strong>Débardeur gris</strong>
+										<br>
+										39,99 €
+									</p>
+									</div>
+									<button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+									<br>
+									<div class="mt-2">
+									<select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+										<option class="size" disabled selected>Votre taille</option>
+										<option class="size">S</option>
+										<option class="size">M</option>
+										<option class="size">L</option>
+										<option class="size">XL</option>
+									</select>
+									</div>
+									<hr class="col-6">
+									<div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+									<i class="fas fa-truck" > Livraison Standarde gratuite</i>
+									ve, 26.07. - ma, 30.07.
+									</div>
+									<div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+									<i class="fas fa-truck "> Livraison Express 9,95 €</i>
+									1-2 jours ouvrables en commandant avant 15h
+									</div>
+								</div>
+								<!--BLOC MENU DEROULANT-->
+								<div class="containerMenuDeroulant col-12 offset-1">
+									<div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Description
+									</div>
+									<div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Taille et coupe
+									</div>
+									<div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Livraison
+									</div>
+									<div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+									</div>
+									<div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Avis
+									</div>
+									<div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
-
+            <!--Produit 8-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                   <a class="thumbnail">
                     <figure>
@@ -335,8 +1154,124 @@
                       <span style="font-weight: bold">49,99€</span>
                     </p>
                   </div>
+                  <!--------------------------début modal 1---------------------------------------------------------------------------->
+				<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit8" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+					</div>
+					<!---->
+					<div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title descriptionFicheProduit" >
+								Fiche produit
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+							<div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+								<div class="container-fluid ">
+								<!--BLOC SLIDER-->
+								<div id="containerSlidertpH8" class="carousel offset-2" data-ride="carousel">
+									<ol class="carousel-indicators">
+									<li data-target="#containerSlidertpH8" data-slide-to="0" class="active"></li>
+									<li data-target="#containerSlidertpH8" data-slide-to="1"></li>
+									<li data-target="#containerSlidertpH8" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-flex " src="img/homme/vetements/teeshirt/polo_blanc_avant.jpg" alt="Polo blanc">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/polo_blanc_arriere.jpg" alt="Polo blanc">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/polo_blanc_volant.jpg" alt="Polo blanc">
+									</div>
+									</div>
+									<a class="carousel-control-prev" href="#containerSlidertpH8" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Avant</span>
+									</a>
+									<a class="carousel-control-next" href="#containerSlidertpH8" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Aprés</span>
+									</a>
+								</div>
+								<!---BLOC PHOTOS MINIATURE-->
+								<div id="containerPhotos">
+									<div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+									<img src="img/homme/vetements/teeshirt/polo_blanc_arriere.jpg" alt="Polo blanc" class="zoom">
+									<img src="img/homme/vetements/teeshirt/polo_blanc_volant.jpg" alt="Polo blanc" class="zoom">
+									<img src="img/homme/vetements/teeshirt/polo_blanc_avant.jpg" alt="Polo blanc" style="height: 500px;width:300px;" id="premiereImage">
+									</div>
+								</div>
+								<!--BLOC DESCRIPTION PRODUIT-->
+								<div class="container-fluid mt-5">
+									<div class="col-12 offset-1">
+									<p class="text-center ">
+										<strong>Polo blanc</strong>
+										<br>
+										49,99 €
+									</p>
+									</div>
+									<button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+									<br>
+									<div class="mt-2">
+									<select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+										<option class="size" disabled selected>Votre taille</option>
+										<option class="size">S</option>
+										<option class="size">M</option>
+										<option class="size">L</option>
+										<option class="size">XL</option>
+									</select>
+									</div>
+									<hr class="col-6">
+									<div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+									<i class="fas fa-truck" > Livraison Standarde gratuite</i>
+									ve, 26.07. - ma, 30.07.
+									</div>
+									<div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+									<i class="fas fa-truck "> Livraison Express 9,95 €</i>
+									1-2 jours ouvrables en commandant avant 15h
+									</div>
+								</div>
+								<!--BLOC MENU DEROULANT-->
+								<div class="containerMenuDeroulant col-12 offset-1">
+									<div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Description
+									</div>
+									<div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Taille et coupe
+									</div>
+									<div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Livraison
+									</div>
+									<div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+									</div>
+									<div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Avis
+									</div>
+									<div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
-                                                            
+             <!--Produit 9-->                                               
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
               <a class="thumbnail">
                 <figure>
@@ -355,8 +1290,124 @@
                   <span style="font-weight: bold">59,99€</span>
                 </p>
               </div>
+              <!--------------------------début modal 9---------------------------------------------------------------------------->
+				<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit9" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+					</div>
+					<!---->
+					<div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title descriptionFicheProduit" >
+								Fiche produit
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+							<div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+								<div class="container-fluid ">
+								<!--BLOC SLIDER-->
+								<div id="containerSlidertpH9" class="carousel offset-2" data-ride="carousel">
+									<ol class="carousel-indicators">
+									<li data-target="#containerSlidertpH9" data-slide-to="0" class="active"></li>
+									<li data-target="#containerSlidertpH9" data-slide-to="1"></li>
+									<li data-target="#containerSlidertpH9" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_motif_avant.jpg" alt="T-shirt motif">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_motif_arriere.jpg" alt="T-shirt motif">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_motif_volant.jpg" alt="T-shirt motif">
+									</div>
+									</div>
+									<a class="carousel-control-prev" href="#containerSlidertpH9" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Avant</span>
+									</a>
+									<a class="carousel-control-next" href="#containerSlidertpH9" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Aprés</span>
+									</a>
+								</div>
+								<!---BLOC PHOTOS MINIATURE-->
+								<div id="containerPhotos">
+									<div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+									<img src="img/homme/vetements/teeshirt/teeshirt_motif_arriere.jpg" alt="T-shirt motif" class="zoom">
+									<img src="img/homme/vetements/teeshirt/teeshirt_motif_volant.jpg" alt="T-shirt motif" class="zoom">
+									<img src="img/homme/vetements/teeshirt/teeshirt_motif_avant.jpg" alt="T-shirt motif" style="height: 500px;width:300px;" id="premiereImage">
+									</div>
+								</div>
+								<!--BLOC DESCRIPTION PRODUIT-->
+								<div class="container-fluid mt-5">
+									<div class="col-12 offset-1">
+									<p class="text-center ">
+										<strong>T-shirt à motif</strong>
+										<br>
+										59,99 €
+									</p>
+									</div>
+									<button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+									<br>
+									<div class="mt-2">
+									<select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+										<option class="size" disabled selected>Votre taille</option>
+										<option class="size">S</option>
+										<option class="size">M</option>
+										<option class="size">L</option>
+										<option class="size">XL</option>
+									</select>
+									</div>
+									<hr class="col-6">
+									<div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+									<i class="fas fa-truck" > Livraison Standarde gratuite</i>
+									ve, 26.07. - ma, 30.07.
+									</div>
+									<div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+									<i class="fas fa-truck "> Livraison Express 9,95 €</i>
+									1-2 jours ouvrables en commandant avant 15h
+									</div>
+								</div>
+								<!--BLOC MENU DEROULANT-->
+								<div class="containerMenuDeroulant col-12 offset-1">
+									<div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Description
+									</div>
+									<div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Taille et coupe
+									</div>
+									<div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Livraison
+									</div>
+									<div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+									</div>
+									<div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Avis
+									</div>
+									<div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
-
+            <!--Produit 10-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                 <a class="thumbnail">
                   <figure>
@@ -375,8 +1426,124 @@
                     <span style="font-weight: bold">49,99€</span>
                   </p>
                 </div>
+                <!--------------------------début modal 10---------------------------------------------------------------------------->
+				<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit10" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+					</div>
+					<!---->
+					<div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title descriptionFicheProduit" >
+								Fiche produit
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+							<div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+								<div class="container-fluid ">
+								<!--BLOC SLIDER-->
+								<div id="containerSlidertpH10" class="carousel offset-2" data-ride="carousel">
+									<ol class="carousel-indicators">
+									<li data-target="#containerSlidertpH10" data-slide-to="0" class="active"></li>
+									<li data-target="#containerSlidertpH10" data-slide-to="1"></li>
+									<li data-target="#containerSlidertpH10" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-flex " src="img/homme/vetements/teeshirt/polo_bleumarine_avant.jpg" alt="Polo bleu marine">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/polo_bleumarine_arriere.jpg" alt="Polo bleu marine">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/polo_bleumarine_volant.jpg" alt="Polo bleu marine">
+									</div>
+									</div>
+									<a class="carousel-control-prev" href="#containerSlidertpH10" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Avant</span>
+									</a>
+									<a class="carousel-control-next" href="#containerSlidertpH10" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Aprés</span>
+									</a>
+								</div>
+								<!---BLOC PHOTOS MINIATURE-->
+								<div id="containerPhotos">
+									<div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+									<img src="img/homme/vetements/teeshirt/polo_bleumarine_avant.jpg" alt="Polo bleu marine" class="zoom">
+									<img src="img/homme/vetements/teeshirt/polo_bleumarine_volant.jpg" alt="Polo bleu marine" class="zoom">
+									<img src="img/homme/vetements/teeshirt/polo_bleumarine_avant.jpg" alt="Polo bleu marine" style="height: 500px;width:300px;" id="premiereImage">
+									</div>
+								</div>
+								<!--BLOC DESCRIPTION PRODUIT-->
+								<div class="container-fluid mt-5">
+									<div class="col-12 offset-1">
+									<p class="text-center ">
+										<strong>Polo bleu marine</strong>
+										<br>
+										49,99 €
+									</p>
+									</div>
+									<button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+									<br>
+									<div class="mt-2">
+									<select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+										<option class="size" disabled selected>Votre taille</option>
+										<option class="size">S</option>
+										<option class="size">M</option>
+										<option class="size">L</option>
+										<option class="size">XL</option>
+									</select>
+									</div>
+									<hr class="col-6">
+									<div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+									<i class="fas fa-truck" > Livraison Standarde gratuite</i>
+									ve, 26.07. - ma, 30.07.
+									</div>
+									<div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+									<i class="fas fa-truck "> Livraison Express 9,95 €</i>
+									1-2 jours ouvrables en commandant avant 15h
+									</div>
+								</div>
+								<!--BLOC MENU DEROULANT-->
+								<div class="containerMenuDeroulant col-12 offset-1">
+									<div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Description
+									</div>
+									<div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Taille et coupe
+									</div>
+									<div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Livraison
+									</div>
+									<div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+									</div>
+									<div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Avis
+									</div>
+									<div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
-
+            <!--Produit 11-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                   <a class="thumbnail">
                     <figure>
@@ -395,13 +1562,129 @@
                       <span style="font-weight: bold">39,90€</span>
                     </p>
                   </div>
+                  <!--------------------------début modal 11---------------------------------------------------------------------------->
+				<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit11" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+					</div>
+					<!---->
+					<div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title descriptionFicheProduit" >
+								Fiche produit
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+							<div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+								<div class="container-fluid ">
+								<!--BLOC SLIDER-->
+								<div id="containerSlidertpH11" class="carousel offset-2" data-ride="carousel">
+									<ol class="carousel-indicators">
+									<li data-target="#containerSlidertpH11" data-slide-to="0" class="active"></li>
+									<li data-target="#containerSlidertpH11" data-slide-to="1"></li>
+									<li data-target="#containerSlidertpH11" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-flex " src="img/homme/vetements/teeshirt/debardeur_noir_avant.jpg" alt="Débardeur noir">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/debardeur_noir_arriere.jpg" alt="Débardeur noir">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/debardeur_noir_volant.jpg" alt="Débardeur noir">
+									</div>
+									</div>
+									<a class="carousel-control-prev" href="#containerSlidertpH11" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Avant</span>
+									</a>
+									<a class="carousel-control-next" href="#containerSlidertpH11" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Aprés</span>
+									</a>
+								</div>
+								<!---BLOC PHOTOS MINIATURE-->
+								<div id="containerPhotos">
+									<div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+									<img src="img/homme/vetements/teeshirt/debardeur_noir_arriere.jpg" alt="Débardeur noir" class="zoom">
+									<img src="img/homme/vetements/teeshirt/debardeur_noir_volant.jpg" alt="Débardeur noir" class="zoom">
+									<img src="img/homme/vetements/teeshirt/debardeur_noir_avant.jpg" alt="Débardeur noir" style="height: 500px;width:300px;" id="premiereImage">
+									</div>
+								</div>
+								<!--BLOC DESCRIPTION PRODUIT-->
+								<div class="container-fluid mt-5">
+									<div class="col-12 offset-1">
+									<p class="text-center ">
+										<strong>Débardeur noir</strong>
+										<br>
+										39,99 €
+									</p>
+									</div>
+									<button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+									<br>
+									<div class="mt-2">
+									<select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+										<option class="size" disabled selected>Votre taille</option>
+										<option class="size">S</option>
+										<option class="size">M</option>
+										<option class="size">L</option>
+										<option class="size">XL</option>
+									</select>
+									</div>
+									<hr class="col-6">
+									<div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+									<i class="fas fa-truck" > Livraison Standarde gratuite</i>
+									ve, 26.07. - ma, 30.07.
+									</div>
+									<div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+									<i class="fas fa-truck "> Livraison Express 9,95 €</i>
+									1-2 jours ouvrables en commandant avant 15h
+									</div>
+								</div>
+								<!--BLOC MENU DEROULANT-->
+								<div class="containerMenuDeroulant col-12 offset-1">
+									<div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Description
+									</div>
+									<div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Taille et coupe
+									</div>
+									<div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Livraison
+									</div>
+									<div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+									</div>
+									<div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Avis
+									</div>
+									<div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
-
+            <!--Produit 12-->
             <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
                     <a class="thumbnail">
                       <figure>
                         <img class="img-thumbnail" src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_avant.jpg" alt="t-shirt manche longue rouge">
-                          <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                          <figcaption class="d-none d-lg-block d-xl-block" style="height: 275px;margin: 0;">
                             <p style="text-align: center;margin: 0;">T-shirt manche longue rouge<br>59,99 EUROS</p>
                               <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
                                 <img src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_arriere.jpg" alt="t-shirt manche longue rouge" style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
@@ -415,6 +1698,122 @@
                         <span style="font-weight: bold">59,99€</span>
                       </p>
                     </div>
+                    <!--------------------------début modal 12---------------------------------------------------------------------------->
+				<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit12" ><p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p></button>
+					</div>
+					<!---->
+					<div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title descriptionFicheProduit" >
+								Fiche produit
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body">
+							<div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+								<div class="container-fluid ">
+								<!--BLOC SLIDER-->
+								<div id="containerSlidertpH12" class="carousel offset-2" data-ride="carousel">
+									<ol class="carousel-indicators">
+									<li data-target="#containerSlidertpH12" data-slide-to="0" class="active"></li>
+									<li data-target="#containerSlidertpH12" data-slide-to="1"></li>
+									<li data-target="#containerSlidertpH12" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-flex " src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_avant.jpg" alt="T-shirt manches longues rouge">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_arriere.jpg" alt="T-shirt manches longues rouge">
+									</div>
+									<div class="carousel-item">
+										<img class="d-flex" src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_volant.jpg" alt="T-shirt manches longues rouge">
+									</div>
+									</div>
+									<a class="carousel-control-prev" href="#containerSlidertpH12" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Avant</span>
+									</a>
+									<a class="carousel-control-next" href="#containerSlidertpH12" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Aprés</span>
+									</a>
+								</div>
+								<!---BLOC PHOTOS MINIATURE-->
+								<div id="containerPhotos">
+									<div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width:400px;height: 520px">
+									<img src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_arriere.jpg" alt="T-shirt manches longues rouge" class="zoom">
+									<img src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_volant.jpg" alt="T-shirt manches longues rouge" class="zoom">
+									<img src="img/homme/vetements/teeshirt/teeshirt_manche_longue_rouge_avant.jpg" alt="T-shirt manches longues rouge" style="height: 500px;width:300px;" id="premiereImage">
+									</div>
+								</div>
+								<!--BLOC DESCRIPTION PRODUIT-->
+								<div class="container-fluid mt-5">
+									<div class="col-12 offset-1">
+									<p class="text-center ">
+										<strong>T-shirt manches longues rouge</strong>
+										<br>
+										59,99 €
+									</p>
+									</div>
+									<button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 ">Ajouter au panier</button>
+									<br>
+									<div class="mt-2">
+									<select class=" fs-1 btn-lg col-12 offset-1 mb-3 custom-dropdown__select custom-dropdown__select-white">
+										<option class="size" disabled selected>Votre taille</option>
+										<option class="size">S</option>
+										<option class="size">M</option>
+										<option class="size">L</option>
+										<option class="size">XL</option>
+									</select>
+									</div>
+									<hr class="col-6">
+									<div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+									<i class="fas fa-truck" > Livraison Standarde gratuite</i>
+									ve, 26.07. - ma, 30.07.
+									</div>
+									<div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+									<i class="fas fa-truck "> Livraison Express 9,95 €</i>
+									1-2 jours ouvrables en commandant avant 15h
+									</div>
+								</div>
+								<!--BLOC MENU DEROULANT-->
+								<div class="containerMenuDeroulant col-12 offset-1">
+									<div class="barre btn-lg col-10 offset-1 " style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Description
+									</div>
+									<div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="btn-lg col-10 offset-1 barre2" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Taille et coupe
+									</div>
+									<div class="rideau2 btn-lg col-10 offset-1" style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									</div>
+									<div class="barre3 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Livraison
+									</div>
+									<div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. M 
+									</div>
+									<div class="barre4 btn-lg col-10 offset-1" style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+									Avis
+									</div>
+									<div class="rideau4 btn-lg col-10 offset-1" style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+	  <!--------------------------------fin Modal------------------------------------------------------------------------>
             </div>
 
                                               
@@ -492,7 +1891,7 @@
         </footer>
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/script.js"></script> 
