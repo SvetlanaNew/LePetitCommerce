@@ -191,7 +191,7 @@ input .civilite {box-shadow: 5px 5px 5px white;}
 @media screen and  (min-width: 768px) {
 	.modal-content{font-size: 1em;}
 	#containerPhotos{display: flex;vertical-align: bottom;}
-	.carousel{display: none;}
+	.modal-body .carousel{display: none;}
 	
 	.containerDescription{line-height: 1.5em;font-size: 1em;width: 100%;}
 
