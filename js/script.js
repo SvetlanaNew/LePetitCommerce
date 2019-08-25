@@ -1,4 +1,4 @@
-
+/***********Menu Deroulant******************** */
 $(document).ready(function(){
 $('.barre').click(function(){
      
@@ -21,3 +21,4 @@ $('.rideau').slideToggle(500);
   });
 
  });
+
