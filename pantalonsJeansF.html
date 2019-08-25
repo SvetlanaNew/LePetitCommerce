@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +15,6 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Le Petit Commerce, pantalons</title>
-
-
-
 </head>
 
 <body class="container-fluid d-flex flex-column flex-lg-row ">
@@ -182,6 +178,7 @@
       <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
 
         <div class="container-fluid mt-3">
+            <img src="img/logo.png" alt="logo" class="m-1" style="height:60px;width:60px;">  
           <h2 style="text-align: center">PANTALONS & JEANS</h2>
           <p style="text-align: center">Du jeans au pantalon, les jeux de longueur donnent à la silhouette une nouvelle
             liberté. A chacune son allure affirmée.</p>
@@ -298,7 +295,7 @@
                               <p class="text-center "><strong>Jeans bootcut bleu clair</strong><br>129,99 €</p>
                             </div>
                             <button
-                              class="add btn-lg h-1.5 offset-1 btn-success btn-success boutonpanier col-12 ">Ajouter au
+                              class="add btn-lg h-1.5 offset-1 btn-success btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -446,7 +443,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Jeans bootcut bleu foncé</strong><br>129,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -591,7 +588,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Jeans bootcut bleu</strong><br>119,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -739,7 +736,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Jeans bootcut usé bleu</strong><br>119,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -884,7 +881,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Pantalon kaki droit</strong><br>89,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1029,7 +1026,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Pantalon gris droit</strong><br>49,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1175,7 +1172,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Pantalon droit écru</strong><br>89,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1319,7 +1316,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Jeans skinny noir</strong><br>119,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1466,7 +1463,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Jeans skinny bleu usé</strong><br>189,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1611,7 +1608,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Pantalon droit rayé</strong><br>99,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1759,7 +1756,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Jeans skinny noir en latex</strong><br>119,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1908,7 +1905,7 @@
                             <div class="col-12 offset-1">
                               <p class="text-center "><strong>Pantalon droit à carreaux</strong><br>159,99 €</p>
                             </div>
-                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 ">Ajouter au
+                            <button class="add btn-lg h-1.5 offset-1 btn-success boutonpanier col-12 " onclick="add();" >Ajouter au
                               panier</button>
                             <br>
                             <hr class="col-6">
@@ -1964,32 +1961,23 @@
             <!--fin article-->
           </div>
         </div>
-
-
-
       </div>
-
+<!--pre footer 1-->
       <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap p-3">
         <h3 class="col col-lg-12 p-2">AVANTAGES E-BOUTIQUE</h3>
-
-
         <article class="col col-lg-4 p-3">
           <h4><i class="fas fa-shipping-fast"></i></h4>
           <h4>LIVRAISON OFFERTE</h4>
           <p><span class="marge"></span>La livraison standard est offerte, à partir d’un montant minimum d’achat de
             24.90 €.Nous proposons également la livraison express pour 9.95 €. </p>
-
         </article>
-
         <article class="col col-lg-4 p-3">
           <h4><i class="fas fa-undo-alt"></i></h4>
           <h4> RETOUR OFFERT</h4>
           <p><span class="marge"></span>Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de
             documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br> Les frais de port
             sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit !</p>
-
         </article>
-
         <article class="col col-lg-4 p-3 ">
           <h4><i class="fas fa-gift"></i></h'>
             <h4>L'ART D'OFFRIR</h4>
@@ -1997,24 +1985,17 @@
               confrontés à la même question : à quoi ressemble le cadeau parfait ?<br> Avec un coffret personnalisé Le
               Petit Commerce, vous avez trouvé la réponse.<br>Votre commande sera sublimée dans un coffret cadeau
               personnalisé</p>
-
         </article>
-
-
       </section>
-
+<!--pre footer 2-->
       <section class="contenair-fluid prefooter2 d-flex flex-column flex-lg-row  p-3">
         <article class="col p-3">
           <h3>NEWSLETTER</h3>
-
           <a href="newsletters.html" class="stretched-link">
-            <p class="p-4"><span class="marge"></span>Et si vous profitiez de 10% de réduction sur votre prochaine
-              commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine
+            <p class="p-4"><span class="marge"></span>Abonnez-vous à la newsletter Le PEtit Commerce et bénéficiez de 10% de réduction sur votre prochaine
               commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p>
           </a>
-
         </article>
-
         <article class="col p-3">
           <h3>NOUS CONTACTER</h3>
           <a href="contact.html" class="stretched-link">
@@ -2030,11 +2011,10 @@
             <a href="http://instagram.com" target="_blank" title="instagram" class="p-3"><i
                 class="fab fa-instagram"></i></a>
             <a href="http://twitter.com" target="_blank" title="twitter " class="p-3"><i
-                class="fab fa-pinterest"></i></a>
+                class="fab fa-twitter"></i></a>
           </div>
         </article>
       </section>
-
     </main>
 
     <footer class="pt-4">
@@ -2054,7 +2034,13 @@
   </script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
-
+  <script>
+    $(function add(){$('.add').on("click", function add(){
+      alert('Votre produit a été ajouté au panier');
+     document.location.href="pantalonsJeansF.html";
+     });
+    });
+   </script>
 </body>
 
 </html
