@@ -17,11 +17,12 @@ function resultat(){
        && document.formulaire1.mdp.value.length >= 8
           && document.formulaire1.mdp.value.length <=16)
           { 
-            alert('Bienvenue! vous êtes connecté')
+            alert('Bienvenue! vous êtes connecté');
+            document.location.href="compteClient.html";
            
             }else{
               alert("ERREUR! Votre coonexion a échoué");
-        
+              document.location.href="connexionInscription.html";
             };
 };
    
@@ -85,7 +86,8 @@ if(document.formulaire2.pseudo2.value.length >= 5
 // && document.formulaire2.code_postal.value.typeof === 'number'
 
 )      { 
-  alert('Votre compte a été créé avec succes!')
+  alert('Votre compte a été créé avec succes!');
+  document.location.href="compteClient.html";
  
   }else{
     alert("ERREUR! Votre inscription a échoué");
@@ -139,6 +141,7 @@ if(document.formulaire2.pseudo2.value.length >= 5
      
       }else{
         alert("ERREUR! Votre demande n'a pas abouti!");
+        document.location.href="connexionInscription.html";
   
       }
   };
@@ -189,11 +192,12 @@ if(document.formulaire2.pseudo2.value.length >= 5
                     && document.formulaireRecrutement.lettreM.value.length != ""
                       && document.formulaireRecrutement.message4.value.length != ""
     ){ 
-    alert('Votre candidature a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.')
+    alert('Votre candidature a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.');
+    document.location.href="recrutements.html";
    
     }else{
       alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");
-
+      document.location.href="recrutements.html";
     }
 };
 /*********************Formulaire prise rendez vous***************************/
@@ -223,11 +227,11 @@ function resultat5(){
               && document.formulaireRendezVous.email5.value.length != ""
                       && document.formulaireRendezVous.calendrier.value.length != ""
     ){ 
-    alert('Votre DEMANDE a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.')
-   
+    alert('Votre DEMANDE a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.');
+    document.location.href="coachPersonnel.html";
     }else{
       alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");
-
+      document.location.href="coachPersonnel.html";
     }
 };
 
@@ -258,10 +262,11 @@ function resultat6(){
               && document.formulaireCommentaire.email6.value.length != ""
                 && document.formulaireCommentaire.message6.value.length != ""
     ){ 
-    alert('Votre Commentaire a bien été envoyer! il sera visible dans 24H! Vous recevrez un email de confirmation dès sa parution')
-   
+    alert('Votre Commentaire a bien été envoyer! il sera visible dans 24H! Vous recevrez un email de confirmation dès sa parution');
+    document.location.href="avis_boutique.html";
     }else{
       alert("ERREUR! Votre demande n'a pas abouti! veuillez re-commencer");
+      document.location.href="avis_boutique.html";
     }
   };
 /**************evaluation commentaires***********************/
@@ -316,7 +321,7 @@ function resultat7(){
             && document.formulaireNewsletters.prenom7.value.length < 25
               && document.formulaireNewsletters.email7.value.length != ""
     ){ 
-    alert('Votre inscription a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.')
+    alert('Votre inscription a bien été envoyer! Vous recevrez un email de confirmation dès reception de votre dossier.');
    
     }else{
       alert("ERREUR! Votre inscription n'a pas abouti! veuillez re-commencer");
