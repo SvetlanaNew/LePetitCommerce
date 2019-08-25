@@ -111,7 +111,7 @@
 					<li>
 						<form class="form-inline offset-2 offset-lg-0 ">
 							<input class="col-5 col-lg-11  form-control w-100  m-2 " type="search"
-								placeholder="Recherche" aria-label="Search">
+								placeholder="Recherche" aria-label="Search" pattern="[a-zA-Z0-9.-_]+" title="caractère autorisés : a-zA-Z0-9.-_">
 							<button class="col-2  col-lg-4  btn  ml-2 ml-lg-5  " type="submit"><i
 									class="fas fa-search"></i></button>
 						</form>
@@ -174,9 +174,53 @@
 				<li class="nav-item">
 					<a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i></a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href=""><i class="fas fa-heart"></i></a>
-				</li>
+	        <!---->
+			<li class="nav-item">
+				<!-- Button Favoris -->
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+				  <i class="fas fa-heart"></i>
+				</button>
+				<!-- Modal favoris -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+				  aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Vos Favoris</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="favoris card-header">
+						  <ul class="nav nav-tabs card-header-tabs">
+							<li class="nav-item">
+							  <a class="nav-link active" href="presse.html">FAVORIS</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="connexionInscription.html">COMPTE </a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="panier.html">PANIER</a>
+							</li>
+						  </ul>
+						</div>
+						<div class="card mb-3 m-lg-4 p-4">
+						  <div class="card-header">Favoris</div>
+						  <div class="card-body">
+							<p class="card-text col col-lg-8 offset-lg-2 font-weight-bold font-italic">Votre liste de favoris
+							  est vide
+							</p>
+						  </div>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn" data-dismiss="modal">OK</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!--fin modal favoris-->
+			  </li>
 			</ul>
 			<h1 class="d-none d-lg-block"><a href="index.html">Le Petit Commerce</a></h1>
 		</header>
