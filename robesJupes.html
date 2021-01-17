@@ -1,125 +1,167 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="description"
+    content="Découvrez la nouvelle collection Printemps Eté 2020. Retour sous 100 jours. Paiement Sécurisé. Satisfait ou Remboursé. Retour Gratuit. Livraison Gratuite. Types: Vêtements, Chaussures, Accessoires, Sports, Luxe, Lingerie.">
+  <meta name="author" content="Svetlana et Samy">
+  <meta name="robots" content="INDEX,FOLLOW">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <title>Le Petit Commerce, Robe jupes</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
-<body class="container-fluid d-flex flex-column flex-lg-row">
+
+<body class="container-fluid d-flex flex-column flex-lg-row ">
   <!--Contenair divisé en 2 colonnes/row  pour le menu et pour le corps-->
-    <!--1ere partie menu -->
-    <!--------------------->
-  <div class="col-2">   
-    <nav class=" col col-lg-2 navbar navbar-expand-lg  position-fixed">  
+  <!--1ere partie menu -->
+  <div class="col-2">
+    <nav class="container-fluid col col-lg-2 navbar navbar-expand-lg  position-fixed">
       <!--menu mobil et tablette-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
+      <h1 class="navbar-toggler"><a href="index.html">Le Petit Commerce</a></h1>
       <!-- menu écran large-->
-      <div class=" collapse navbar-collapse" id="navbarTogglerDemo01">         
-        <ul class="navPerso navbar-nav mt-2 mt-lg-0 flex-column justify-content-start justify-content-lg-around align-items-start  align-items-lg-start">   
-             
+      <div class=" collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul
+          class="navPerso navbar-nav mt-2 mt-lg-0 flex-column justify-content-sm-start justify-content-lg-around  align-items-lg-start">
+          <li class="nav-item dropdown femme ">
+            <a class="nav-link dropdown-toggle m-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Femme</a>
+            <div class="dropdown-menu ">
+              <a class="dropdown-item" href="vetementsF.html">Vêtements
+                <ul class="sousMenu p-0">
+                  <li><a href="robesJupes.html">Robes et Jupes</a></li>
+                  <li><a href="pantalonsJeansF.html">Pantalons et Jeans</a></li>
+                  <li><a href="teeshirtsTops.html">Tee-shirts et Tops</a></li>
+                  <li><a href="chemisesBlouses.html">Chemises et Blouses</a></li>
+                </ul>
+              </a>
+              <a class="dropdown-item" href="chaussures.html">Chaussures
+                <ul class="sousMenu p-0">
+                  <li><a href="escarpins.html">Escarpins</a></li>
+                  <li><a href="sandales.html">Sandales</a></li>
+                  <li><a href="sneakersF.html">Sneakers</a></li>
+                  <li><a href="bottines.html">Bottines</a></li>
+                </ul>
+              </a>
+              <a class="dropdown-item" href="accessoires.html">Accessoires
+                <ul class="sousMenu p-0">
+                  <li><a href="sacMains.html">Sac à mains</a></li>
+                  <li><a href="sacDosF.html">sac à dos</a></li>
+                </ul>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown homme">
+            <a class="nav-link dropdown-toggle  ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Homme</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="vetementsH.html">Vêtements
+                <ul class="sousMenu p-0">
+                  <li><a href="chemises.html">Chemises</a></li>
+                  <li><a href="teeshirtPolo.html">Tee-shirts et Polos</a></li>
+                  <li><a href="pantalonsJeansH.html">Pantalons et Jeans</a></li>
+                  <li><a href="vestesManteauxH.html">Vestes et manteaux</a></li>
+                </ul>
+              </a>
+              <a class="dropdown-item" href="chaussuresH.html">Chaussures
+                <ul class="sousMenu p-0">
+                  <li><a href="derbies.html">Derbies</a></li>
+                  <li><a href="sneakersH.html">Sneakers</a></li>
+                  <li><a href="boots.html">Boots</a></li>
+                  <li><a href="chaussuresSport.html">chaussures de sport</a></li>
+                </ul>
+              </a>
+              <a class="dropdown-item" href="accessoiresH.html">Accessoires
+                <ul class="sousMenu p-0">
+                  <li><a href="sacDosH.html">Sac à dos et sac de sport</a></li>
+                  <li><a href="portefeuille.html">Portefeuilles</a></li>
+                  <li><a href="ceintures.html">Ceintures</a></li>
+                </ul>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-2 " href="coachPersonnel.html" style="text-align: left;">Coach personnel Shopper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-2 " href="actualites.html">Actualités</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Femme</a>
-              <div class="dropdown-menu ">
-                <a class="dropdown-item" href="vetementsF.html" target="_blank">Vêtements
-                  <ul class="sousMenu p-0">
-                    <li><a href="robesJupes.html" target="_blank">Robes et Jupes</a></li>
-                    <li><a href="pantalonsJeansF.html" target="_blank">Pantalons et Jeans</a></li>
-                    <li><a href="teeshirtsTops.html" target="_blank">Tee-shirts et Tops</a></li>
-                    <li><a href="chemisesBlouses.html" target="_blank">Chemises et Blouses</a></li>
-                    <li><a href="manteauxVestesF.html" target="_blank">Manteaux et vestes</a></li>
-                  </ul>
-                </a>
-                <a class="dropdown-item" href="chaussures.html" target="_blank">Chaussures
-                  <ul>
-                    <li><a href="escarpins.html" target="_blank">Escarpins</a></li>
-                    <li><a href="sandales.html" target="_blank">Sandales</a></li>
-                    <li><a href="sneakersF.html" target="_blank">Sneakers</a></li>
-                    <li><a href="bottines.html" target="_blank">Bottines</a></li>
-                  </ul>
-                </a>            
-                <a class="dropdown-item" href="accessoires.html" target="_blank">Accessoires
-                  <ul>
-                    <li><a href="sacMains.html" target="_blank">Sac à mains</a></li>
-                    <li><a href="sacDosF.html" target="_blank">sac à dos</a></li>
-                  </ul>
-                </a>
-              </div>
+            <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Avis</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="avis_e_boutique.html">Boutique en ligne</a></li>
+                <li><a href="avis_boutique.html">Points de ventes</a></li>
+              </ul>
+
+            </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Homme</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item " href="vetementsH.html" target="_blank">Vêtements
-                  <ul >
-                    <li><a href="chemises.html" target="_blank">Chemises</a></li>
-                    <li><a href="teeshirtPolo.html" target="_blank">Tee-shirts et Polos</a></li>           
-                    <li><a href="pantalosJeansH.html" target="_blank">Pantalons et Jeans</a></li>
-                    <li><a href="vestesManteauxH.html" target="_blank">Vestes et manteaux</a></li>
-                  </ul>
-                </a>
-                <a class="dropdown-item" href="chaussuresH.html" target="_blank">Chaussures
-                  <ul>
-                    <li><a href="derbies.html" target="_blank">Derbies</a></li>
-                    <li><a href="sneakersH.html" target="_blank">Sneakers</a></li>
-                    <li><a href="boots.html" target="_blank">Boots</a></li>
-                    <li><a href="chaussuresSport.html" target="_blank">chaussures de sport</a></li>
-                  </ul>
-                </a>            
-                <a class="dropdown-item" href="accessoiresH.html" target="_blank">Accessoires
-                  <ul>
-                    <li><a href="sacDosH.html" target="_blank">Sac à dos et sac de sport</a></li>
-                    <li><a href="portefeuille.html" target="_blank">Portefeuilles</a></li>
-                    <li><a href="ceintures.html" target="_blank">Ceintures</a></li>
-                  </ul>
-                </a>
-              </div>
-          </li>   
-          <li class="nav-item">
-                  <a class="nav-link" href="coachPersonnel.html" target="_blank">Coach personnel<br>Shopper</a>
-          </li>
-          <li class="nav-item">
-                  <a class="nav-link" href="actualites.html" target="_blank">Actualités</a>
-          </li>
-          <li class="nav-item">
-                    <a class="nav-link" href="avis.html" target="_blank">Avis</a>
-          </li>
-          <li>   
-            <form class="form-inline">
-              <input class="col-5 col-lg-9 form-control w-100 " type="search" placeholder="Recherche" aria-label="Search">
-              <button class="col-2  col-lg-3 btn p-1 " type="submit"><i class="fas fa-search"></i></button>
+          <li>
+            <form class="form-inline offset-2 offset-lg-0 ">
+              <input class="col-5 col-lg-11  form-control w-100  m-2 " type="search" placeholder="Recherche"
+                aria-label="Search">
+              <button class="col-2  col-lg-4  btn  ml-2 ml-lg-5  " type="submit"><i class="fas fa-search"></i></button>
             </form>
           </li>
-      </ul>
+        </ul>
       </div>
     </nav>
   </div>
-    <!--2eme partie le Corps-->
-    <!------------------------>
-  <div class="corps col col-lg-10 my-lg-0 ">
+  <!--2eme partie le Corps-->
+  <div class="corps col col-lg-10 my-lg-0">
 
-    <header class="container-fluid service p-2" >
-      <ul  class=" d-flex flex-row justify-content-around">                     
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >France </a>
-          <div class="dropdown-menu">       
-            <a class="dropdown-item" href="#"> Royaume Uni </a>
-            <a class="dropdown-item" href="#"> Espagne </a>       
-            <a class="dropdown-item" href="#"> Italie </a>
+    <header class="container-fluid service p-2">
+      <ul class=" d-flex flex-row flex-wrap justify-content-around justify-content-lg-around">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+            aria-haspopup="true" aria-expanded="false">Langues</a>
+          <div class="dropdown-menu ">
+            <ul class="container-fluid d-flex justify-content-around">
+              <li>
+                <a target="_blank" rel="nofollow"
+                  onclick="window.open('https://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=fr%7Cen&hl=fr&ie=UTF8'); return false;">
+                  <img style="cursor:pointer; cursor:hand;" alt="Translate this page in English"
+                    src="https://www.numelion.com/images/flag/royaume-uni.png" title="Translate this page in English"
+                    width="30" /></a>
+              </li>
+              <li>
+                <a target="_blank" rel="nofollow" onclick="window.open('https://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=fr%7Ces&hl=fr&ie=UTF8'); 
+                    return false;"><img style="cursor:pointer; cursor:hand;" alt="Traducir esta página en español"
+                    src="https://www.numelion.com/images/flag//espagne.png" title="Traducir esta página en español"
+                    width="30" /></a>
+              </li>
+              <li>
+                <a target="_blank" rel="nofollow" onclick="window.open('https://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&langpair=fr%7Cit&hl=fr&ie=UTF8'); 
+                    return false;"><img style="cursor:pointer; cursor:hand;" alt="Traduci questa pagina in italiano"
+                    src="https://www.numelion.com/images/flag/italie.png" title="Traduci questa pagina in italiano"
+                    width="30" /></a>
+              </li>
+            </ul>
           </div>
         </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Boutique</a>
-          <div class="dropdown-menu">       
-            <a class="dropdown-item" href="quiSommesNous.html" target="_blank">Qui Sommes-nous</a>
-            <a class="dropdown-item" href="contact.html" target="_blank">Contact</a>       
-            <a class="dropdown-item" href="recrutements.html" target="_blank">Recrutements</a>
-            <a class="dropdown-item" href="evenements.html" target="_blank">Evénements</a>
-            <a class="dropdown-item" href="presse.html" target="_blank">Presse</a>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+            aria-haspopup="true" aria-expanded="false">La Boutique</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="quiSommesNous.html">Qui Sommes-nous</a>
+            <a class="dropdown-item" href="contact.html">Contact</a>
+            <a class="dropdown-item" href="recrutements.html">Recrutements</a>
+            <a class="dropdown-item" href="evenements.html">Evénements</a>
+            <a class="dropdown-item" href="presse.html">Presse</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pointDeVentes.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
+          <a class="nav-link" href="pointDeVentes.html"><i class="fas fa-map-marker-alt"></i> Points de vente</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="connexionInscription.html"><i class="fas fa-user"></i></a>
@@ -128,84 +170,1845 @@
           <a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="" ><i class="fas fa-heart"></i></a>
+          <a class="nav-link" href=""><i class="fas fa-heart"></i></a>
         </li>
       </ul>
-      <h1><a  href="index.html">Le Petit Commerce</a></h1>
+      <h1 class="	d-none d-lg-block"><a href="index.html">Le Petit Commerce</a></h1>
     </header>
 
     <main class="container-fluid">
- 
-        
-        <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
-          <!------------début nvo contenu----------------------------------->
-        
-          <!-------------fin nvo contenu------------------------------------>
-        </div>
-  
-        <section class="container-fluid preFooter d-flex flex-column flex-lg-row flex-wrap" >
-          <h2 class="col col-lg-12">AVANTAGES E-BOUTIQUE</h2>
-    
-    
-              <article class="col col-lg-4">
-                <h3><i class="fas fa-shipping-fast"></i></h3>
-                <h3>LIVRAISON OFFERTE</h3>
-                <p>Livraison standard offerte pour toute commande</p>
-                 <hr class="col-2 offset-5">
-              </article>
-    
-              <article class="col col-lg-4">
-                <h3><i class="fas fa-undo-alt"></i></h3>
-               <h3> RETOUR OFFERT</h3>
-               <p>Retour sous 14 jours offerts pour toute commande</p>
-                <hr class="col-2 offset-5">
-              </article>
-              
-              <article class="col col-lg-4">
-                <h3><i class="fas fa-gift"></i></h3>
-                <h3>L'ART D'OFFRIR</h3>
-                <p >Votre commande sublimée dans un coffret cadeau personnalisé</p> 
-                  <hr class="col-2 offset-5">     
-              </article> 
-    
-          
-        </section>
-  
-        <section class="container-fluid d-flex flex-column flex-lg-row">
-              <article class="col">
-                  <h2>NEWSLETTER</h2>
-                  <p>Et si vous profitiez de 10% de réduction sur votre prochaine commande ?Abonnez-vous à la newsletter Zalando et bénéficiez de 10% de réduction sur votre prochaine commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p>
-            
-                    <a href="newsletters.html" class="stretched-link">S'abonner</a>
-              </article>
-              <article class="col">
-                  <h2>NOUS CONTACTER</h2>
-                  <p>Vous avez une question, vousavez besoins d'aides, n'hésitez pas nous sommes là pour vous!</p>
-                  <a href="contact.html" class="stretched-link">contact</a>
-              </article>
-              <article class="col">
-                  <h2>SUIVEZ-NOUS</h2> 
-                  <div class=" justify-item-around m-2">
-                    <a href="facebook.com"><i class="fab fa-facebook"></i></a>
-                    <a href="instagram.com"><i class="fab fa-facebook"></i></a>
-                    <a href="twitter.com"><i class="fab fa-facebook"></i></a>
-                   </div>    
-              </article> 
-        </section>
-  
-      </main> 
+<!--contenu principal-->
+      <div class="container-fluid d-flex flex-column flex-lg-row flex-wrap ">
 
-    <footer class="container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around text-center">
-      <a href="cgv.html " >Conditions generales de ventes</a>
-      <a href="mentionsLegales.html" >Mentions légales</a>   
-      <a href="planSite.html" >plan du site</a>       
+        <div class="container-fluid mt-3">
+          <h2 style="text-align: center">Robes & jupes</h2>
+          <p style="text-align: center">Fidèles à l’esprit couture de la Maison Le Petit Commerce, ces essentiels du
+            vestiaire féminin célèbrent la passion virtuose du couturier.</p>
+        </div>
+        <hr class="col-10">
+        <div class="offset-1 mb-5 ligneCategories">
+          <ul class="d-flex flex-row" style="font-size: 1.2em">
+            <a href="modeFemme.html">
+              <li> Femme ></li>
+            </a>
+            <a href="vetementsF.html">
+              <li>Vêtements ></li>
+            </a>
+            <li>Robes et jupes</li>
+          </ul>
+        </div>
+
+
+        <div class="container-fluid d-flex flex-column">
+          <div class="row d-flex justify-content-center">
+            <!--produit 1-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\jupe2_bleue_jeans_courte_face.jpg"
+                    alt="jupe bleu jeans courte">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Jupe en jeans bleu courte<br>69,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\jupe2_bleue_jeans_courte_arriere.jpg"
+                        alt="jupe bleu jeans courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\jupe2_bleue_jeans_courte.jpg"
+                        alt="jupe bleu jeans courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Jupe en jeans bleu courte<br>
+                  <span style="font-weight: bold">69,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 1---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit1">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF1" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF1" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF1" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex "
+                                  src="img/femme/vetements/robes-jupes/jupe2_bleue_jeans_courte_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex"
+                                  src="img/femme/vetements/robes-jupes/jupe2_bleue_jeans_courte_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe2_bleue_jeans_courte.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF1" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF1" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                  400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/jupe2_bleue_jeans_courte.jpg"
+                                alt="jupe bleu jeans courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe2_bleue_jeans_courte_arriere.jpg"
+                                alt="jupe bleu jeans courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe2_bleue_jeans_courte_face.jpg"
+                                alt="jupe bleu jeans courte" style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Jupe en jeans bleu courte</strong><br>69,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1 "
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="btn-lg col-10 offset-1 barre2"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal------------------------------------------------------------------------>
+            </div>
+            <!--produit 2-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\jupe_blanche_dentelle_courte_face.jpg"
+                    alt="jupe blanche dentelle courte">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Jupe en dentelle blanche<br>89,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\jupe_blanche_dentelle_courte_arriere.jpg"
+                        alt="jupe blanche dentelle courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\jupe_blanche_dentelle_courte.jpg"
+                        alt="jupe blanche dentelle courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Jupe en dentelle blanche<br>
+                  <span style="font-weight: bold">89,99€</span>
+                </p>
+              </div>
+
+              <!--------------------------début modal 2---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit2">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSlider2" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSlider2" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSlider2" data-slide-to="1"></li>
+                              <li data-target="#containerSlider2" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex "
+                                  src="img/femme/vetements/robes-jupes/jupe_blanche_dentelle_courte_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex"
+                                  src="img/femme/vetements/robes-jupes/jupe_blanche_dentelle_courte_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex"
+                                  src="img/femme/vetements/robes-jupes/jupe_blanche_dentelle_courte.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSlider2" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSlider2" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/jupe_blanche_dentelle_courte.jpg"
+                                alt="jupe blanche dentelle courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe_blanche_dentelle_courte_arriere.jpg"
+                                alt="jupe blanche dentelle courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe_blanche_dentelle_courte_face.jpg"
+                                alt="jupe blanche dentelle courte" style="height: 500px;width:300px;"
+                                id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Jupe en dentelle blanche</strong><br>89,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 2------------------------------------------------------------------------>
+            </div>
+            <!--produit 3-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\jupe_bleue_courte_face.jpg"
+                    alt="jupe bleue courte">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Jupe bleue courte<br>49,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\jupe_bleue_courte_arriere.jpg" alt="jupe bleue courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\jupe_bleue_courte.jpg" alt="jupe bleue courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Jupe bleue courte<br>
+                  <span style="font-weight: bold">49,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 3---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit3">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSlider3" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSlider3" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSlider3" data-slide-to="1"></li>
+                              <li data-target="#containerSlider3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/jupe_bleue_courte_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe_bleue_courte_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe_bleue_courte.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSlider3" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSlider3" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                            400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/jupe_bleue_courte.jpg" class="zoom"
+                                alt="jupe bleue courte">
+                              <img src="img/femme/vetements/robes-jupes/jupe_bleue_courte_arriere.jpg"
+                                alt="jupe bleue courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe_bleue_courte_face.jpg"
+                                alt="jupe bleue courte" style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Jupe bleue courte</strong><br>49,99 €</p>
+                            </div>
+                            <button class="add btn-lg h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg btn-success col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 3------------------------------------------------------------------------>
+            </div>
+            <!--produit 4-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\jupe_bleue_jeans_courte_face.jpg"
+                    alt="jupe en jeans bleue courte ">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Jupe en jeans courte<br>59,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\jupe_bleue_jeans_courte_arriere.jpg"
+                        alt="jupe en jeans bleue courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\jupe_bleue_jeans_courte.jpg"
+                        alt="jupe en jeans bleue courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Jupe en jeans courte<br>
+                  <span style="font-weight: bold">59,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 4---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit4">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit4" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF4" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF4" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF4" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF4" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex "
+                                  src="img/femme/vetements/robes-jupes/jupe_bleue_jeans_courte_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex"
+                                  src="img/femme/vetements/robes-jupes/jupe_bleue_jeans_courte_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe_bleue_jeans_courte.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF4" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF4" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                          400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/jupe_bleue_jeans_courte.jpg"
+                                alt="jupe en jeans bleue courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe_bleue_jeans_courte_arriere.jpg"
+                                alt="jupe en jeans bleue courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe_bleue_jeans_courte_face.jpg"
+                                alt="jupe en jeans bleue courte" style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Jupe en jeans courte</strong><br>59,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 4------------------------------------------------------------------------>
+            </div>
+            <!--produit 5-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\jupe_rouge_courte_face.jpg"
+                    alt="jupe rouge courte">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Jupe rouge courte<br>59,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\jupe_rouge_courte_arriere.jpg" alt="jupe rouge courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\jupe_rouge_courte.jpg" alt="jupe rouge courte"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Jupe rouge courte<br>
+                  <span style="font-weight: bold">59,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 5---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit5">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit5" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF5" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF5" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF5" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF5" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/jupe_rouge_courte_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe_rouge_courte_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe_rouge_courte.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF5" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF5" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                      400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/jupe_rouge_courte.jpg" alt="jupe rouge courte"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe_rouge_courte_arriere.jpg"
+                                alt="jupe rouge courte" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe_rouge_courte_face.jpg"
+                                alt="jupe rouge courte" style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Jupe rouge courte</strong><br>59,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 5------------------------------------------------------------------------>
+            </div>
+            <!--produit 6-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\jupe2_noire_longue_face.jpg"
+                    alt="Jupe longue noir">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Jupe longue noir<br>49,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\jupe2_noire_longue_arriere.jpg" alt="Jupe longue noir"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\jupe2_noire_longue.jpg" alt="Jupe longue noir"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Jupe longue noire<br>
+                  <span style="font-weight: bold">49,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 6---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit6">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit6" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF6" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF6" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF6" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF6" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/jupe2_noire_longue_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe2_noire_longue_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/jupe2_noire_longue.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF6" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF6" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                        400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/jupe2_noire_longue.jpg" alt="Jupe longue noire"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe2_noire_longue_arriere.jpg"
+                                alt="Jupe longue noire" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/jupe2_noire_longue_face.jpg"
+                                alt="Jupe longue noire" style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Jupe longue noire</strong><br>49,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 6------------------------------------------------------------------------>
+            </div>
+            <!--produit 7-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\robe_bronze_face.jpg"
+                    alt="Robe bronze">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Robe bronze<br>79,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\robe_bronze_arriere.jpg" alt="Robe bronze"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\robe_bronze.jpg" alt="Robe bronze"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Robe bronze<br>
+                  <span style="font-weight: bold">79,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 7---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit7">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit7" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF7" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF7" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF7" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF7" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/robe_bronze_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_bronze_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_bronze.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF7" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF7" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/robe_bronze.jpg" alt="Robe bronze" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_bronze_arriere.jpg" alt="Robe bronze"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_bronze_face.jpg" alt="Robe bronze"
+                                style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Robe bronze</strong><br>79,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 7------------------------------------------------------------------------>
+            </div>
+            <!--produit 8-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\robe_bleue_face.jpg" alt="Robe bleu">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Robe bleu<br>119,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\robe_bleue_arriere.jpg" alt="Robe bleu"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\robe_bleue.jpg" alt="Robe bleu"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Robe bleue<br>
+                  <span style="font-weight: bold">119,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 8---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit8">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit8" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF8" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF8" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF8" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF8" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/robe_bleue_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_bleue_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_bleue.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF8" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF8" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/robe_bleue.jpg" alt="Robe bleue" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_bleue_arriere.jpg" alt="Robe bleue"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_bleue_face.jpg" alt="Robe bleue"
+                                style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Robe bleue</strong><br>119,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 8------------------------------------------------------------------------>
+            </div>
+            <!--produit 9-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\robe_rose_metal_face.jpg"
+                    alt="Robe rose métal">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Robe rose métal<br>89,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\robe_rose_metal_arriere.jpg" alt="Robe rose métal"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\robe_rose_metal.jpg" alt="Robe rose métal"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Robe rose métale<br>
+                  <span style="font-weight: bold">89,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 9---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit9">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit9" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF9" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF9" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF9" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF9" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/robe_rose_metal_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_rose_metal.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_rose_metal_arriere.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF9" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF9" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/robe_rose_metal.jpg" alt="Robe rose métale"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_rose_metal_arriere.jpg"
+                                alt="Robe rose métale" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_rose_metal_face.jpg" alt="Robe rose métale"
+                                style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Robe rose métale</strong><br>89,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 9------------------------------------------------------------------------>
+            </div>
+            <!--produit 10-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\robe_noire_dentelle2_face.jpg"
+                    alt="Robe noir dentelle">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Robe noir en dentelle<br>79,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\robe_noire_dentelle2_arriere.jpg"
+                        alt="Robe noir dentelle" style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\robe_noire_dentelle2.jpg" alt="Robe noir dentelle"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Robe noire en dentelle<br>
+                  <span style="font-weight: bold">79,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 10---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit10">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit10" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF10" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF10" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF10" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF10" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/robe_noire_dentelle2_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex"
+                                  src="img/femme/vetements/robes-jupes/robe_noire_dentelle2_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_noire_dentelle2.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF10" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF10" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                    400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/robe_noire_dentelle2.jpg"
+                                alt="Robe noire en dentelle" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_noire_dentelle2_arriere.jpg"
+                                alt="Robe noire en dentelle" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_noire_dentelle2_face.jpg"
+                                alt="Robe noire en dentelle" style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Robe noire en dentelle</strong><br>79,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 10------------------------------------------------------------------------>
+            </div>
+            <!--produit 11-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\robe_or_longue_face.jpg"
+                    alt="Robe or longue">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Robe or longue<br>119,90 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\robe_or_longue_arriere.jpg" alt="Robe or longue"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\robe_or_longue.jpg" alt="Robe or longue"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Robe or longue<br>
+                  <span style="font-weight: bold">119,90€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 11---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit11">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit11" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF11" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF11" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF11" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF11" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/robe_or_longue_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_or_longue_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_or_longue.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF11" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF11" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                      400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/robe_or_longue.jpg" alt="Robe or longue"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_or_longue_arriere.jpg" alt="Robe or longue"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_or_longue_face.jpg" alt="Robe or longue"
+                                style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Robe or longue</strong><br>119,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 11------------------------------------------------------------------------>
+
+            </div>
+            <!--produit 12-->
+            <div class="col-10 col-sm-6 col-md-5 col-lg-3 mb-5 m-2">
+              <a class="thumbnail">
+                <figure>
+                  <img class="img-thumbnail" src="img\femme\vetements\robes-jupes\robe_ciel_longue_face.jpg"
+                    alt="Robe ciel longue">
+                  <figcaption class="d-none d-lg-block d-xl-block" style="height: 250px;margin: 0;">
+                    <p style="text-align: center;margin: 0;">Robe ciel longue<br>159,99 EUROS</p>
+                    <div class="miniature1 d-flex justify-content-around m-0 m-md-3">
+                      <img src="img\femme\vetements\robes-jupes\robe_ciel_longue_arriere.jpg" alt="Robe ciel longue"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                      <img src="img\femme\vetements\robes-jupes\robe_ciel_longue.jpg" alt="Robe ciel longue"
+                        style="width: 25%; height:50%; border: 1px solid black;margin: 10px">
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="d-lg-none mr-0">
+                <p style="text-align: center; margin-bottom: 20px;">Robe ciel longue<br>
+                  <span style="font-weight: bold">159,99€</span>
+                </p>
+              </div>
+              <!--------------------------début modal 12---------------------------------------------------------------------------->
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-dark mt-lg-2" data-toggle="modal" data-target="#produit12">
+                  <p style="font-size: 1.4em; margin:0; padding:0">Voir la fiche produit</p>
+                </button>
+              </div>
+              <!---->
+              <div class="modal fade" id="produit12" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title descriptionFicheProduit">Fiche produit</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container-fluid col-10 d-flex flex-column flex-lg-row flex-wrap ">
+                        <div class="container-fluid ">
+                          <!--BLOC SLIDER-->
+                          <div id="containerSliderrjF12" class="carousel offset-2" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#containerSliderrjF12" data-slide-to="0" class="active"></li>
+                              <li data-target="#containerSliderrjF12" data-slide-to="1"></li>
+                              <li data-target="#containerSliderrjF12" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-flex " src="img/femme/vetements/robes-jupes/robe_ciel_longue_face.jpg"
+                                  alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_ciel_longue_arriere.jpg"
+                                  alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-flex" src="img/femme/vetements/robes-jupes/robe_ciel_longue.jpg"
+                                  alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#containerSliderrjF12" role="button"
+                              data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Avant</span>
+                            </a>
+                            <a class="carousel-control-next" href="#containerSliderrjF12" role="button"
+                              data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Aprés</span>
+                            </a>
+                          </div>
+                          <!---BLOC PHOTOS MINIATURE-->
+                          <div id="containerPhotos">
+                            <div class="container-fluid d-flex flex-column flex-wrap col-6 " style="width: 
+                                        400px;height: 520px">
+                              <img src="img/femme/vetements/robes-jupes/robe_ciel_longue.jpg" alt="Robe ciel longue"
+                                class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_ciel_longue_arriere.jpg"
+                                alt="Robe ciel longue" class="zoom">
+                              <img src="img/femme/vetements/robes-jupes/robe_ciel_longue_face.jpg"
+                                alt="Robe ciel longue" style="height: 500px;width:300px;" id="premiereImage">
+                            </div>
+                          </div>
+                          <!--BLOC DESCRIPTION PRODUIT-->
+                          <div class="container-fluid mt-5">
+                            <div class="col-12 offset-1">
+                              <p class="text-center "><strong>Robe ciel longue</strong><br>159,99 €</p>
+                            </div>
+                            <button class="add btn-lg btn-success h-1.5 offset-1 boutonpanier col-12 " onclick="add();" >Ajouter au
+                              panier</button>
+                            <br>
+                            <hr class="col-6">
+                            <div class="containerLivraisonGratuite d-flex flex-column mt-3 offset-3">
+                              <i class="fas fa-truck"> Livraison Standarde gratuite</i>
+                              ve, 26.07. - ma, 30.07.
+                            </div>
+                            <div class="containerLivraisonExpress d-flex flex-column mt-3 mb-3 offset-3 ">
+                              <i class="fas fa-truck "> Livraison Express 9,95 €</i>
+                              1-2 jours ouvrables en commandant avant 15h
+                            </div>
+                          </div>
+                          <!--BLOC MENU DEROULANT-->
+                          <div class="containerMenuDeroulant col-12 offset-1">
+
+                            <div class="barre btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Description</div>
+                            <div class="rideau btn-lg col-10 offset-1" style="height: 100px; display: none;">Lorem ipsum
+                              dolor sit amet consectetur adipisicing elit. </div>
+
+                            <div class="barre2 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Taille et coupe</div>
+                            <div class="rideau2 btn-lg col-10 offset-1"
+                              style="height: 100px; border-top: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+                            <div class="barre3 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Livraison</div>
+                            <div class="rideau3 btn-lg col-10 offset-1" style="height: 100px;; display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. M </div>
+
+
+                            <div class="barre4 btn-lg col-10 offset-1"
+                              style="cursor: pointer; border-top: 1px solid rgba(0, 0, 0, 0.377); text-align:center;">
+                              Avis</div>
+                            <div class="rideau4 btn-lg col-10 offset-1"
+                              style="height: 100px; border-bottom: 1px solid rgba(0, 0, 0, 0.377); display: none;">Lorem
+                              ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------------------fin Modal 12------------------------------------------------------------------------>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+<!--pre footer 1-->
+      <section class="contenair-fluid preFooter d-flex flex-column flex-lg-row flex-wrap p-3">
+        <h3 class="col col-lg-12 p-2">AVANTAGES E-BOUTIQUE</h3>
+        <article class="col col-lg-4 p-3">
+          <h4><i class="fas fa-shipping-fast"></i></h4>
+          <h4>LIVRAISON OFFERTE</h4>
+          <p><span class="marge"></span>La livraison standard est offerte, à partir d’un montant minimum d’achat de
+            24.90 €.Nous proposons également la livraison express pour 9.95 €. </p>
+        </article>
+        <article class="col col-lg-4 p-3">
+          <h4><i class="fas fa-undo-alt"></i></h4>
+          <h4> RETOUR OFFERT</h4>
+          <p><span class="marge"></span>Vous souhaitez effectuer un retour ? C’est simple et gratuit, vous n'avez pas de
+            documents à imprimer. L'étiquette jointe à votre colis lors de la livraison suffit.<br> Les frais de port
+            sont pris en charge par Le Petit Commerce, vous n’avez donc rien à payer : c’est simple et gratuit !</p>
+        </article>
+        <article class="col col-lg-4 p-3 ">
+          <h4><i class="fas fa-gift"></i></h'>
+            <h4>L'ART D'OFFRIR</h4>
+            <p><span class="marge"></span>Avant chaque anniversaire, chaque fête et chaque Noël, nous nous trouvons
+              confrontés à la même question : à quoi ressemble le cadeau parfait ?<br> Avec un coffret personnalisé Le
+              Petit Commerce, vous avez trouvé la réponse.<br>Votre commande sera sublimée dans un coffret cadeau
+              personnalisé</p>
+        </article>
+      </section>
+<!--pre footer 2-->
+      <section class="contenair-fluid prefooter2 d-flex flex-column flex-lg-row  p-3">
+        <article class="col p-3">
+          <h3>NEWSLETTER</h3>
+          <a href="newsletters.html" class="stretched-link">
+            <p class="p-4"><span class="marge"></span>Abonnez-vous à la newsletter Le Petit Commerce et bénéficiez de 10% de réduction sur votre prochaine
+              commande ainsi que des alertes pour des offres, les dernières tendances et des conseils mode. </p>
+          </a>
+        </article>
+        <article class="col p-3">
+          <h3>NOUS CONTACTER</h3>
+          <a href="contact.html" class="stretched-link">
+            <p class="p-4"><span class="marge"></span>Vous avez une question, Vous avez besoins d'aides, n'hésitez pas
+              nous sommes là pour vous!</p>
+          </a>
+        </article>
+        <article class="col p-3">
+          <h3>SUIVEZ-NOUS</h3>
+          <div class="reseaux d-flex flex-row justify-content-around  p-5">
+            <a href="http://www.facebook.com" target="_blank" title="Facebook" class="p-3"><i
+                class="fab fa-facebook"></i></a>
+            <a href="http://instagram.com" target="_blank" title="instagram" class="p-3"><i
+                class="fab fa-instagram"></i></a>
+            <a href="http://twitter.com" target="_blank" title="twitter " class="p-3"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="pt-4">
+      <div class="liens container-fluid d-flex flex-column flex-lg-row flex-wrap justify-content-around text-center">
+        <a href="cgv.html ">Conditions generales de ventes</a>
+        <a href="mentionsLegales.html">Mentions légales</a>
+        <a href="planSite.html">plan du site</a>
+        <a href="javascript:window.print()">Imprimer cette page</a>
+      </div>
+      <p class="col text-center">Copyright &copy; Svetlana & Samy </p>
     </footer>
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/script.js"></script> 
-         
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(function add(){$('.add').on("click", function add(){
+      alert('Votre produit a été ajouté au panier');
+     document.location.href="robesJupes.html";
+     });
+    });
+   </script>
 </body>
-</html>
+
+</html
